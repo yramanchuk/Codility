@@ -11,6 +11,7 @@
 #import "CyclicRotation.h"
 #import "OddOccurrencesInArray.h"
 #import "FrogJmp.h"
+#import "TapeEquilibrium.h"
 
 @interface CodilityTests : XCTestCase
 
@@ -89,6 +90,18 @@
     XCTAssertEqual(1 , [FrogJmp solution:10 toY:85 withD:130]);
     XCTAssertEqual(7692308 , [FrogJmp solution:10 toY:1000000000 withD:130]);
     XCTAssertEqual(0 , [FrogJmp solution:10 toY:10 withD:130]);
+}
+
+- (void)testTapeEquilibrium {
+    int result = [TapeEquilibrium solution:[@[@3, @1, @2, @4, @3] mutableCopy]];
+    XCTAssertEqual(1, result);
+
+    result = [TapeEquilibrium solution:[@[@3, @1] mutableCopy]];
+    XCTAssertEqual(2, result);
+
+    result = [TapeEquilibrium solution:[@[@3, @1, @-3] mutableCopy]];
+    XCTAssertEqual(5, result);
+
 }
 
 @end
