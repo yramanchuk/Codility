@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "BinaryGap.h"
 #import "CyclicRotation.h"
+#import "OddOccurrencesInArray.h"
 
 @interface CodilityTests : XCTestCase
 
@@ -52,6 +53,27 @@
 - (void)testCyclicRotation {
     [CyclicRotation solution:[@[@3, @8, @9, @7, @6] mutableCopy] size:6];
     [CyclicRotation solution:[@[] mutableCopy] size:6];
+}
+
+- (void)testOddOccurrencesInArray {
+
+    int result = [OddOccurrencesInArray solution:[@[@2, @1, @3, @2, @1, @2, @2, @3, @4, @1, @1, @5, @5] mutableCopy]];
+    XCTAssertEqual(4 ,result);
+
+    result = [OddOccurrencesInArray solution:[@[@2, @1, @3, @2, @1, @2, @2, @3, @4, @1, @1] mutableCopy]];
+    XCTAssertEqual(4 ,result);
+    
+    result = [OddOccurrencesInArray solution:[@[@2, @2, @3, @3, @4] mutableCopy]];
+    XCTAssertEqual(4 ,result);
+    
+    
+    result = [OddOccurrencesInArray solution:[@[@42] mutableCopy]];
+    XCTAssertEqual(42 ,result);
+    
+    result = [OddOccurrencesInArray solution:[@[@9, @3, @9, @3, @9, @7, @9] mutableCopy]];
+    XCTAssertEqual(7 ,result);
+
+
 }
 
 - (void)testPerformanceExample {
