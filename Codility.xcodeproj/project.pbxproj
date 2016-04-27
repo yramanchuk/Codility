@@ -15,7 +15,8 @@
 		CB75BAC91CD0C34B00663431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB75BAC71CD0C34B00663431 /* LaunchScreen.storyboard */; };
 		CB75BAD41CD0C34B00663431 /* CodilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAD31CD0C34B00663431 /* CodilityTests.m */; };
 		CB75BADF1CD0C34B00663431 /* CodilityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BADE1CD0C34B00663431 /* CodilityUITests.m */; };
-		CB75BAEE1CD0C39A00663431 /* BinaryGap.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAED1CD0C39A00663431 /* BinaryGap.m */; };
+		CB75BAFC1CD0CA6A00663431 /* BinaryGap Description.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BAF81CD0CA6A00663431 /* BinaryGap Description.docx */; };
+		CB75BAFD1CD0CA6A00663431 /* BinaryGap.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAFA1CD0CA6A00663431 /* BinaryGap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,9 @@
 		CB75BADA1CD0C34B00663431 /* CodilityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodilityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB75BADE1CD0C34B00663431 /* CodilityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodilityUITests.m; sourceTree = "<group>"; };
 		CB75BAE01CD0C34B00663431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB75BAEC1CD0C39A00663431 /* BinaryGap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BinaryGap.h; path = Tasks/BinaryGap.h; sourceTree = "<group>"; };
-		CB75BAED1CD0C39A00663431 /* BinaryGap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BinaryGap.m; path = Tasks/BinaryGap.m; sourceTree = "<group>"; };
+		CB75BAF81CD0CA6A00663431 /* BinaryGap Description.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BinaryGap Description.docx"; sourceTree = "<group>"; };
+		CB75BAF91CD0CA6A00663431 /* BinaryGap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryGap.h; sourceTree = "<group>"; };
+		CB75BAFA1CD0CA6A00663431 /* BinaryGap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryGap.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +149,29 @@
 		CB75BAEF1CD0C39F00663431 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				CB75BAEC1CD0C39A00663431 /* BinaryGap.h */,
-				CB75BAED1CD0C39A00663431 /* BinaryGap.m */,
+				CB75BAF71CD0CA6A00663431 /* Lesson_1-Iterations */,
+				CB75BAFB1CD0CA6A00663431 /* Lesson_2-Arrays */,
 			);
 			name = Tasks;
+			sourceTree = "<group>";
+		};
+		CB75BAF71CD0CA6A00663431 /* Lesson_1-Iterations */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BAF81CD0CA6A00663431 /* BinaryGap Description.docx */,
+				CB75BAF91CD0CA6A00663431 /* BinaryGap.h */,
+				CB75BAFA1CD0CA6A00663431 /* BinaryGap.m */,
+			);
+			name = "Lesson_1-Iterations";
+			path = "Tasks/Lesson_1-Iterations";
+			sourceTree = "<group>";
+		};
+		CB75BAFB1CD0CA6A00663431 /* Lesson_2-Arrays */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Lesson_2-Arrays";
+			path = "Tasks/Lesson_2-Arrays";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +280,7 @@
 				CB75BAC91CD0C34B00663431 /* LaunchScreen.storyboard in Resources */,
 				CB75BAC61CD0C34B00663431 /* Assets.xcassets in Resources */,
 				CB75BAC41CD0C34B00663431 /* Main.storyboard in Resources */,
+				CB75BAFC1CD0CA6A00663431 /* BinaryGap Description.docx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +308,7 @@
 				CB75BAC11CD0C34B00663431 /* ViewController.m in Sources */,
 				CB75BABE1CD0C34B00663431 /* AppDelegate.m in Sources */,
 				CB75BABB1CD0C34B00663431 /* main.m in Sources */,
-				CB75BAEE1CD0C39A00663431 /* BinaryGap.m in Sources */,
+				CB75BAFD1CD0CA6A00663431 /* BinaryGap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
