@@ -12,6 +12,7 @@
 #import "OddOccurrencesInArray.h"
 #import "FrogJmp.h"
 #import "TapeEquilibrium.h"
+#import "PermMissingElem.h"
 
 @interface CodilityTests : XCTestCase
 
@@ -101,6 +102,15 @@
 
     result = [TapeEquilibrium solution:[@[@3, @1, @-3] mutableCopy]];
     XCTAssertEqual(5, result);
+
+}
+
+- (void)testPermMissingElem {
+    int result = [PermMissingElem solution:[@[@2, @3, @1, @5] mutableCopy]];
+    XCTAssertEqual(4, result);
+    
+    result = [PermMissingElem solution:[@[@2] mutableCopy]];
+    XCTAssertEqual(1, result);
 
 }
 
