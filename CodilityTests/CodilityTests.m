@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "BinaryGap.h"
+#import "CyclicRotation.h"
 
 @interface CodilityTests : XCTestCase
 
@@ -46,6 +47,11 @@
     XCTAssertEqual(4 ,[BinaryGap solution:74901729]);
     XCTAssertEqual(25 ,[BinaryGap solution:805306373]);
     XCTAssertEqual(5 ,[BinaryGap solution:1376796946]);
+}
+
+- (void)testCyclicRotation {
+    [CyclicRotation solution:[@[@3, @8, @9, @7, @6] mutableCopy] size:6];
+    [CyclicRotation solution:[@[] mutableCopy] size:6];
 }
 
 - (void)testPerformanceExample {

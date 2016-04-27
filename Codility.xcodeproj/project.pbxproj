@@ -15,8 +15,9 @@
 		CB75BAC91CD0C34B00663431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB75BAC71CD0C34B00663431 /* LaunchScreen.storyboard */; };
 		CB75BAD41CD0C34B00663431 /* CodilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAD31CD0C34B00663431 /* CodilityTests.m */; };
 		CB75BADF1CD0C34B00663431 /* CodilityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BADE1CD0C34B00663431 /* CodilityUITests.m */; };
-		CB75BAFC1CD0CA6A00663431 /* BinaryGap Description.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BAF81CD0CA6A00663431 /* BinaryGap Description.docx */; };
 		CB75BAFD1CD0CA6A00663431 /* BinaryGap.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAFA1CD0CA6A00663431 /* BinaryGap.m */; };
+		CB75BB001CD0D22E00663431 /* CyclicRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAFF1CD0D22E00663431 /* CyclicRotation.m */; };
+		CB75BB021CD0D60200663431 /* CyclicRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAFF1CD0D22E00663431 /* CyclicRotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,9 @@
 		CB75BAF81CD0CA6A00663431 /* BinaryGap Description.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BinaryGap Description.docx"; sourceTree = "<group>"; };
 		CB75BAF91CD0CA6A00663431 /* BinaryGap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryGap.h; sourceTree = "<group>"; };
 		CB75BAFA1CD0CA6A00663431 /* BinaryGap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryGap.m; sourceTree = "<group>"; };
+		CB75BAFE1CD0D22E00663431 /* CyclicRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicRotation.h; sourceTree = "<group>"; };
+		CB75BAFF1CD0D22E00663431 /* CyclicRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyclicRotation.m; sourceTree = "<group>"; };
+		CB75BB011CD0D28A00663431 /* CyclicRotation.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = CyclicRotation.docx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,9 @@
 		CB75BAFB1CD0CA6A00663431 /* Lesson_2-Arrays */ = {
 			isa = PBXGroup;
 			children = (
+				CB75BB011CD0D28A00663431 /* CyclicRotation.docx */,
+				CB75BAFE1CD0D22E00663431 /* CyclicRotation.h */,
+				CB75BAFF1CD0D22E00663431 /* CyclicRotation.m */,
 			);
 			name = "Lesson_2-Arrays";
 			path = "Tasks/Lesson_2-Arrays";
@@ -280,7 +287,6 @@
 				CB75BAC91CD0C34B00663431 /* LaunchScreen.storyboard in Resources */,
 				CB75BAC61CD0C34B00663431 /* Assets.xcassets in Resources */,
 				CB75BAC41CD0C34B00663431 /* Main.storyboard in Resources */,
-				CB75BAFC1CD0CA6A00663431 /* BinaryGap Description.docx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +315,7 @@
 				CB75BABE1CD0C34B00663431 /* AppDelegate.m in Sources */,
 				CB75BABB1CD0C34B00663431 /* main.m in Sources */,
 				CB75BAFD1CD0CA6A00663431 /* BinaryGap.m in Sources */,
+				CB75BB001CD0D22E00663431 /* CyclicRotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB75BB021CD0D60200663431 /* CyclicRotation.m in Sources */,
 				CB75BAD41CD0C34B00663431 /* CodilityTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
