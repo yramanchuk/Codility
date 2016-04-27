@@ -15,6 +15,7 @@
 #import "PermMissingElem.h"
 #import "FrogRiverOne.h"
 #import "PermCheck.h"
+#import "MissingInteger.h"
 
 @interface CodilityTests : XCTestCase
 
@@ -149,6 +150,36 @@
     
     result = [PermCheck solution:[@[@2] mutableCopy]];
     XCTAssertEqual(0, result);
+}
+
+- (void)testMissingInteger {
+    int result = [MissingInteger solution:[@[@1, @3, @6, @4, @1, @2] mutableCopy]];
+    XCTAssertEqual(5, result);
+    
+    result = [MissingInteger solution:[@[@100, @300, @600, @40, @10, @20] mutableCopy]];
+    XCTAssertEqual(1, result);
+    
+    result = [MissingInteger solution:[@[@100, @1, @600, @40, @10, @20] mutableCopy]];
+    XCTAssertEqual(2, result);
+    
+    result = [MissingInteger solution:[@[@1, @-2, @600, @40, @10, @20] mutableCopy]];
+    XCTAssertEqual(2, result);
+
+    result = [MissingInteger solution:[@[@-2147483646, @-2, @600, @40, @10, @20] mutableCopy]];
+    XCTAssertEqual(1, result);
+
+    result = [MissingInteger solution:[@[@100, @3, @2147483647, @2147483646, @10, @20] mutableCopy]];
+    XCTAssertEqual(1, result);
+
+    result = [MissingInteger solution:[@[@1] mutableCopy]];
+    XCTAssertEqual(2, result);
+
+    result = [MissingInteger solution:[@[@2] mutableCopy]];
+    XCTAssertEqual(1, result);
+
+    result = [MissingInteger solution:[@[@1, @3, @2, @4, @5, @6] mutableCopy]];
+    XCTAssertEqual(7, result);
+
 }
 
 @end
