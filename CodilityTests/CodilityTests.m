@@ -10,6 +10,7 @@
 #import "BinaryGap.h"
 #import "CyclicRotation.h"
 #import "OddOccurrencesInArray.h"
+#import "FrogJmp.h"
 
 @interface CodilityTests : XCTestCase
 
@@ -81,6 +82,13 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+- (void)testFrogJmp {
+    XCTAssertEqual(3 , [FrogJmp solution:10 toY:85 withD:30]);
+    XCTAssertEqual(1 , [FrogJmp solution:10 toY:85 withD:130]);
+    XCTAssertEqual(7692308 , [FrogJmp solution:10 toY:1000000000 withD:130]);
+    XCTAssertEqual(0 , [FrogJmp solution:10 toY:10 withD:130]);
 }
 
 @end

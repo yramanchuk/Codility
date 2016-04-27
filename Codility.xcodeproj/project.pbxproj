@@ -19,6 +19,8 @@
 		CB75BB001CD0D22E00663431 /* CyclicRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAFF1CD0D22E00663431 /* CyclicRotation.m */; };
 		CB75BB021CD0D60200663431 /* CyclicRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAFF1CD0D22E00663431 /* CyclicRotation.m */; };
 		CB75BB0F1CD0E01600663431 /* OddOccurrencesInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB0E1CD0E01600663431 /* OddOccurrencesInArray.m */; };
+		CB75BB231CD114FB00663431 /* FrogJmp.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB221CD114FB00663431 /* FrogJmp.docx */; };
+		CB75BB261CD1151F00663431 /* FrogJmp.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB251CD1151F00663431 /* FrogJmp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,9 @@
 		CB75BB0C1CD0E00800663431 /* OddOccurrencesInArray.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = OddOccurrencesInArray.docx; sourceTree = "<group>"; };
 		CB75BB0D1CD0E01600663431 /* OddOccurrencesInArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OddOccurrencesInArray.h; sourceTree = "<group>"; };
 		CB75BB0E1CD0E01600663431 /* OddOccurrencesInArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OddOccurrencesInArray.m; sourceTree = "<group>"; };
+		CB75BB221CD114FB00663431 /* FrogJmp.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = FrogJmp.docx; sourceTree = "<group>"; };
+		CB75BB241CD1151F00663431 /* FrogJmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrogJmp.h; sourceTree = "<group>"; };
+		CB75BB251CD1151F00663431 /* FrogJmp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrogJmp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +164,7 @@
 			children = (
 				CB75BAF71CD0CA6A00663431 /* Lesson_1-Iterations */,
 				CB75BAFB1CD0CA6A00663431 /* Lesson_2-Arrays */,
+				CB75BB211CD114FB00663431 /* Lesson_3-TimeComplexity */,
 			);
 			name = Tasks;
 			sourceTree = "<group>";
@@ -187,6 +193,17 @@
 			name = "Lesson_2-Arrays";
 			path = "Tasks/Lesson_2-Arrays";
 			sourceTree = "<group>";
+		};
+		CB75BB211CD114FB00663431 /* Lesson_3-TimeComplexity */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BB221CD114FB00663431 /* FrogJmp.docx */,
+				CB75BB241CD1151F00663431 /* FrogJmp.h */,
+				CB75BB251CD1151F00663431 /* FrogJmp.m */,
+			);
+			name = "Lesson_3-TimeComplexity";
+			path = "Codility/Tasks/Lesson_3-TimeComplexity";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -292,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB75BAC91CD0C34B00663431 /* LaunchScreen.storyboard in Resources */,
+				CB75BB231CD114FB00663431 /* FrogJmp.docx in Resources */,
 				CB75BAC61CD0C34B00663431 /* Assets.xcassets in Resources */,
 				CB75BAC41CD0C34B00663431 /* Main.storyboard in Resources */,
 			);
@@ -318,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB75BB261CD1151F00663431 /* FrogJmp.m in Sources */,
 				CB75BAC11CD0C34B00663431 /* ViewController.m in Sources */,
 				CB75BABE1CD0C34B00663431 /* AppDelegate.m in Sources */,
 				CB75BABB1CD0C34B00663431 /* main.m in Sources */,
