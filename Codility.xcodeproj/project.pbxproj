@@ -23,6 +23,8 @@
 		CB75BB261CD1151F00663431 /* FrogJmp.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB251CD1151F00663431 /* FrogJmp.m */; };
 		CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB2C1CD1462B00663431 /* TapeEquilibrium.m */; };
 		CB75BB311CD14C3300663431 /* PermMissingElem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB301CD14C3300663431 /* PermMissingElem.m */; };
+		CB75BB341CD1504500663431 /* FrogRiverOne.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB331CD1504500663431 /* FrogRiverOne.docx */; };
+		CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB361CD1507900663431 /* FrogRiverOne.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,9 @@
 		CB75BB2E1CD14C2100663431 /* PermMissingElem.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = PermMissingElem.docx; sourceTree = "<group>"; };
 		CB75BB2F1CD14C3300663431 /* PermMissingElem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermMissingElem.h; sourceTree = "<group>"; };
 		CB75BB301CD14C3300663431 /* PermMissingElem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermMissingElem.m; sourceTree = "<group>"; };
+		CB75BB331CD1504500663431 /* FrogRiverOne.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = FrogRiverOne.docx; sourceTree = "<group>"; };
+		CB75BB351CD1507900663431 /* FrogRiverOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrogRiverOne.h; sourceTree = "<group>"; };
+		CB75BB361CD1507900663431 /* FrogRiverOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrogRiverOne.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +178,7 @@
 				CB75BAF71CD0CA6A00663431 /* Lesson_1-Iterations */,
 				CB75BAFB1CD0CA6A00663431 /* Lesson_2-Arrays */,
 				CB75BB211CD114FB00663431 /* Lesson_3-TimeComplexity */,
+				CB75BB321CD1504500663431 /* Lesson_4-CountingElements */,
 			);
 			name = Tasks;
 			sourceTree = "<group>";
@@ -218,6 +224,17 @@
 			name = "Lesson_3-TimeComplexity";
 			path = "Codility/Tasks/Lesson_3-TimeComplexity";
 			sourceTree = SOURCE_ROOT;
+		};
+		CB75BB321CD1504500663431 /* Lesson_4-CountingElements */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BB331CD1504500663431 /* FrogRiverOne.docx */,
+				CB75BB351CD1507900663431 /* FrogRiverOne.h */,
+				CB75BB361CD1507900663431 /* FrogRiverOne.m */,
+			);
+			name = "Lesson_4-CountingElements";
+			path = "Tasks/Lesson_4-CountingElements";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -326,6 +343,7 @@
 				CB75BB231CD114FB00663431 /* FrogJmp.docx in Resources */,
 				CB75BAC61CD0C34B00663431 /* Assets.xcassets in Resources */,
 				CB75BAC41CD0C34B00663431 /* Main.storyboard in Resources */,
+				CB75BB341CD1504500663431 /* FrogRiverOne.docx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +375,7 @@
 				CB75BAFD1CD0CA6A00663431 /* BinaryGap.m in Sources */,
 				CB75BB311CD14C3300663431 /* PermMissingElem.m in Sources */,
 				CB75BB001CD0D22E00663431 /* CyclicRotation.m in Sources */,
+				CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */,
 				CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */,
 				CB75BB0F1CD0E01600663431 /* OddOccurrencesInArray.m in Sources */,
 			);

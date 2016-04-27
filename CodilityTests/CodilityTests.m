@@ -13,6 +13,7 @@
 #import "FrogJmp.h"
 #import "TapeEquilibrium.h"
 #import "PermMissingElem.h"
+#import "FrogRiverOne.h"
 
 @interface CodilityTests : XCTestCase
 
@@ -111,6 +112,18 @@
     
     result = [PermMissingElem solution:[@[@2] mutableCopy]];
     XCTAssertEqual(1, result);
+
+}
+
+- (void)testFrogRiverOne {
+    int result = [FrogRiverOne solution:5 witArray:[@[@1, @3, @1, @4, @2, @3, @5, @4] mutableCopy]];
+    XCTAssertEqual(6, result);
+
+    result = [FrogRiverOne solution:6 witArray:[@[@1, @3, @1, @4, @2, @3, @5, @4] mutableCopy]];
+    XCTAssertEqual(-1, result);
+
+    result = [FrogRiverOne solution:4 witArray:[@[@1, @3, @1, @4, @2, @3, @5, @4] mutableCopy]];
+    XCTAssertEqual(4, result);
 
 }
 
