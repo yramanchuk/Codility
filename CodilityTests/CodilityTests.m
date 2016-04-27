@@ -14,6 +14,7 @@
 #import "TapeEquilibrium.h"
 #import "PermMissingElem.h"
 #import "FrogRiverOne.h"
+#import "PermCheck.h"
 
 @interface CodilityTests : XCTestCase
 
@@ -125,6 +126,29 @@
     result = [FrogRiverOne solution:4 witArray:[@[@1, @3, @1, @4, @2, @3, @5, @4] mutableCopy]];
     XCTAssertEqual(4, result);
 
+}
+
+- (void)testPermCheck {
+    int result = [PermCheck solution:[@[@4, @1, @2, @3] mutableCopy]];
+    XCTAssertEqual(1, result);
+    
+    result = [PermCheck solution:[@[@5, @1, @2, @3] mutableCopy]];
+    XCTAssertEqual(0, result);
+
+    result = [PermCheck solution:[@[@5, @1, @3, @1] mutableCopy]];
+    XCTAssertEqual(0, result);
+
+    result = [PermCheck solution:[@[@5, @5, @5, @4, @1, @1] mutableCopy]];
+    XCTAssertEqual(0, result);
+
+    result = [PermCheck solution:[@[@1] mutableCopy]];
+    XCTAssertEqual(1, result);
+    
+    result = [PermCheck solution:[@[@0] mutableCopy]];
+    XCTAssertEqual(0, result);
+    
+    result = [PermCheck solution:[@[@2] mutableCopy]];
+    XCTAssertEqual(0, result);
 }
 
 @end

@@ -25,6 +25,7 @@
 		CB75BB311CD14C3300663431 /* PermMissingElem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB301CD14C3300663431 /* PermMissingElem.m */; };
 		CB75BB341CD1504500663431 /* FrogRiverOne.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB331CD1504500663431 /* FrogRiverOne.docx */; };
 		CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB361CD1507900663431 /* FrogRiverOne.m */; };
+		CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB3A1CD157D800663431 /* PermCheck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,9 @@
 		CB75BB331CD1504500663431 /* FrogRiverOne.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = FrogRiverOne.docx; sourceTree = "<group>"; };
 		CB75BB351CD1507900663431 /* FrogRiverOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrogRiverOne.h; sourceTree = "<group>"; };
 		CB75BB361CD1507900663431 /* FrogRiverOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrogRiverOne.m; sourceTree = "<group>"; };
+		CB75BB381CD157CA00663431 /* PermCheck.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = PermCheck.docx; sourceTree = "<group>"; };
+		CB75BB391CD157D800663431 /* PermCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermCheck.h; sourceTree = "<group>"; };
+		CB75BB3A1CD157D800663431 /* PermCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermCheck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +235,9 @@
 				CB75BB331CD1504500663431 /* FrogRiverOne.docx */,
 				CB75BB351CD1507900663431 /* FrogRiverOne.h */,
 				CB75BB361CD1507900663431 /* FrogRiverOne.m */,
+				CB75BB381CD157CA00663431 /* PermCheck.docx */,
+				CB75BB391CD157D800663431 /* PermCheck.h */,
+				CB75BB3A1CD157D800663431 /* PermCheck.m */,
 			);
 			name = "Lesson_4-CountingElements";
 			path = "Tasks/Lesson_4-CountingElements";
@@ -376,6 +383,7 @@
 				CB75BB311CD14C3300663431 /* PermMissingElem.m in Sources */,
 				CB75BB001CD0D22E00663431 /* CyclicRotation.m in Sources */,
 				CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */,
+				CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */,
 				CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */,
 				CB75BB0F1CD0E01600663431 /* OddOccurrencesInArray.m in Sources */,
 			);
