@@ -13,8 +13,8 @@
 
 + (int)solution:(NSMutableArray *)A {
     
-    int maxEnding = 0;
-    int maxSlice = 0;
+    int maxEnding = 0; //current max ending
+    int maxSlice = 0; //max of all endings
     
     for (int i = 0; i < A.count; i++) {
         int val = [A[i] intValue];
