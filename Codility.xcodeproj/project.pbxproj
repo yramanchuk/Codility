@@ -27,6 +27,7 @@
 		CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB361CD1507900663431 /* FrogRiverOne.m */; };
 		CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB3A1CD157D800663431 /* PermCheck.m */; };
 		CB75BB3F1CD15D8D00663431 /* MissingInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB3E1CD15D8D00663431 /* MissingInteger.m */; };
+		CB75BB431CD2198300663431 /* MaxCounters.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB421CD2198300663431 /* MaxCounters.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,9 @@
 		CB75BB3C1CD15D7A00663431 /* MissingInteger.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = MissingInteger.docx; sourceTree = "<group>"; };
 		CB75BB3D1CD15D8D00663431 /* MissingInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissingInteger.h; sourceTree = "<group>"; };
 		CB75BB3E1CD15D8D00663431 /* MissingInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissingInteger.m; sourceTree = "<group>"; };
+		CB75BB401CD2197600663431 /* MaxCounters.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaxCounters.docx; sourceTree = "<group>"; };
+		CB75BB411CD2198300663431 /* MaxCounters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxCounters.h; sourceTree = "<group>"; };
+		CB75BB421CD2198300663431 /* MaxCounters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxCounters.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +249,9 @@
 				CB75BB3C1CD15D7A00663431 /* MissingInteger.docx */,
 				CB75BB3D1CD15D8D00663431 /* MissingInteger.h */,
 				CB75BB3E1CD15D8D00663431 /* MissingInteger.m */,
+				CB75BB401CD2197600663431 /* MaxCounters.docx */,
+				CB75BB411CD2198300663431 /* MaxCounters.h */,
+				CB75BB421CD2198300663431 /* MaxCounters.m */,
 			);
 			name = "Lesson_4-CountingElements";
 			path = "Tasks/Lesson_4-CountingElements";
@@ -382,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB75BB431CD2198300663431 /* MaxCounters.m in Sources */,
 				CB75BB261CD1151F00663431 /* FrogJmp.m in Sources */,
 				CB75BAC11CD0C34B00663431 /* ViewController.m in Sources */,
 				CB75BABE1CD0C34B00663431 /* AppDelegate.m in Sources */,

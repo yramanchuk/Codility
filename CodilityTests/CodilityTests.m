@@ -16,6 +16,7 @@
 #import "FrogRiverOne.h"
 #import "PermCheck.h"
 #import "MissingInteger.h"
+#import "MaxCounters.h"
 
 @interface CodilityTests : XCTestCase
 
@@ -180,6 +181,45 @@
     result = [MissingInteger solution:[@[@1, @3, @2, @4, @5, @6] mutableCopy]];
     XCTAssertEqual(7, result);
 
+}
+
+- (void)testMaxCounters {
+    NSMutableArray *result = [MaxCounters  solution:5 forArray:[@[@3, @4, @4, @6, @1, @4, @4] mutableCopy]];
+    NSMutableArray *expected = [@[@3, @2, @2, @4, @2] mutableCopy];
+    [self testArray:result withExpected:expected];
+    
+    result = [MaxCounters  solution:2 forArray:[@[@1, @1] mutableCopy]];
+    expected = [@[@2, @0] mutableCopy];
+    [self testArray:result withExpected:expected];
+    
+    result = [MaxCounters  solution:2 forArray:[@[@1, @3] mutableCopy]];
+    expected = [@[@1, @1] mutableCopy];
+    [self testArray:result withExpected:expected];
+    
+    result = [MaxCounters  solution:2 forArray:[@[@3, @2] mutableCopy]];
+    expected = [@[@0, @1] mutableCopy];
+    [self testArray:result withExpected:expected];
+    
+    result = [MaxCounters  solution:2 forArray:[@[@1, @2] mutableCopy]];
+    expected = [@[@1, @1] mutableCopy];
+    [self testArray:result withExpected:expected];
+    
+    result = [MaxCounters  solution:3 forArray:[@[@3, @4, @4, @6, @1] mutableCopy]];
+    expected = [@[@2, @1, @1] mutableCopy];
+    [self testArray:result withExpected:expected];
+    
+    result = [MaxCounters  solution:3 forArray:[@[@3, @4, @4, @6, @1, @4] mutableCopy]];
+    expected = [@[@2, @2, @2] mutableCopy];
+    [self testArray:result withExpected:expected];
+
+}
+
+
+- (void)testArray:(NSArray<NSNumber *> *)array withExpected:(NSArray<NSNumber *> *)expected {
+    XCTAssertTrue(array.count == expected.count);
+    for (int i = 0; i < array.count; i++) {
+        XCTAssertEqual([array[i] intValue], [expected[i] intValue]);
+    }
 }
 
 @end
