@@ -18,6 +18,8 @@
 #import "MissingInteger.h"
 #import "MaxCounters.h"
 
+#import "MaxSliceSum.h"
+
 @interface CodilityTests : XCTestCase
 
 @end
@@ -220,6 +222,15 @@
     for (int i = 0; i < array.count; i++) {
         XCTAssertEqual([array[i] intValue], [expected[i] intValue]);
     }
+}
+
+
+- (void)testMaxSliceSum {
+    int result = [MaxSliceSum solution:[@[@3, @2, @(-6), @4, @0] mutableCopy]];
+    XCTAssertEqual(5, result);
+    
+    result = [MaxSliceSum solution:[@[@5, @-7, @3, @5, @-2, @4, @-1] mutableCopy]];
+    XCTAssertEqual(10, result);
 }
 
 @end

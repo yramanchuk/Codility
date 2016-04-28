@@ -28,6 +28,8 @@
 		CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB3A1CD157D800663431 /* PermCheck.m */; };
 		CB75BB3F1CD15D8D00663431 /* MissingInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB3E1CD15D8D00663431 /* MissingInteger.m */; };
 		CB75BB431CD2198300663431 /* MaxCounters.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB421CD2198300663431 /* MaxCounters.m */; };
+		CB75BB4B1CD25CF700663431 /* MaxSliceSum.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB4A1CD25CF700663431 /* MaxSliceSum.docx */; };
+		CB75BB4E1CD25D1700663431 /* MaxSliceSum.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB4D1CD25D1700663431 /* MaxSliceSum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,9 @@
 		CB75BB401CD2197600663431 /* MaxCounters.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaxCounters.docx; sourceTree = "<group>"; };
 		CB75BB411CD2198300663431 /* MaxCounters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxCounters.h; sourceTree = "<group>"; };
 		CB75BB421CD2198300663431 /* MaxCounters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxCounters.m; sourceTree = "<group>"; };
+		CB75BB4A1CD25CF700663431 /* MaxSliceSum.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaxSliceSum.docx; sourceTree = "<group>"; };
+		CB75BB4C1CD25D1700663431 /* MaxSliceSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxSliceSum.h; sourceTree = "<group>"; };
+		CB75BB4D1CD25D1700663431 /* MaxSliceSum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxSliceSum.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +196,7 @@
 				CB75BAFB1CD0CA6A00663431 /* Lesson_2-Arrays */,
 				CB75BB211CD114FB00663431 /* Lesson_3-TimeComplexity */,
 				CB75BB321CD1504500663431 /* Lesson_4-CountingElements */,
+				CB75BB491CD25CF700663431 /* Lesson_9-MaxSliceProblem */,
 			);
 			name = Tasks;
 			sourceTree = "<group>";
@@ -255,6 +261,17 @@
 			);
 			name = "Lesson_4-CountingElements";
 			path = "Tasks/Lesson_4-CountingElements";
+			sourceTree = "<group>";
+		};
+		CB75BB491CD25CF700663431 /* Lesson_9-MaxSliceProblem */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BB4A1CD25CF700663431 /* MaxSliceSum.docx */,
+				CB75BB4C1CD25D1700663431 /* MaxSliceSum.h */,
+				CB75BB4D1CD25D1700663431 /* MaxSliceSum.m */,
+			);
+			name = "Lesson_9-MaxSliceProblem";
+			path = "Tasks/Lesson_9-MaxSliceProblem";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +380,7 @@
 				CB75BAC91CD0C34B00663431 /* LaunchScreen.storyboard in Resources */,
 				CB75BB231CD114FB00663431 /* FrogJmp.docx in Resources */,
 				CB75BAC61CD0C34B00663431 /* Assets.xcassets in Resources */,
+				CB75BB4B1CD25CF700663431 /* MaxSliceSum.docx in Resources */,
 				CB75BAC41CD0C34B00663431 /* Main.storyboard in Resources */,
 				CB75BB341CD1504500663431 /* FrogRiverOne.docx in Resources */,
 			);
@@ -398,6 +416,7 @@
 				CB75BB311CD14C3300663431 /* PermMissingElem.m in Sources */,
 				CB75BB001CD0D22E00663431 /* CyclicRotation.m in Sources */,
 				CB75BB3F1CD15D8D00663431 /* MissingInteger.m in Sources */,
+				CB75BB4E1CD25D1700663431 /* MaxSliceSum.m in Sources */,
 				CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */,
 				CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */,
 				CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */,
