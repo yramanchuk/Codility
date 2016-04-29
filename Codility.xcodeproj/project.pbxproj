@@ -30,6 +30,8 @@
 		CB75BB431CD2198300663431 /* MaxCounters.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB421CD2198300663431 /* MaxCounters.m */; };
 		CB75BB4B1CD25CF700663431 /* MaxSliceSum.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB4A1CD25CF700663431 /* MaxSliceSum.docx */; };
 		CB75BB4E1CD25D1700663431 /* MaxSliceSum.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB4D1CD25D1700663431 /* MaxSliceSum.m */; };
+		CB75BB521CD38F7500663431 /* Utopian Tree.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB511CD38F7500663431 /* Utopian Tree.docx */; };
+		CB75BB551CD38F8F00663431 /* UtopianTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB541CD38F8F00663431 /* UtopianTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,9 @@
 		CB75BB4A1CD25CF700663431 /* MaxSliceSum.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaxSliceSum.docx; sourceTree = "<group>"; };
 		CB75BB4C1CD25D1700663431 /* MaxSliceSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxSliceSum.h; sourceTree = "<group>"; };
 		CB75BB4D1CD25D1700663431 /* MaxSliceSum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxSliceSum.m; sourceTree = "<group>"; };
+		CB75BB511CD38F7500663431 /* Utopian Tree.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Utopian Tree.docx"; sourceTree = "<group>"; };
+		CB75BB531CD38F8F00663431 /* UtopianTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtopianTree.h; sourceTree = "<group>"; };
+		CB75BB541CD38F8F00663431 /* UtopianTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtopianTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +164,7 @@
 				CB75BACA1CD0C34B00663431 /* Info.plist */,
 				CB75BAB91CD0C34B00663431 /* Supporting Files */,
 				CB75BAEF1CD0C39F00663431 /* Tasks */,
+				CB75BB501CD38F7500663431 /* HackerRank */,
 			);
 			path = Codility;
 			sourceTree = "<group>";
@@ -274,6 +280,16 @@
 			path = "Tasks/Lesson_9-MaxSliceProblem";
 			sourceTree = "<group>";
 		};
+		CB75BB501CD38F7500663431 /* HackerRank */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BB511CD38F7500663431 /* Utopian Tree.docx */,
+				CB75BB531CD38F8F00663431 /* UtopianTree.h */,
+				CB75BB541CD38F8F00663431 /* UtopianTree.m */,
+			);
+			path = HackerRank;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB75BAC91CD0C34B00663431 /* LaunchScreen.storyboard in Resources */,
+				CB75BB521CD38F7500663431 /* Utopian Tree.docx in Resources */,
 				CB75BB231CD114FB00663431 /* FrogJmp.docx in Resources */,
 				CB75BAC61CD0C34B00663431 /* Assets.xcassets in Resources */,
 				CB75BB4B1CD25CF700663431 /* MaxSliceSum.docx in Resources */,
@@ -420,6 +437,7 @@
 				CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */,
 				CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */,
 				CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */,
+				CB75BB551CD38F8F00663431 /* UtopianTree.m in Sources */,
 				CB75BB0F1CD0E01600663431 /* OddOccurrencesInArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

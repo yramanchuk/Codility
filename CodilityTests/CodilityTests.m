@@ -20,6 +20,8 @@
 
 #import "MaxSliceSum.h"
 
+#import "UtopianTree.h"
+
 @interface CodilityTests : XCTestCase
 
 @end
@@ -231,6 +233,12 @@
     
     result = [MaxSliceSum solution:[@[@5, @-7, @3, @5, @-2, @4, @-1] mutableCopy]];
     XCTAssertEqual(10, result);
+}
+
+- (void)testUtopianTree {
+    XCTAssertEqual(7, [UtopianTree solution:4]);
+    XCTAssertEqual(6, [UtopianTree solution:3]);
+    XCTAssertEqual(1, [UtopianTree solution:0]);
 }
 
 @end
