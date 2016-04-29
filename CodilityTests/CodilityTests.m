@@ -17,6 +17,7 @@
 #import "PermCheck.h"
 #import "MissingInteger.h"
 #import "MaxCounters.h"
+#import "CountDiv.h"
 
 #import "MaxSliceSum.h"
 
@@ -233,6 +234,12 @@
     
     result = [MaxSliceSum solution:[@[@5, @-7, @3, @5, @-2, @4, @-1] mutableCopy]];
     XCTAssertEqual(10, result);
+}
+
+- (void)testCountDiv {
+    XCTAssertEqual(2, [CountDiv solution:5 for:9 by:3]);
+    XCTAssertEqual(1, [CountDiv solution:4 for:8 by:3]);
+    XCTAssertEqual(2, [CountDiv solution:6 for:10 by:3]);
 }
 
 - (void)testUtopianTree {

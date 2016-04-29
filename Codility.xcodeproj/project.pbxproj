@@ -32,6 +32,8 @@
 		CB75BB4E1CD25D1700663431 /* MaxSliceSum.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB4D1CD25D1700663431 /* MaxSliceSum.m */; };
 		CB75BB521CD38F7500663431 /* Utopian Tree.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB511CD38F7500663431 /* Utopian Tree.docx */; };
 		CB75BB551CD38F8F00663431 /* UtopianTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB541CD38F8F00663431 /* UtopianTree.m */; };
+		CBEA62B91CD3D0400036303F /* CountDiv.docx in Resources */ = {isa = PBXBuildFile; fileRef = CBEA62B81CD3D0400036303F /* CountDiv.docx */; };
+		CBEA62BC1CD3D0540036303F /* CountDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62BB1CD3D0540036303F /* CountDiv.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,9 @@
 		CB75BB511CD38F7500663431 /* Utopian Tree.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Utopian Tree.docx"; sourceTree = "<group>"; };
 		CB75BB531CD38F8F00663431 /* UtopianTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtopianTree.h; sourceTree = "<group>"; };
 		CB75BB541CD38F8F00663431 /* UtopianTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtopianTree.m; sourceTree = "<group>"; };
+		CBEA62B81CD3D0400036303F /* CountDiv.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = CountDiv.docx; sourceTree = "<group>"; };
+		CBEA62BA1CD3D0540036303F /* CountDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDiv.h; sourceTree = "<group>"; };
+		CBEA62BB1CD3D0540036303F /* CountDiv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDiv.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +207,7 @@
 				CB75BAFB1CD0CA6A00663431 /* Lesson_2-Arrays */,
 				CB75BB211CD114FB00663431 /* Lesson_3-TimeComplexity */,
 				CB75BB321CD1504500663431 /* Lesson_4-CountingElements */,
+				CBEA62B71CD3D0400036303F /* Lesson_5-PrefixSums */,
 				CB75BB491CD25CF700663431 /* Lesson_9-MaxSliceProblem */,
 			);
 			name = Tasks;
@@ -288,6 +294,17 @@
 				CB75BB541CD38F8F00663431 /* UtopianTree.m */,
 			);
 			path = HackerRank;
+			sourceTree = "<group>";
+		};
+		CBEA62B71CD3D0400036303F /* Lesson_5-PrefixSums */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA62B81CD3D0400036303F /* CountDiv.docx */,
+				CBEA62BA1CD3D0540036303F /* CountDiv.h */,
+				CBEA62BB1CD3D0540036303F /* CountDiv.m */,
+			);
+			name = "Lesson_5-PrefixSums";
+			path = "Tasks/Lesson_5-PrefixSums";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +415,7 @@
 				CB75BB231CD114FB00663431 /* FrogJmp.docx in Resources */,
 				CB75BAC61CD0C34B00663431 /* Assets.xcassets in Resources */,
 				CB75BB4B1CD25CF700663431 /* MaxSliceSum.docx in Resources */,
+				CBEA62B91CD3D0400036303F /* CountDiv.docx in Resources */,
 				CB75BAC41CD0C34B00663431 /* Main.storyboard in Resources */,
 				CB75BB341CD1504500663431 /* FrogRiverOne.docx in Resources */,
 			);
@@ -425,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB75BB431CD2198300663431 /* MaxCounters.m in Sources */,
+				CBEA62BC1CD3D0540036303F /* CountDiv.m in Sources */,
 				CB75BB261CD1151F00663431 /* FrogJmp.m in Sources */,
 				CB75BAC11CD0C34B00663431 /* ViewController.m in Sources */,
 				CB75BABE1CD0C34B00663431 /* AppDelegate.m in Sources */,
