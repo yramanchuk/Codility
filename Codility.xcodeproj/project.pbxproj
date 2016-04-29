@@ -35,6 +35,7 @@
 		CBEA62B91CD3D0400036303F /* CountDiv.docx in Resources */ = {isa = PBXBuildFile; fileRef = CBEA62B81CD3D0400036303F /* CountDiv.docx */; };
 		CBEA62BC1CD3D0540036303F /* CountDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62BB1CD3D0540036303F /* CountDiv.m */; };
 		CBEA62C01CD3E1B50036303F /* PassingCars.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62BF1CD3E1B50036303F /* PassingCars.m */; };
+		CBEA62C41CD3E8770036303F /* GenomicRangeQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62C31CD3E8770036303F /* GenomicRangeQuery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,9 @@
 		CBEA62BD1CD3E1A70036303F /* PassingCars.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = PassingCars.docx; sourceTree = "<group>"; };
 		CBEA62BE1CD3E1B50036303F /* PassingCars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassingCars.h; sourceTree = "<group>"; };
 		CBEA62BF1CD3E1B50036303F /* PassingCars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassingCars.m; sourceTree = "<group>"; };
+		CBEA62C11CD3E8680036303F /* GenomicRangeQuery.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = GenomicRangeQuery.docx; sourceTree = "<group>"; };
+		CBEA62C21CD3E8770036303F /* GenomicRangeQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenomicRangeQuery.h; sourceTree = "<group>"; };
+		CBEA62C31CD3E8770036303F /* GenomicRangeQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenomicRangeQuery.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +313,9 @@
 				CBEA62BD1CD3E1A70036303F /* PassingCars.docx */,
 				CBEA62BE1CD3E1B50036303F /* PassingCars.h */,
 				CBEA62BF1CD3E1B50036303F /* PassingCars.m */,
+				CBEA62C11CD3E8680036303F /* GenomicRangeQuery.docx */,
+				CBEA62C21CD3E8770036303F /* GenomicRangeQuery.h */,
+				CBEA62C31CD3E8770036303F /* GenomicRangeQuery.m */,
 			);
 			name = "Lesson_5-PrefixSums";
 			path = "Tasks/Lesson_5-PrefixSums";
@@ -452,6 +459,7 @@
 				CB75BB431CD2198300663431 /* MaxCounters.m in Sources */,
 				CBEA62BC1CD3D0540036303F /* CountDiv.m in Sources */,
 				CB75BB261CD1151F00663431 /* FrogJmp.m in Sources */,
+				CBEA62C41CD3E8770036303F /* GenomicRangeQuery.m in Sources */,
 				CB75BAC11CD0C34B00663431 /* ViewController.m in Sources */,
 				CB75BABE1CD0C34B00663431 /* AppDelegate.m in Sources */,
 				CB75BABB1CD0C34B00663431 /* main.m in Sources */,

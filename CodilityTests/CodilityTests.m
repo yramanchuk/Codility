@@ -19,6 +19,7 @@
 #import "MaxCounters.h"
 #import "CountDiv.h"
 #import "PassingCars.h"
+#import "GenomicRangeQuery.h"
 
 #import "MaxSliceSum.h"
 
@@ -255,6 +256,13 @@
     
     result = [PassingCars solution:[@[@0, @0] mutableCopy]];
     XCTAssertEqual(0, result);
+}
+
+- (void)testGenomicRangeQuery {
+    NSArray *result = [GenomicRangeQuery solution:@"CAGCCTA" from:[@[@2, @5, @0] mutableCopy] till:[@[@4, @5, @6] mutableCopy]];
+    NSArray *expected = [@[@2, @4, @1] mutableCopy];
+    [self testArray:result withExpected:expected];
+    
 }
 
 - (void)testUtopianTree {
