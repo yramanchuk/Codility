@@ -34,6 +34,7 @@
 		CB75BB551CD38F8F00663431 /* UtopianTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB541CD38F8F00663431 /* UtopianTree.m */; };
 		CBEA62B91CD3D0400036303F /* CountDiv.docx in Resources */ = {isa = PBXBuildFile; fileRef = CBEA62B81CD3D0400036303F /* CountDiv.docx */; };
 		CBEA62BC1CD3D0540036303F /* CountDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62BB1CD3D0540036303F /* CountDiv.m */; };
+		CBEA62C01CD3E1B50036303F /* PassingCars.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62BF1CD3E1B50036303F /* PassingCars.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,9 @@
 		CBEA62B81CD3D0400036303F /* CountDiv.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = CountDiv.docx; sourceTree = "<group>"; };
 		CBEA62BA1CD3D0540036303F /* CountDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDiv.h; sourceTree = "<group>"; };
 		CBEA62BB1CD3D0540036303F /* CountDiv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDiv.m; sourceTree = "<group>"; };
+		CBEA62BD1CD3E1A70036303F /* PassingCars.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = PassingCars.docx; sourceTree = "<group>"; };
+		CBEA62BE1CD3E1B50036303F /* PassingCars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassingCars.h; sourceTree = "<group>"; };
+		CBEA62BF1CD3E1B50036303F /* PassingCars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassingCars.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +306,9 @@
 				CBEA62B81CD3D0400036303F /* CountDiv.docx */,
 				CBEA62BA1CD3D0540036303F /* CountDiv.h */,
 				CBEA62BB1CD3D0540036303F /* CountDiv.m */,
+				CBEA62BD1CD3E1A70036303F /* PassingCars.docx */,
+				CBEA62BE1CD3E1B50036303F /* PassingCars.h */,
+				CBEA62BF1CD3E1B50036303F /* PassingCars.m */,
 			);
 			name = "Lesson_5-PrefixSums";
 			path = "Tasks/Lesson_5-PrefixSums";
@@ -456,6 +463,7 @@
 				CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */,
 				CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */,
 				CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */,
+				CBEA62C01CD3E1B50036303F /* PassingCars.m in Sources */,
 				CB75BB551CD38F8F00663431 /* UtopianTree.m in Sources */,
 				CB75BB0F1CD0E01600663431 /* OddOccurrencesInArray.m in Sources */,
 			);

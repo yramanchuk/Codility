@@ -18,6 +18,7 @@
 #import "MissingInteger.h"
 #import "MaxCounters.h"
 #import "CountDiv.h"
+#import "PassingCars.h"
 
 #import "MaxSliceSum.h"
 
@@ -240,6 +241,20 @@
     XCTAssertEqual(2, [CountDiv solution:5 for:9 by:3]);
     XCTAssertEqual(1, [CountDiv solution:4 for:8 by:3]);
     XCTAssertEqual(2, [CountDiv solution:6 for:10 by:3]);
+}
+
+- (void)testPassingCars {
+    int result = [PassingCars solution:[@[@0, @1, @0, @1, @1] mutableCopy]];
+    XCTAssertEqual(5, result);
+    
+    result = [PassingCars solution:[@[@1, @1, @0, @0, @0] mutableCopy]];
+    XCTAssertEqual(0, result);
+    
+    result = [PassingCars solution:[@[@1, @1, @1, @1, @1] mutableCopy]];
+    XCTAssertEqual(0, result);
+    
+    result = [PassingCars solution:[@[@0, @0] mutableCopy]];
+    XCTAssertEqual(0, result);
 }
 
 - (void)testUtopianTree {
