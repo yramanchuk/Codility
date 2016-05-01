@@ -21,6 +21,8 @@
 #import "PassingCars.h"
 #import "GenomicRangeQuery.h"
 
+#import "Fish.h"
+
 #import "MaxSliceSum.h"
 
 #import "UtopianTree.h"
@@ -269,6 +271,18 @@
     XCTAssertEqual(7, [UtopianTree solution:4]);
     XCTAssertEqual(6, [UtopianTree solution:3]);
     XCTAssertEqual(1, [UtopianTree solution:0]);
+}
+
+- (void)testFish {
+    int result = [Fish solution:[@[@4, @3, @2, @1, @5] mutableCopy] andArray:[@[@0, @1, @0, @0, @0] mutableCopy]];
+    XCTAssertEqual(2, result);
+
+    result = [Fish solution:[@[@4, @3, @2, @1, @5] mutableCopy] andArray:[@[@1, @1, @0, @0, @0] mutableCopy]];
+    XCTAssertEqual(1, result);
+
+    
+    result = [Fish solution:[@[@4, @6, @2, @1, @5] mutableCopy] andArray:[@[@1, @1, @0, @0, @0] mutableCopy]];
+    XCTAssertEqual(2, result);
 }
 
 @end
