@@ -38,6 +38,7 @@
 		CBEA62C41CD3E8770036303F /* GenomicRangeQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62C31CD3E8770036303F /* GenomicRangeQuery.m */; };
 		CBEA62C71CD626670036303F /* Fish.docx in Resources */ = {isa = PBXBuildFile; fileRef = CBEA62C61CD626670036303F /* Fish.docx */; };
 		CBEA62CA1CD626790036303F /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62C91CD626790036303F /* Fish.m */; };
+		CBEA62CE1CD62BBF0036303F /* StoneWall.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62CD1CD62BBF0036303F /* StoneWall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,9 @@
 		CBEA62C61CD626670036303F /* Fish.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fish.docx; sourceTree = "<group>"; };
 		CBEA62C81CD626790036303F /* Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
 		CBEA62C91CD626790036303F /* Fish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
+		CBEA62CB1CD62BAC0036303F /* StoneWall.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoneWall.docx; sourceTree = "<group>"; };
+		CBEA62CC1CD62BBF0036303F /* StoneWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoneWall.h; sourceTree = "<group>"; };
+		CBEA62CD1CD62BBF0036303F /* StoneWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoneWall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +337,9 @@
 				CBEA62C61CD626670036303F /* Fish.docx */,
 				CBEA62C81CD626790036303F /* Fish.h */,
 				CBEA62C91CD626790036303F /* Fish.m */,
+				CBEA62CB1CD62BAC0036303F /* StoneWall.docx */,
+				CBEA62CC1CD62BBF0036303F /* StoneWall.h */,
+				CBEA62CD1CD62BBF0036303F /* StoneWall.m */,
 			);
 			name = "Lesson_7-StackQueues";
 			path = "Tasks/Lesson_7-StackQueues";
@@ -485,6 +492,7 @@
 				CB75BAFD1CD0CA6A00663431 /* BinaryGap.m in Sources */,
 				CB75BB311CD14C3300663431 /* PermMissingElem.m in Sources */,
 				CB75BB001CD0D22E00663431 /* CyclicRotation.m in Sources */,
+				CBEA62CE1CD62BBF0036303F /* StoneWall.m in Sources */,
 				CB75BB3F1CD15D8D00663431 /* MissingInteger.m in Sources */,
 				CB75BB4E1CD25D1700663431 /* MaxSliceSum.m in Sources */,
 				CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */,

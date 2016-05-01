@@ -22,6 +22,7 @@
 #import "GenomicRangeQuery.h"
 
 #import "Fish.h"
+#import "StoneWall.h"
 
 #import "MaxSliceSum.h"
 
@@ -283,6 +284,23 @@
     
     result = [Fish solution:[@[@4, @6, @2, @1, @5] mutableCopy] andArray:[@[@1, @1, @0, @0, @0] mutableCopy]];
     XCTAssertEqual(2, result);
+}
+
+- (void)testStoneWall {
+    int result = [StoneWall solution:[@[@8, @8, @5, @7, @9, @8] mutableCopy]];
+    XCTAssertEqual(5, result);
+
+    result = [StoneWall solution:[@[@8, @8, @5, @7, @9, @8, @7] mutableCopy]];
+    XCTAssertEqual(5, result);
+
+    result = [StoneWall solution:[@[@8, @8, @5, @7, @9, @8, @7, @4] mutableCopy]];
+    XCTAssertEqual(6, result);
+  
+    result = [StoneWall solution:[@[@8, @8, @5, @7, @9, @8, @7, @4, @8] mutableCopy]];
+    XCTAssertEqual(7, result);
+
+    result = [StoneWall solution:[@[@8, @8, @5, @7, @9, @8, @7, @5, @8] mutableCopy]];
+    XCTAssertEqual(6, result);
 }
 
 @end
