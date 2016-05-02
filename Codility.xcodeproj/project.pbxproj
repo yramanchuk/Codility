@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB26F7CD1CD809510040A1B6 /* ArraysStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = CB26F7CC1CD809510040A1B6 /* ArraysStrings.m */; };
+		CB26F7D01CD809D30040A1B6 /* CTCITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB26F7CF1CD809D30040A1B6 /* CTCITests.m */; };
 		CB75BABB1CD0C34B00663431 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BABA1CD0C34B00663431 /* main.m */; };
 		CB75BABE1CD0C34B00663431 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BABD1CD0C34B00663431 /* AppDelegate.m */; };
 		CB75BAC11CD0C34B00663431 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAC01CD0C34B00663431 /* ViewController.m */; };
@@ -59,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB26F7CB1CD809510040A1B6 /* ArraysStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArraysStrings.h; sourceTree = "<group>"; };
+		CB26F7CC1CD809510040A1B6 /* ArraysStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArraysStrings.m; sourceTree = "<group>"; };
+		CB26F7CF1CD809D30040A1B6 /* CTCITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCITests.m; sourceTree = "<group>"; };
 		CB75BAB61CD0C34B00663431 /* Codility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB75BABA1CD0C34B00663431 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB75BABC1CD0C34B00663431 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,6 +158,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB26F7C91CD809300040A1B6 /* CTCI */ = {
+			isa = PBXGroup;
+			children = (
+				CB26F7CA1CD809300040A1B6 /* 1_ArrayString */,
+			);
+			path = CTCI;
+			sourceTree = "<group>";
+		};
+		CB26F7CA1CD809300040A1B6 /* 1_ArrayString */ = {
+			isa = PBXGroup;
+			children = (
+				CB26F7CB1CD809510040A1B6 /* ArraysStrings.h */,
+				CB26F7CC1CD809510040A1B6 /* ArraysStrings.m */,
+			);
+			path = 1_ArrayString;
+			sourceTree = "<group>";
+		};
 		CB75BAAD1CD0C34B00663431 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +209,7 @@
 				CB75BAB91CD0C34B00663431 /* Supporting Files */,
 				CB75BAEF1CD0C39F00663431 /* Tasks */,
 				CB75BB501CD38F7500663431 /* HackerRank */,
+				CB26F7C91CD809300040A1B6 /* CTCI */,
 			);
 			path = Codility;
 			sourceTree = "<group>";
@@ -203,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CB75BAD31CD0C34B00663431 /* CodilityTests.m */,
+				CB26F7CF1CD809D30040A1B6 /* CTCITests.m */,
 				CB75BAD51CD0C34B00663431 /* Info.plist */,
 			);
 			path = CodilityTests;
@@ -489,6 +513,7 @@
 				CBEA62CA1CD626790036303F /* Fish.m in Sources */,
 				CB75BABE1CD0C34B00663431 /* AppDelegate.m in Sources */,
 				CB75BABB1CD0C34B00663431 /* main.m in Sources */,
+				CB26F7CD1CD809510040A1B6 /* ArraysStrings.m in Sources */,
 				CB75BAFD1CD0CA6A00663431 /* BinaryGap.m in Sources */,
 				CB75BB311CD14C3300663431 /* PermMissingElem.m in Sources */,
 				CB75BB001CD0D22E00663431 /* CyclicRotation.m in Sources */,
@@ -510,6 +535,7 @@
 			files = (
 				CB75BB021CD0D60200663431 /* CyclicRotation.m in Sources */,
 				CB75BAD41CD0C34B00663431 /* CodilityTests.m in Sources */,
+				CB26F7D01CD809D30040A1B6 /* CTCITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
