@@ -46,4 +46,56 @@
     }
 }
 
+# pragma mark Linked Lists tasks
+
++ (void)removeDuplicates:(NSMutableArray *)a {
+    NSMutableSet *existing = [NSMutableSet new];
+    int lastEl = 0;
+    while (lastEl < a.count - 1)
+        for (int i = lastEl; i < a.count; i++) {
+            id value = a[i];
+            lastEl = i;
+            if ([existing containsObject:value]) {
+                [a removeObjectAtIndex:i]; //bad practise to iterate and change
+                break;
+            } else {
+                [existing addObject:value];
+            }
+        }
+}
+
+////Implement an algorithm to find the kth to last element of a singly linked list.
+//// use 2 pointer one after another!
+//- (id)findKthLast: (LinkedListNode *)head postion:(int)position {
+//    int count = 0;
+//    id node = head;
+//    while (!(id next = node.next)) {
+//        count++;
+//        node = next;
+//        
+//        if (k > count) {
+//            retutn nil;
+//        }
+//    }
+//    
+//    id result = head;
+//    for (int = 0; i < count - k; i++) {
+//        result = result.next;
+//    }
+//    
+//    return result;
+//    
+//}
+
+//// Implement an algorithm to delete a node in the middle of a singly linked list, given only access to that node.
+//// a->b->c->d->e
+//- (void)removeNode:(Node **)node {
+//    node = node.next;
+//    
+//}
+//- (void)removeNode:(Node *)node {
+//    node.data = node.next.data;
+//    node.next = node.next.next;
+//}
+
 @end

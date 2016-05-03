@@ -13,4 +13,6 @@
 + (BOOL)hasDuplicates:(NSString *)string;
 + (void)rotate:(NSMutableArray<NSMutableArray<NSNumber *> *> *)array;
 
++ (void)removeDuplicates:(NSMutableArray *)a;
+
 @end
