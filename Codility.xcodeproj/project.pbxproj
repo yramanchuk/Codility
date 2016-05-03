@@ -34,6 +34,48 @@
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
+		<key>194804C8B31E07154FBD8FA3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E5C3190456CBC68404BF9F9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2B5A422194BDAFF0CEAAA3DA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-CodilityTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2FA20B20507C549FF7A3AC94</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79B09D2E35133C60D0159EDE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3E5C3190456CBC68404BF9F9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_Codility.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>4EC85A95B5C0781E03E16D8B</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -64,6 +106,8 @@
 			<array>
 				<string>A324B1512C9226EF9455D1F0</string>
 				<string>F33CA7F9F11E5EE5B34DD876</string>
+				<string>AB9B16AE72DFBF88C83025A4</string>
+				<string>2B5A422194BDAFF0CEAAA3DA</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -72,25 +116,96 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>63B46DDCA227528A975E5286</key>
+		<key>6B96B035D402E7FD375D6836</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>79B09D2E35133C60D0159EDE</key>
 		<dict>
 			<key>explicitFileType</key>
-			<string>archive.ar</string>
+			<string>wrapper.framework</string>
 			<key>includeInIndex</key>
 			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
-			<string>libPods-Codility.a</string>
+			<string>Pods_CodilityTests.framework</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>999B0B849F99ADF6D081500E</key>
+		<key>7B4A9C5B0F9C5958DBB8DCD5</key>
 		<dict>
-			<key>fileRef</key>
-			<string>63B46DDCA227528A975E5286</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>7CBC9C13176289FB0FFB7AA6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
 		</dict>
 		<key>A324B1512C9226EF9455D1F0</key>
 		<dict>
@@ -104,6 +219,21 @@
 			<string>Pods-Codility.debug.xcconfig</string>
 			<key>path</key>
 			<string>Pods/Target Support Files/Pods-Codility/Pods-Codility.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AB9B16AE72DFBF88C83025A4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-CodilityTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -319,7 +449,7 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>999B0B849F99ADF6D081500E</string>
+				<string>194804C8B31E07154FBD8FA3</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -631,7 +761,9 @@
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
-			<array/>
+			<array>
+				<string>2FA20B20507C549FF7A3AC94</string>
+			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
@@ -654,9 +786,12 @@
 			<string>CB75BAE61CD0C34B00663431</string>
 			<key>buildPhases</key>
 			<array>
+				<string>7CBC9C13176289FB0FFB7AA6</string>
 				<string>CB75BACB1CD0C34B00663431</string>
 				<string>CB75BACC1CD0C34B00663431</string>
 				<string>CB75BACD1CD0C34B00663431</string>
+				<string>6B96B035D402E7FD375D6836</string>
+				<string>7B4A9C5B0F9C5958DBB8DCD5</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -1081,6 +1216,19 @@
 				<string>Codility/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>-ObjC</string>
+					<string>-l"EKAlgorithms"</string>
+					<string>-all_load</string>
+					<string>-framework</string>
+					<string>"CoreGraphics"</string>
+					<string>-framework</string>
+					<string>"Foundation"</string>
+					<string>-framework</string>
+					<string>"UIKit"</string>
+				</array>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
 				<string>com.ramanchuk.Codility</string>
 				<key>PRODUCT_NAME</key>
@@ -1103,6 +1251,19 @@
 				<string>Codility/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>-ObjC</string>
+					<string>-l"EKAlgorithms"</string>
+					<string>-all_load</string>
+					<string>-framework</string>
+					<string>"CoreGraphics"</string>
+					<string>-framework</string>
+					<string>"Foundation"</string>
+					<string>-framework</string>
+					<string>"UIKit"</string>
+				</array>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
 				<string>com.ramanchuk.Codility</string>
 				<key>PRODUCT_NAME</key>
@@ -1129,6 +1290,8 @@
 		</dict>
 		<key>CB75BAE71CD0C34B00663431</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AB9B16AE72DFBF88C83025A4</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -1137,6 +1300,19 @@
 				<string>CodilityTests/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>-ObjC</string>
+					<string>-l"EKAlgorithms"</string>
+					<string>-all_load</string>
+					<string>-framework</string>
+					<string>"CoreGraphics"</string>
+					<string>-framework</string>
+					<string>"Foundation"</string>
+					<string>-framework</string>
+					<string>"UIKit"</string>
+				</array>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
 				<string>com.ramanchuk.CodilityTests</string>
 				<key>PRODUCT_NAME</key>
@@ -1151,6 +1327,8 @@
 		</dict>
 		<key>CB75BAE81CD0C34B00663431</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2B5A422194BDAFF0CEAAA3DA</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -1159,6 +1337,19 @@
 				<string>CodilityTests/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>-ObjC</string>
+					<string>-l"EKAlgorithms"</string>
+					<string>-all_load</string>
+					<string>-framework</string>
+					<string>"CoreGraphics"</string>
+					<string>-framework</string>
+					<string>"Foundation"</string>
+					<string>-framework</string>
+					<string>"UIKit"</string>
+				</array>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
 				<string>com.ramanchuk.CodilityTests</string>
 				<key>PRODUCT_NAME</key>
@@ -2208,7 +2399,8 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>63B46DDCA227528A975E5286</string>
+				<string>3E5C3190456CBC68404BF9F9</string>
+				<string>79B09D2E35133C60D0159EDE</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>

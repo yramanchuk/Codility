@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "ArraysStrings.h"
+#import "EKLinkedList.h"
 
 @interface CTCITests : XCTestCase
 @end
@@ -62,6 +63,45 @@
     [ArraysStrings removeDuplicates:array];
     [self testArray:array withExpected:expected];
     
+    
+}
+
+- (void)testPartitionLL {
+    //// 3 5 6 2 9 1 5 around 6
+
+    EKLinkedList *list = [[EKLinkedList alloc] initWithHead:@3];
+    EKNode *head = list.head;
+    
+    [list addToBack:@5];
+    [list addToBack:@6];
+    [list addToBack:@2];
+    [list addToBack:@9];
+    [list addToBack:@1];
+    [list addToBack:@5];
+
+    [list printList];
+    [ArraysStrings partition:head around:6];
+    NSLog(@"\n");
+    [list printList];
+    
+
+    
+}
+
+- (void)testSum {
+    EKLinkedList *left = [[EKLinkedList alloc] initWithHead:@7];
+    [left addToBack:@1];
+//    [left addToBack:@6];
+    
+    EKLinkedList *right = [[EKLinkedList alloc] initWithHead:@5];
+    [right addToBack:@9];
+    [right addToBack:@2];
+    
+    EKNode *result = [ArraysStrings sum:left.head with:right.head];
+    while (result) {
+        NSLog(@"%@", result.data);
+        result = result.next;
+    }
     
 }
 
