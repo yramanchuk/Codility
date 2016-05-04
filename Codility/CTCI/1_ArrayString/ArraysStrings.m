@@ -17,6 +17,19 @@
 }
 @end
 
+@implementation EKTreeNode (Additions)
+
+- (NSArray *)children {
+    return @[self.child, self.sibling];
+}
+
+//only to mock. use dynamic assosiation
+- (BOOL)visited {
+    return YES;
+}
+
+@end
+
 @implementation ArraysStrings
 
 + (BOOL)hasDuplicates:(NSString *)string {
@@ -233,6 +246,53 @@
 
 + (int)getData:(EKNode *)node {
     return [(NSNumber *)node.value intValue];
+}
+
+
+/// DFS
+- (void)treeDFS:(EKTreeNode *)node {
+    if (!node) {
+        return;
+    }
+    
+    [self visit:node];
+    
+    for (EKTreeNode *n in node.children) {
+        if (!n.visited) {
+            [self treeDFS:n];
+        }
+    }
+}
+
+// BFS search
+- (void)treeBFS:(EKTreeNode *)node {
+    if (!node) {
+        return;
+    }
+    
+    NSMutableArray *queue = [NSMutableArray new];
+    [queue addObject:node];
+    [self visit:node];
+    
+    while (queue.count > 0) {
+        EKTreeNode *n = queue.lastObject;
+        [queue removeLastObject];
+        
+        for (EKTreeNode *child in n.children) {
+            if (!child.visited) {
+                [self visit:child];
+                [queue addObject:child];
+            }
+        }
+        
+    }
+}
+
+
+
+- (void)visit:(EKTreeNode *)node {
+//    node.visited = YES;
+    //validate
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "EKNode.h"
+#import "EKTreeNode.h"
 
 @interface EKNode (Additions)
 - (NSNumber *)data;
