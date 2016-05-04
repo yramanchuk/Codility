@@ -295,4 +295,64 @@
     //validate
 }
 
+
+# pragma mark binary operations
+const int MAX_ITERATIONS = 32;
+
++ (NSString *)toBinary:(double)value {
+    
+    assert(value > 0);
+    assert(value < 1);
+    
+    NSMutableString *result = [NSMutableString stringWithString:@"0."];
+    double sum = 0;
+    int counter = 1;
+    
+    while (sum != value && counter <= MAX_ITERATIONS) {
+        double delta = 1.f / (1 << counter);
+        if (sum + delta <= value) {
+            sum += delta;
+            [result appendString:@"1"];
+        } else {
+            [result appendString:@"0"];
+        }
+        counter++;
+    }
+    
+    
+    return sum == value ? result : [NSString stringWithFormat:@"ERROR %@", result];
+}
+
+
++ (void)printSmallestAndLargest:(int)value {
+    assert(value > 0);
+    
+    int countBits = 0; //helper and not used
+    int counter = 0;
+    NSString *smallest = [NSMutableString new];
+    NSString *biggest = [NSMutableString new];
+    int smallestInt = 0;
+    int biggestInt = 0;
+    
+    while (1 << counter <= value) {
+        int max = 1 << counter;
+        if ((value & max) > 0) {
+            biggest = [NSString stringWithFormat:@"1%@", biggest];
+            smallest = [NSString stringWithFormat:@"%@1", smallest];
+            
+            smallestInt += 1 << countBits;
+            
+            countBits++;
+        } else {
+            biggest = [NSString stringWithFormat:@"%@0", biggest];
+            smallest = [NSString stringWithFormat:@"0%@", smallest];
+        }
+        counter++;
+    }
+    
+    biggestInt = smallestInt << (counter - countBits);
+    
+    NSLog(@"biggest %d - %@, smallest %d - %@", biggestInt, biggest, smallestInt, smallest);
+    
+}
 @end

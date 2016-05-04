@@ -105,4 +105,13 @@
     
 }
 
+- (void)testToBinary {
+    NSString *result = [ArraysStrings toBinary:.76];
+    NSLog(@"%@", result);
+}
+
+- (void)testPrintMinMax {
+    [ArraysStrings printSmallestAndLargest:18];
+}
+
 @end

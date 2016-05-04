@@ -24,4 +24,7 @@
 + (EKNode *)partition:(EKNode *)head around:(int)n;
 + (EKNode *)sum:(EKNode *)left with:(EKNode *)right;
 
+
++ (NSString *)toBinary:(double)value;
++ (void)printSmallestAndLargest:(int)value;
 @end
