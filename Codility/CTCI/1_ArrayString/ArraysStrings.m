@@ -355,4 +355,49 @@ const int MAX_ITERATIONS = 32;
     NSLog(@"biggest %d - %@, smallest %d - %@", biggestInt, biggest, smallestInt, smallest);
     
 }
+
+
+////NSMutableArray *integers;
+//
+//@implementation Chunk implements Copy
+//{
+//    int startPos;
+//    int length;
+//    long amountSet;
+//    NSMutableArry *values;
+//}
+//
+//- (void)setValue:(int)value {
+//    if (value >= startPos && value < startPos + length && amountSet < length) {
+//        int setVal = values[value - startPos];
+//        if (setVal == 0) {
+//            values[value - startPos] = @1;
+//            amountSet++;
+//        }
+//    }
+//}
+//
+//- (BOOL)fits
+//
+//@end
+//
+//@implementation Algorithm
+//
+//NSMutableArray *currentChunk;
+//
+//-(void)loadIntegers:(int)start length:(int)length {
+//    void *data  = [read file from start*64bit till end*64bit];
+//    for (int i = 0; i < length; i+=64)
+//        int value  = data[subarray start+i, 64];
+//    if (value)
+//        
+//        }
+//
+//-(Chunk *)getChunk:(int)value {
+//    if (currentChun)
+//        }
+//
+//
+//@nd
+
 @end
