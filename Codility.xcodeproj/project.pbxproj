@@ -1,2461 +1,968 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>172FBE2E77C9B9E9D384EB47</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Codility/Pods-Codility-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>194804C8B31E07154FBD8FA3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E5C3190456CBC68404BF9F9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2B5A422194BDAFF0CEAAA3DA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-CodilityTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2FA20B20507C549FF7A3AC94</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79B09D2E35133C60D0159EDE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3E5C3190456CBC68404BF9F9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Codility.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>4EC85A95B5C0781E03E16D8B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Codility/Pods-Codility-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>62A50829A07E5DE4ED506AA1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A324B1512C9226EF9455D1F0</string>
-				<string>F33CA7F9F11E5EE5B34DD876</string>
-				<string>AB9B16AE72DFBF88C83025A4</string>
-				<string>2B5A422194BDAFF0CEAAA3DA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6B96B035D402E7FD375D6836</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>79B09D2E35133C60D0159EDE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_CodilityTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7B4A9C5B0F9C5958DBB8DCD5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>7CBC9C13176289FB0FFB7AA6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>A324B1512C9226EF9455D1F0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Codility.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Codility/Pods-Codility.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB9B16AE72DFBF88C83025A4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-CodilityTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB26F7C91CD809300040A1B6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB26F7CA1CD809300040A1B6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CTCI</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB26F7CA1CD809300040A1B6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB26F7CB1CD809510040A1B6</string>
-				<string>CB26F7CC1CD809510040A1B6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>1_ArrayString</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB26F7CB1CD809510040A1B6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ArraysStrings.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB26F7CC1CD809510040A1B6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ArraysStrings.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB26F7CD1CD809510040A1B6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB26F7CC1CD809510040A1B6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB26F7CF1CD809D30040A1B6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CTCITests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB26F7D01CD809D30040A1B6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB26F7CF1CD809D30040A1B6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BAAD1CD0C34B00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BAB81CD0C34B00663431</string>
-				<string>CB75BAD21CD0C34B00663431</string>
-				<string>CB75BADD1CD0C34B00663431</string>
-				<string>CB75BAB71CD0C34B00663431</string>
-				<string>62A50829A07E5DE4ED506AA1</string>
-				<string>D44A89B0C100C61534976938</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAAE1CD0C34B00663431</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Yury Ramanchuk</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>CB75BAB51CD0C34B00663431</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-					</dict>
-					<key>CB75BACE1CD0C34B00663431</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>CB75BAB51CD0C34B00663431</string>
-					</dict>
-					<key>CB75BAD91CD0C34B00663431</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>CB75BAB51CD0C34B00663431</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>CB75BAB11CD0C34B00663431</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>CB75BAAD1CD0C34B00663431</string>
-			<key>productRefGroup</key>
-			<string>CB75BAB71CD0C34B00663431</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>CB75BAB51CD0C34B00663431</string>
-				<string>CB75BACE1CD0C34B00663431</string>
-				<string>CB75BAD91CD0C34B00663431</string>
-			</array>
-		</dict>
-		<key>CB75BAB11CD0C34B00663431</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CB75BAE11CD0C34B00663431</string>
-				<string>CB75BAE21CD0C34B00663431</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CB75BAB21CD0C34B00663431</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CB75BB431CD2198300663431</string>
-				<string>CBEA62BC1CD3D0540036303F</string>
-				<string>CB75BB261CD1151F00663431</string>
-				<string>CBEA62C41CD3E8770036303F</string>
-				<string>CB75BAC11CD0C34B00663431</string>
-				<string>CBEA62CA1CD626790036303F</string>
-				<string>CB75BABE1CD0C34B00663431</string>
-				<string>CB75BABB1CD0C34B00663431</string>
-				<string>CB26F7CD1CD809510040A1B6</string>
-				<string>CB75BAFD1CD0CA6A00663431</string>
-				<string>CB75BB311CD14C3300663431</string>
-				<string>CB75BB001CD0D22E00663431</string>
-				<string>CBEA62CE1CD62BBF0036303F</string>
-				<string>CB75BB3F1CD15D8D00663431</string>
-				<string>CB75BB4E1CD25D1700663431</string>
-				<string>CB75BB371CD1507900663431</string>
-				<string>CB75BB3B1CD157D800663431</string>
-				<string>CB75BB2D1CD1462B00663431</string>
-				<string>CBEA62C01CD3E1B50036303F</string>
-				<string>CB75BB551CD38F8F00663431</string>
-				<string>CB75BB0F1CD0E01600663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB75BAB31CD0C34B00663431</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>194804C8B31E07154FBD8FA3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB75BAB41CD0C34B00663431</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CB75BAC91CD0C34B00663431</string>
-				<string>CBEA62C71CD626670036303F</string>
-				<string>CB75BB521CD38F7500663431</string>
-				<string>CB75BB231CD114FB00663431</string>
-				<string>CB75BAC61CD0C34B00663431</string>
-				<string>CB75BB4B1CD25CF700663431</string>
-				<string>CBEA62B91CD3D0400036303F</string>
-				<string>CB75BAC41CD0C34B00663431</string>
-				<string>CB75BB341CD1504500663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB75BAB51CD0C34B00663431</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CB75BAE31CD0C34B00663431</string>
-			<key>buildPhases</key>
-			<array>
-				<string>DE55ED9935E3C644ECEDDA31</string>
-				<string>CB75BAB21CD0C34B00663431</string>
-				<string>CB75BAB31CD0C34B00663431</string>
-				<string>CB75BAB41CD0C34B00663431</string>
-				<string>4EC85A95B5C0781E03E16D8B</string>
-				<string>172FBE2E77C9B9E9D384EB47</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Codility</string>
-			<key>productName</key>
-			<string>Codility</string>
-			<key>productReference</key>
-			<string>CB75BAB61CD0C34B00663431</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>CB75BAB61CD0C34B00663431</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Codility.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CB75BAB71CD0C34B00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BAB61CD0C34B00663431</string>
-				<string>CB75BACF1CD0C34B00663431</string>
-				<string>CB75BADA1CD0C34B00663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAB81CD0C34B00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BABC1CD0C34B00663431</string>
-				<string>CB75BABD1CD0C34B00663431</string>
-				<string>CB75BABF1CD0C34B00663431</string>
-				<string>CB75BAC01CD0C34B00663431</string>
-				<string>CB75BAC21CD0C34B00663431</string>
-				<string>CB75BAC51CD0C34B00663431</string>
-				<string>CB75BAC71CD0C34B00663431</string>
-				<string>CB75BACA1CD0C34B00663431</string>
-				<string>CB75BAB91CD0C34B00663431</string>
-				<string>CB75BAEF1CD0C39F00663431</string>
-				<string>CB75BB501CD38F7500663431</string>
-				<string>CB26F7C91CD809300040A1B6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Codility</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAB91CD0C34B00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BABA1CD0C34B00663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BABA1CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BABB1CD0C34B00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BABA1CD0C34B00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BABC1CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BABD1CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BABE1CD0C34B00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BABD1CD0C34B00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BABF1CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAC01CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAC11CD0C34B00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BAC01CD0C34B00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BAC21CD0C34B00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BAC31CD0C34B00663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAC31CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAC41CD0C34B00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BAC21CD0C34B00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BAC51CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAC61CD0C34B00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BAC51CD0C34B00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BAC71CD0C34B00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BAC81CD0C34B00663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAC81CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAC91CD0C34B00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BAC71CD0C34B00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BACA1CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BACB1CD0C34B00663431</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CB75BB021CD0D60200663431</string>
-				<string>CB75BAD41CD0C34B00663431</string>
-				<string>CB26F7D01CD809D30040A1B6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB75BACC1CD0C34B00663431</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2FA20B20507C549FF7A3AC94</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB75BACD1CD0C34B00663431</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB75BACE1CD0C34B00663431</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CB75BAE61CD0C34B00663431</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7CBC9C13176289FB0FFB7AA6</string>
-				<string>CB75BACB1CD0C34B00663431</string>
-				<string>CB75BACC1CD0C34B00663431</string>
-				<string>CB75BACD1CD0C34B00663431</string>
-				<string>6B96B035D402E7FD375D6836</string>
-				<string>7B4A9C5B0F9C5958DBB8DCD5</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>CB75BAD11CD0C34B00663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CodilityTests</string>
-			<key>productName</key>
-			<string>CodilityTests</string>
-			<key>productReference</key>
-			<string>CB75BACF1CD0C34B00663431</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>CB75BACF1CD0C34B00663431</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CodilityTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CB75BAD01CD0C34B00663431</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>CB75BAAE1CD0C34B00663431</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>CB75BAB51CD0C34B00663431</string>
-			<key>remoteInfo</key>
-			<string>Codility</string>
-		</dict>
-		<key>CB75BAD11CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>CB75BAB51CD0C34B00663431</string>
-			<key>targetProxy</key>
-			<string>CB75BAD01CD0C34B00663431</string>
-		</dict>
-		<key>CB75BAD21CD0C34B00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BAD31CD0C34B00663431</string>
-				<string>CB26F7CF1CD809D30040A1B6</string>
-				<string>CB75BAD51CD0C34B00663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CodilityTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAD31CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CodilityTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAD41CD0C34B00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BAD31CD0C34B00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BAD51CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAD61CD0C34B00663431</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CB75BADF1CD0C34B00663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB75BAD71CD0C34B00663431</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB75BAD81CD0C34B00663431</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB75BAD91CD0C34B00663431</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CB75BAE91CD0C34B00663431</string>
-			<key>buildPhases</key>
-			<array>
-				<string>CB75BAD61CD0C34B00663431</string>
-				<string>CB75BAD71CD0C34B00663431</string>
-				<string>CB75BAD81CD0C34B00663431</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>CB75BADC1CD0C34B00663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CodilityUITests</string>
-			<key>productName</key>
-			<string>CodilityUITests</string>
-			<key>productReference</key>
-			<string>CB75BADA1CD0C34B00663431</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>CB75BADA1CD0C34B00663431</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CodilityUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CB75BADB1CD0C34B00663431</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>CB75BAAE1CD0C34B00663431</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>CB75BAB51CD0C34B00663431</string>
-			<key>remoteInfo</key>
-			<string>Codility</string>
-		</dict>
-		<key>CB75BADC1CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>CB75BAB51CD0C34B00663431</string>
-			<key>targetProxy</key>
-			<string>CB75BADB1CD0C34B00663431</string>
-		</dict>
-		<key>CB75BADD1CD0C34B00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BADE1CD0C34B00663431</string>
-				<string>CB75BAE01CD0C34B00663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CodilityUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BADE1CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CodilityUITests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BADF1CD0C34B00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BADE1CD0C34B00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BAE01CD0C34B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAE11CD0C34B00663431</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CB75BAE21CD0C34B00663431</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CB75BAE31CD0C34B00663431</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CB75BAE41CD0C34B00663431</string>
-				<string>CB75BAE51CD0C34B00663431</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CB75BAE41CD0C34B00663431</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>A324B1512C9226EF9455D1F0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Codility/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>-ObjC</string>
-					<string>-l"EKAlgorithms"</string>
-					<string>-all_load</string>
-					<string>-framework</string>
-					<string>"CoreGraphics"</string>
-					<string>-framework</string>
-					<string>"Foundation"</string>
-					<string>-framework</string>
-					<string>"UIKit"</string>
-				</array>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.ramanchuk.Codility</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CB75BAE51CD0C34B00663431</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F33CA7F9F11E5EE5B34DD876</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Codility/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>-ObjC</string>
-					<string>-l"EKAlgorithms"</string>
-					<string>-all_load</string>
-					<string>-framework</string>
-					<string>"CoreGraphics"</string>
-					<string>-framework</string>
-					<string>"Foundation"</string>
-					<string>-framework</string>
-					<string>"UIKit"</string>
-				</array>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.ramanchuk.Codility</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CB75BAE61CD0C34B00663431</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CB75BAE71CD0C34B00663431</string>
-				<string>CB75BAE81CD0C34B00663431</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CB75BAE71CD0C34B00663431</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AB9B16AE72DFBF88C83025A4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CodilityTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>-ObjC</string>
-					<string>-l"EKAlgorithms"</string>
-					<string>-all_load</string>
-					<string>-framework</string>
-					<string>"CoreGraphics"</string>
-					<string>-framework</string>
-					<string>"Foundation"</string>
-					<string>-framework</string>
-					<string>"UIKit"</string>
-				</array>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.ramanchuk.CodilityTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Codility.app/Codility</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CB75BAE81CD0C34B00663431</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2B5A422194BDAFF0CEAAA3DA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CodilityTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>-ObjC</string>
-					<string>-l"EKAlgorithms"</string>
-					<string>-all_load</string>
-					<string>-framework</string>
-					<string>"CoreGraphics"</string>
-					<string>-framework</string>
-					<string>"Foundation"</string>
-					<string>-framework</string>
-					<string>"UIKit"</string>
-				</array>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.ramanchuk.CodilityTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Codility.app/Codility</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CB75BAE91CD0C34B00663431</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CB75BAEA1CD0C34B00663431</string>
-				<string>CB75BAEB1CD0C34B00663431</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CB75BAEA1CD0C34B00663431</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>CodilityUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.ramanchuk.CodilityUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Codility</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CB75BAEB1CD0C34B00663431</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>CodilityUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.ramanchuk.CodilityUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Codility</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CB75BAEF1CD0C39F00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BAF71CD0CA6A00663431</string>
-				<string>CB75BAFB1CD0CA6A00663431</string>
-				<string>CB75BB211CD114FB00663431</string>
-				<string>CB75BB321CD1504500663431</string>
-				<string>CBEA62B71CD3D0400036303F</string>
-				<string>CBEA62C51CD626670036303F</string>
-				<string>CB75BB491CD25CF700663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Tasks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAF71CD0CA6A00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BAF81CD0CA6A00663431</string>
-				<string>CB75BAF91CD0CA6A00663431</string>
-				<string>CB75BAFA1CD0CA6A00663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Lesson_1-Iterations</string>
-			<key>path</key>
-			<string>Tasks/Lesson_1-Iterations</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAF81CD0CA6A00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>BinaryGap Description.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAF91CD0CA6A00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BinaryGap.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAFA1CD0CA6A00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BinaryGap.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAFB1CD0CA6A00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BB011CD0D28A00663431</string>
-				<string>CB75BAFE1CD0D22E00663431</string>
-				<string>CB75BAFF1CD0D22E00663431</string>
-				<string>CB75BB0C1CD0E00800663431</string>
-				<string>CB75BB0D1CD0E01600663431</string>
-				<string>CB75BB0E1CD0E01600663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Lesson_2-Arrays</string>
-			<key>path</key>
-			<string>Tasks/Lesson_2-Arrays</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAFD1CD0CA6A00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BAFA1CD0CA6A00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BAFE1CD0D22E00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CyclicRotation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BAFF1CD0D22E00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CyclicRotation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB001CD0D22E00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BAFF1CD0D22E00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB011CD0D28A00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>CyclicRotation.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB021CD0D60200663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BAFF1CD0D22E00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB0C1CD0E00800663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>OddOccurrencesInArray.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB0D1CD0E01600663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>OddOccurrencesInArray.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB0E1CD0E01600663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>OddOccurrencesInArray.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB0F1CD0E01600663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB0E1CD0E01600663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB211CD114FB00663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BB221CD114FB00663431</string>
-				<string>CB75BB241CD1151F00663431</string>
-				<string>CB75BB251CD1151F00663431</string>
-				<string>CB75BB271CD1441B00663431</string>
-				<string>CB75BB2B1CD1462B00663431</string>
-				<string>CB75BB2C1CD1462B00663431</string>
-				<string>CB75BB2E1CD14C2100663431</string>
-				<string>CB75BB2F1CD14C3300663431</string>
-				<string>CB75BB301CD14C3300663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Lesson_3-TimeComplexity</string>
-			<key>path</key>
-			<string>Codility/Tasks/Lesson_3-TimeComplexity</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>CB75BB221CD114FB00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>FrogJmp.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB231CD114FB00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB221CD114FB00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB241CD1151F00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FrogJmp.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB251CD1151F00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FrogJmp.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB261CD1151F00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB251CD1151F00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB271CD1441B00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>name</key>
-			<string>TapeEquilibrium.docx</string>
-			<key>path</key>
-			<string>Codility/Tasks/Lesson_3-TimeComplexity/TapeEquilibrium.docx</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>CB75BB2B1CD1462B00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TapeEquilibrium.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB2C1CD1462B00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TapeEquilibrium.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB2D1CD1462B00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB2C1CD1462B00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB2E1CD14C2100663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>PermMissingElem.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB2F1CD14C3300663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PermMissingElem.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB301CD14C3300663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PermMissingElem.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB311CD14C3300663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB301CD14C3300663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB321CD1504500663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BB331CD1504500663431</string>
-				<string>CB75BB351CD1507900663431</string>
-				<string>CB75BB361CD1507900663431</string>
-				<string>CB75BB381CD157CA00663431</string>
-				<string>CB75BB391CD157D800663431</string>
-				<string>CB75BB3A1CD157D800663431</string>
-				<string>CB75BB3C1CD15D7A00663431</string>
-				<string>CB75BB3D1CD15D8D00663431</string>
-				<string>CB75BB3E1CD15D8D00663431</string>
-				<string>CB75BB401CD2197600663431</string>
-				<string>CB75BB411CD2198300663431</string>
-				<string>CB75BB421CD2198300663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Lesson_4-CountingElements</string>
-			<key>path</key>
-			<string>Tasks/Lesson_4-CountingElements</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB331CD1504500663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>FrogRiverOne.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB341CD1504500663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB331CD1504500663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB351CD1507900663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FrogRiverOne.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB361CD1507900663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FrogRiverOne.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB371CD1507900663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB361CD1507900663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB381CD157CA00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>PermCheck.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB391CD157D800663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PermCheck.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB3A1CD157D800663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PermCheck.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB3B1CD157D800663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB3A1CD157D800663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB3C1CD15D7A00663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>MissingInteger.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB3D1CD15D8D00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MissingInteger.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB3E1CD15D8D00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MissingInteger.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB3F1CD15D8D00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB3E1CD15D8D00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB401CD2197600663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>MaxCounters.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB411CD2198300663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MaxCounters.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB421CD2198300663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MaxCounters.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB431CD2198300663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB421CD2198300663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB491CD25CF700663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BB4A1CD25CF700663431</string>
-				<string>CB75BB4C1CD25D1700663431</string>
-				<string>CB75BB4D1CD25D1700663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Lesson_9-MaxSliceProblem</string>
-			<key>path</key>
-			<string>Tasks/Lesson_9-MaxSliceProblem</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB4A1CD25CF700663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>MaxSliceSum.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB4B1CD25CF700663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB4A1CD25CF700663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB4C1CD25D1700663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MaxSliceSum.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB4D1CD25D1700663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MaxSliceSum.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB4E1CD25D1700663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB4D1CD25D1700663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB501CD38F7500663431</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB75BB511CD38F7500663431</string>
-				<string>CB75BB531CD38F8F00663431</string>
-				<string>CB75BB541CD38F8F00663431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HackerRank</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB511CD38F7500663431</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>Utopian Tree.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB521CD38F7500663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB511CD38F7500663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CB75BB531CD38F8F00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UtopianTree.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB541CD38F8F00663431</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UtopianTree.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB75BB551CD38F8F00663431</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB75BB541CD38F8F00663431</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBEA62B71CD3D0400036303F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBEA62B81CD3D0400036303F</string>
-				<string>CBEA62BA1CD3D0540036303F</string>
-				<string>CBEA62BB1CD3D0540036303F</string>
-				<string>CBEA62BD1CD3E1A70036303F</string>
-				<string>CBEA62BE1CD3E1B50036303F</string>
-				<string>CBEA62BF1CD3E1B50036303F</string>
-				<string>CBEA62C11CD3E8680036303F</string>
-				<string>CBEA62C21CD3E8770036303F</string>
-				<string>CBEA62C31CD3E8770036303F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Lesson_5-PrefixSums</string>
-			<key>path</key>
-			<string>Tasks/Lesson_5-PrefixSums</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62B81CD3D0400036303F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>CountDiv.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62B91CD3D0400036303F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBEA62B81CD3D0400036303F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBEA62BA1CD3D0540036303F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CountDiv.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62BB1CD3D0540036303F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CountDiv.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62BC1CD3D0540036303F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBEA62BB1CD3D0540036303F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBEA62BD1CD3E1A70036303F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>PassingCars.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62BE1CD3E1B50036303F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PassingCars.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62BF1CD3E1B50036303F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PassingCars.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62C01CD3E1B50036303F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBEA62BF1CD3E1B50036303F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBEA62C11CD3E8680036303F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>GenomicRangeQuery.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62C21CD3E8770036303F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GenomicRangeQuery.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62C31CD3E8770036303F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>GenomicRangeQuery.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62C41CD3E8770036303F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBEA62C31CD3E8770036303F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBEA62C51CD626670036303F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBEA62C61CD626670036303F</string>
-				<string>CBEA62C81CD626790036303F</string>
-				<string>CBEA62C91CD626790036303F</string>
-				<string>CBEA62CB1CD62BAC0036303F</string>
-				<string>CBEA62CC1CD62BBF0036303F</string>
-				<string>CBEA62CD1CD62BBF0036303F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Lesson_7-StackQueues</string>
-			<key>path</key>
-			<string>Tasks/Lesson_7-StackQueues</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62C61CD626670036303F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>Fish.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62C71CD626670036303F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBEA62C61CD626670036303F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBEA62C81CD626790036303F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Fish.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62C91CD626790036303F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Fish.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62CA1CD626790036303F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBEA62C91CD626790036303F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBEA62CB1CD62BAC0036303F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>StoneWall.docx</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62CC1CD62BBF0036303F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>StoneWall.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62CD1CD62BBF0036303F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>StoneWall.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBEA62CE1CD62BBF0036303F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBEA62CD1CD62BBF0036303F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D44A89B0C100C61534976938</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E5C3190456CBC68404BF9F9</string>
-				<string>79B09D2E35133C60D0159EDE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DE55ED9935E3C644ECEDDA31</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>F33CA7F9F11E5EE5B34DD876</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Codility.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Codility/Pods-Codility.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>CB75BAAE1CD0C34B00663431</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		194804C8B31E07154FBD8FA3 /* Pods_Codility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5C3190456CBC68404BF9F9 /* Pods_Codility.framework */; };
+		2FA20B20507C549FF7A3AC94 /* Pods_CodilityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B09D2E35133C60D0159EDE /* Pods_CodilityTests.framework */; };
+		CB26F7CD1CD809510040A1B6 /* ArraysStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = CB26F7CC1CD809510040A1B6 /* ArraysStrings.m */; };
+		CB26F7D01CD809D30040A1B6 /* CTCITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB26F7CF1CD809D30040A1B6 /* CTCITests.m */; };
+		CB75BABB1CD0C34B00663431 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BABA1CD0C34B00663431 /* main.m */; };
+		CB75BABE1CD0C34B00663431 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BABD1CD0C34B00663431 /* AppDelegate.m */; };
+		CB75BAC11CD0C34B00663431 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAC01CD0C34B00663431 /* ViewController.m */; };
+		CB75BAC41CD0C34B00663431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB75BAC21CD0C34B00663431 /* Main.storyboard */; };
+		CB75BAC61CD0C34B00663431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB75BAC51CD0C34B00663431 /* Assets.xcassets */; };
+		CB75BAC91CD0C34B00663431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB75BAC71CD0C34B00663431 /* LaunchScreen.storyboard */; };
+		CB75BAD41CD0C34B00663431 /* CodilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAD31CD0C34B00663431 /* CodilityTests.m */; };
+		CB75BADF1CD0C34B00663431 /* CodilityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BADE1CD0C34B00663431 /* CodilityUITests.m */; };
+		CB75BAFD1CD0CA6A00663431 /* BinaryGap.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAFA1CD0CA6A00663431 /* BinaryGap.m */; };
+		CB75BB001CD0D22E00663431 /* CyclicRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAFF1CD0D22E00663431 /* CyclicRotation.m */; };
+		CB75BB021CD0D60200663431 /* CyclicRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BAFF1CD0D22E00663431 /* CyclicRotation.m */; };
+		CB75BB0F1CD0E01600663431 /* OddOccurrencesInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB0E1CD0E01600663431 /* OddOccurrencesInArray.m */; };
+		CB75BB231CD114FB00663431 /* FrogJmp.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB221CD114FB00663431 /* FrogJmp.docx */; };
+		CB75BB261CD1151F00663431 /* FrogJmp.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB251CD1151F00663431 /* FrogJmp.m */; };
+		CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB2C1CD1462B00663431 /* TapeEquilibrium.m */; };
+		CB75BB311CD14C3300663431 /* PermMissingElem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB301CD14C3300663431 /* PermMissingElem.m */; };
+		CB75BB341CD1504500663431 /* FrogRiverOne.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB331CD1504500663431 /* FrogRiverOne.docx */; };
+		CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB361CD1507900663431 /* FrogRiverOne.m */; };
+		CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB3A1CD157D800663431 /* PermCheck.m */; };
+		CB75BB3F1CD15D8D00663431 /* MissingInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB3E1CD15D8D00663431 /* MissingInteger.m */; };
+		CB75BB431CD2198300663431 /* MaxCounters.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB421CD2198300663431 /* MaxCounters.m */; };
+		CB75BB4B1CD25CF700663431 /* MaxSliceSum.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB4A1CD25CF700663431 /* MaxSliceSum.docx */; };
+		CB75BB4E1CD25D1700663431 /* MaxSliceSum.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB4D1CD25D1700663431 /* MaxSliceSum.m */; };
+		CB75BB521CD38F7500663431 /* Utopian Tree.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB511CD38F7500663431 /* Utopian Tree.docx */; };
+		CB75BB551CD38F8F00663431 /* UtopianTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB541CD38F8F00663431 /* UtopianTree.m */; };
+		CBC65B581CDB568E00490412 /* CTCI.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC65B571CDB568E00490412 /* CTCI.m */; };
+		CBEA62B91CD3D0400036303F /* CountDiv.docx in Resources */ = {isa = PBXBuildFile; fileRef = CBEA62B81CD3D0400036303F /* CountDiv.docx */; };
+		CBEA62BC1CD3D0540036303F /* CountDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62BB1CD3D0540036303F /* CountDiv.m */; };
+		CBEA62C01CD3E1B50036303F /* PassingCars.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62BF1CD3E1B50036303F /* PassingCars.m */; };
+		CBEA62C41CD3E8770036303F /* GenomicRangeQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62C31CD3E8770036303F /* GenomicRangeQuery.m */; };
+		CBEA62C71CD626670036303F /* Fish.docx in Resources */ = {isa = PBXBuildFile; fileRef = CBEA62C61CD626670036303F /* Fish.docx */; };
+		CBEA62CA1CD626790036303F /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62C91CD626790036303F /* Fish.m */; };
+		CBEA62CE1CD62BBF0036303F /* StoneWall.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62CD1CD62BBF0036303F /* StoneWall.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB75BAD01CD0C34B00663431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB75BAAE1CD0C34B00663431 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB75BAB51CD0C34B00663431;
+			remoteInfo = Codility;
+		};
+		CB75BADB1CD0C34B00663431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB75BAAE1CD0C34B00663431 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB75BAB51CD0C34B00663431;
+			remoteInfo = Codility;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B5A422194BDAFF0CEAAA3DA /* Pods-CodilityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodilityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E5C3190456CBC68404BF9F9 /* Pods_Codility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B09D2E35133C60D0159EDE /* Pods_CodilityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodilityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A324B1512C9226EF9455D1F0 /* Pods-Codility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.debug.xcconfig"; sourceTree = "<group>"; };
+		AB9B16AE72DFBF88C83025A4 /* Pods-CodilityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodilityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB26F7CB1CD809510040A1B6 /* ArraysStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArraysStrings.h; sourceTree = "<group>"; };
+		CB26F7CC1CD809510040A1B6 /* ArraysStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArraysStrings.m; sourceTree = "<group>"; };
+		CB26F7CF1CD809D30040A1B6 /* CTCITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCITests.m; sourceTree = "<group>"; };
+		CB75BAB61CD0C34B00663431 /* Codility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB75BABA1CD0C34B00663431 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB75BABC1CD0C34B00663431 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB75BABD1CD0C34B00663431 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB75BABF1CD0C34B00663431 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB75BAC01CD0C34B00663431 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB75BAC31CD0C34B00663431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB75BAC51CD0C34B00663431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB75BAC81CD0C34B00663431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB75BACA1CD0C34B00663431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB75BACF1CD0C34B00663431 /* CodilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB75BAD31CD0C34B00663431 /* CodilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodilityTests.m; sourceTree = "<group>"; };
+		CB75BAD51CD0C34B00663431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB75BADA1CD0C34B00663431 /* CodilityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodilityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB75BADE1CD0C34B00663431 /* CodilityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodilityUITests.m; sourceTree = "<group>"; };
+		CB75BAE01CD0C34B00663431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB75BAF81CD0CA6A00663431 /* BinaryGap Description.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BinaryGap Description.docx"; sourceTree = "<group>"; };
+		CB75BAF91CD0CA6A00663431 /* BinaryGap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryGap.h; sourceTree = "<group>"; };
+		CB75BAFA1CD0CA6A00663431 /* BinaryGap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryGap.m; sourceTree = "<group>"; };
+		CB75BAFE1CD0D22E00663431 /* CyclicRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicRotation.h; sourceTree = "<group>"; };
+		CB75BAFF1CD0D22E00663431 /* CyclicRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyclicRotation.m; sourceTree = "<group>"; };
+		CB75BB011CD0D28A00663431 /* CyclicRotation.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = CyclicRotation.docx; sourceTree = "<group>"; };
+		CB75BB0C1CD0E00800663431 /* OddOccurrencesInArray.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = OddOccurrencesInArray.docx; sourceTree = "<group>"; };
+		CB75BB0D1CD0E01600663431 /* OddOccurrencesInArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OddOccurrencesInArray.h; sourceTree = "<group>"; };
+		CB75BB0E1CD0E01600663431 /* OddOccurrencesInArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OddOccurrencesInArray.m; sourceTree = "<group>"; };
+		CB75BB221CD114FB00663431 /* FrogJmp.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = FrogJmp.docx; sourceTree = "<group>"; };
+		CB75BB241CD1151F00663431 /* FrogJmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrogJmp.h; sourceTree = "<group>"; };
+		CB75BB251CD1151F00663431 /* FrogJmp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrogJmp.m; sourceTree = "<group>"; };
+		CB75BB271CD1441B00663431 /* TapeEquilibrium.docx */ = {isa = PBXFileReference; lastKnownFileType = file; name = TapeEquilibrium.docx; path = "Codility/Tasks/Lesson_3-TimeComplexity/TapeEquilibrium.docx"; sourceTree = SOURCE_ROOT; };
+		CB75BB2B1CD1462B00663431 /* TapeEquilibrium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapeEquilibrium.h; sourceTree = "<group>"; };
+		CB75BB2C1CD1462B00663431 /* TapeEquilibrium.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapeEquilibrium.m; sourceTree = "<group>"; };
+		CB75BB2E1CD14C2100663431 /* PermMissingElem.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = PermMissingElem.docx; sourceTree = "<group>"; };
+		CB75BB2F1CD14C3300663431 /* PermMissingElem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermMissingElem.h; sourceTree = "<group>"; };
+		CB75BB301CD14C3300663431 /* PermMissingElem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermMissingElem.m; sourceTree = "<group>"; };
+		CB75BB331CD1504500663431 /* FrogRiverOne.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = FrogRiverOne.docx; sourceTree = "<group>"; };
+		CB75BB351CD1507900663431 /* FrogRiverOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrogRiverOne.h; sourceTree = "<group>"; };
+		CB75BB361CD1507900663431 /* FrogRiverOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrogRiverOne.m; sourceTree = "<group>"; };
+		CB75BB381CD157CA00663431 /* PermCheck.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = PermCheck.docx; sourceTree = "<group>"; };
+		CB75BB391CD157D800663431 /* PermCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermCheck.h; sourceTree = "<group>"; };
+		CB75BB3A1CD157D800663431 /* PermCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermCheck.m; sourceTree = "<group>"; };
+		CB75BB3C1CD15D7A00663431 /* MissingInteger.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = MissingInteger.docx; sourceTree = "<group>"; };
+		CB75BB3D1CD15D8D00663431 /* MissingInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissingInteger.h; sourceTree = "<group>"; };
+		CB75BB3E1CD15D8D00663431 /* MissingInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissingInteger.m; sourceTree = "<group>"; };
+		CB75BB401CD2197600663431 /* MaxCounters.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaxCounters.docx; sourceTree = "<group>"; };
+		CB75BB411CD2198300663431 /* MaxCounters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxCounters.h; sourceTree = "<group>"; };
+		CB75BB421CD2198300663431 /* MaxCounters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxCounters.m; sourceTree = "<group>"; };
+		CB75BB4A1CD25CF700663431 /* MaxSliceSum.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaxSliceSum.docx; sourceTree = "<group>"; };
+		CB75BB4C1CD25D1700663431 /* MaxSliceSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxSliceSum.h; sourceTree = "<group>"; };
+		CB75BB4D1CD25D1700663431 /* MaxSliceSum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxSliceSum.m; sourceTree = "<group>"; };
+		CB75BB511CD38F7500663431 /* Utopian Tree.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Utopian Tree.docx"; sourceTree = "<group>"; };
+		CB75BB531CD38F8F00663431 /* UtopianTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtopianTree.h; sourceTree = "<group>"; };
+		CB75BB541CD38F8F00663431 /* UtopianTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtopianTree.m; sourceTree = "<group>"; };
+		CBC65B561CDB568E00490412 /* CTCI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCI.h; sourceTree = "<group>"; };
+		CBC65B571CDB568E00490412 /* CTCI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCI.m; sourceTree = "<group>"; };
+		CBEA62B81CD3D0400036303F /* CountDiv.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = CountDiv.docx; sourceTree = "<group>"; };
+		CBEA62BA1CD3D0540036303F /* CountDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDiv.h; sourceTree = "<group>"; };
+		CBEA62BB1CD3D0540036303F /* CountDiv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDiv.m; sourceTree = "<group>"; };
+		CBEA62BD1CD3E1A70036303F /* PassingCars.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = PassingCars.docx; sourceTree = "<group>"; };
+		CBEA62BE1CD3E1B50036303F /* PassingCars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassingCars.h; sourceTree = "<group>"; };
+		CBEA62BF1CD3E1B50036303F /* PassingCars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassingCars.m; sourceTree = "<group>"; };
+		CBEA62C11CD3E8680036303F /* GenomicRangeQuery.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = GenomicRangeQuery.docx; sourceTree = "<group>"; };
+		CBEA62C21CD3E8770036303F /* GenomicRangeQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenomicRangeQuery.h; sourceTree = "<group>"; };
+		CBEA62C31CD3E8770036303F /* GenomicRangeQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenomicRangeQuery.m; sourceTree = "<group>"; };
+		CBEA62C61CD626670036303F /* Fish.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fish.docx; sourceTree = "<group>"; };
+		CBEA62C81CD626790036303F /* Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
+		CBEA62C91CD626790036303F /* Fish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
+		CBEA62CB1CD62BAC0036303F /* StoneWall.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoneWall.docx; sourceTree = "<group>"; };
+		CBEA62CC1CD62BBF0036303F /* StoneWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoneWall.h; sourceTree = "<group>"; };
+		CBEA62CD1CD62BBF0036303F /* StoneWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoneWall.m; sourceTree = "<group>"; };
+		F33CA7F9F11E5EE5B34DD876 /* Pods-Codility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB75BAB31CD0C34B00663431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				194804C8B31E07154FBD8FA3 /* Pods_Codility.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB75BACC1CD0C34B00663431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA20B20507C549FF7A3AC94 /* Pods_CodilityTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB75BAD71CD0C34B00663431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62A50829A07E5DE4ED506AA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A324B1512C9226EF9455D1F0 /* Pods-Codility.debug.xcconfig */,
+				F33CA7F9F11E5EE5B34DD876 /* Pods-Codility.release.xcconfig */,
+				AB9B16AE72DFBF88C83025A4 /* Pods-CodilityTests.debug.xcconfig */,
+				2B5A422194BDAFF0CEAAA3DA /* Pods-CodilityTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB26F7C91CD809300040A1B6 /* CTCI */ = {
+			isa = PBXGroup;
+			children = (
+				CB26F7CA1CD809300040A1B6 /* 1_ArrayString */,
+				CBC65B561CDB568E00490412 /* CTCI.h */,
+				CBC65B571CDB568E00490412 /* CTCI.m */,
+			);
+			path = CTCI;
+			sourceTree = "<group>";
+		};
+		CB26F7CA1CD809300040A1B6 /* 1_ArrayString */ = {
+			isa = PBXGroup;
+			children = (
+				CB26F7CB1CD809510040A1B6 /* ArraysStrings.h */,
+				CB26F7CC1CD809510040A1B6 /* ArraysStrings.m */,
+			);
+			path = 1_ArrayString;
+			sourceTree = "<group>";
+		};
+		CB75BAAD1CD0C34B00663431 = {
+			isa = PBXGroup;
+			children = (
+				CB75BAB81CD0C34B00663431 /* Codility */,
+				CB75BAD21CD0C34B00663431 /* CodilityTests */,
+				CB75BADD1CD0C34B00663431 /* CodilityUITests */,
+				CB75BAB71CD0C34B00663431 /* Products */,
+				62A50829A07E5DE4ED506AA1 /* Pods */,
+				D44A89B0C100C61534976938 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB75BAB71CD0C34B00663431 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BAB61CD0C34B00663431 /* Codility.app */,
+				CB75BACF1CD0C34B00663431 /* CodilityTests.xctest */,
+				CB75BADA1CD0C34B00663431 /* CodilityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB75BAB81CD0C34B00663431 /* Codility */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BABC1CD0C34B00663431 /* AppDelegate.h */,
+				CB75BABD1CD0C34B00663431 /* AppDelegate.m */,
+				CB75BABF1CD0C34B00663431 /* ViewController.h */,
+				CB75BAC01CD0C34B00663431 /* ViewController.m */,
+				CB75BAC21CD0C34B00663431 /* Main.storyboard */,
+				CB75BAC51CD0C34B00663431 /* Assets.xcassets */,
+				CB75BAC71CD0C34B00663431 /* LaunchScreen.storyboard */,
+				CB75BACA1CD0C34B00663431 /* Info.plist */,
+				CB75BAB91CD0C34B00663431 /* Supporting Files */,
+				CB75BAEF1CD0C39F00663431 /* Tasks */,
+				CB75BB501CD38F7500663431 /* HackerRank */,
+				CB26F7C91CD809300040A1B6 /* CTCI */,
+			);
+			path = Codility;
+			sourceTree = "<group>";
+		};
+		CB75BAB91CD0C34B00663431 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BABA1CD0C34B00663431 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB75BAD21CD0C34B00663431 /* CodilityTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BAD31CD0C34B00663431 /* CodilityTests.m */,
+				CB26F7CF1CD809D30040A1B6 /* CTCITests.m */,
+				CB75BAD51CD0C34B00663431 /* Info.plist */,
+			);
+			path = CodilityTests;
+			sourceTree = "<group>";
+		};
+		CB75BADD1CD0C34B00663431 /* CodilityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BADE1CD0C34B00663431 /* CodilityUITests.m */,
+				CB75BAE01CD0C34B00663431 /* Info.plist */,
+			);
+			path = CodilityUITests;
+			sourceTree = "<group>";
+		};
+		CB75BAEF1CD0C39F00663431 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BAF71CD0CA6A00663431 /* Lesson_1-Iterations */,
+				CB75BAFB1CD0CA6A00663431 /* Lesson_2-Arrays */,
+				CB75BB211CD114FB00663431 /* Lesson_3-TimeComplexity */,
+				CB75BB321CD1504500663431 /* Lesson_4-CountingElements */,
+				CBEA62B71CD3D0400036303F /* Lesson_5-PrefixSums */,
+				CBEA62C51CD626670036303F /* Lesson_7-StackQueues */,
+				CB75BB491CD25CF700663431 /* Lesson_9-MaxSliceProblem */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		CB75BAF71CD0CA6A00663431 /* Lesson_1-Iterations */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BAF81CD0CA6A00663431 /* BinaryGap Description.docx */,
+				CB75BAF91CD0CA6A00663431 /* BinaryGap.h */,
+				CB75BAFA1CD0CA6A00663431 /* BinaryGap.m */,
+			);
+			name = "Lesson_1-Iterations";
+			path = "Tasks/Lesson_1-Iterations";
+			sourceTree = "<group>";
+		};
+		CB75BAFB1CD0CA6A00663431 /* Lesson_2-Arrays */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BB011CD0D28A00663431 /* CyclicRotation.docx */,
+				CB75BAFE1CD0D22E00663431 /* CyclicRotation.h */,
+				CB75BAFF1CD0D22E00663431 /* CyclicRotation.m */,
+				CB75BB0C1CD0E00800663431 /* OddOccurrencesInArray.docx */,
+				CB75BB0D1CD0E01600663431 /* OddOccurrencesInArray.h */,
+				CB75BB0E1CD0E01600663431 /* OddOccurrencesInArray.m */,
+			);
+			name = "Lesson_2-Arrays";
+			path = "Tasks/Lesson_2-Arrays";
+			sourceTree = "<group>";
+		};
+		CB75BB211CD114FB00663431 /* Lesson_3-TimeComplexity */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BB221CD114FB00663431 /* FrogJmp.docx */,
+				CB75BB241CD1151F00663431 /* FrogJmp.h */,
+				CB75BB251CD1151F00663431 /* FrogJmp.m */,
+				CB75BB271CD1441B00663431 /* TapeEquilibrium.docx */,
+				CB75BB2B1CD1462B00663431 /* TapeEquilibrium.h */,
+				CB75BB2C1CD1462B00663431 /* TapeEquilibrium.m */,
+				CB75BB2E1CD14C2100663431 /* PermMissingElem.docx */,
+				CB75BB2F1CD14C3300663431 /* PermMissingElem.h */,
+				CB75BB301CD14C3300663431 /* PermMissingElem.m */,
+			);
+			name = "Lesson_3-TimeComplexity";
+			path = "Codility/Tasks/Lesson_3-TimeComplexity";
+			sourceTree = SOURCE_ROOT;
+		};
+		CB75BB321CD1504500663431 /* Lesson_4-CountingElements */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BB331CD1504500663431 /* FrogRiverOne.docx */,
+				CB75BB351CD1507900663431 /* FrogRiverOne.h */,
+				CB75BB361CD1507900663431 /* FrogRiverOne.m */,
+				CB75BB381CD157CA00663431 /* PermCheck.docx */,
+				CB75BB391CD157D800663431 /* PermCheck.h */,
+				CB75BB3A1CD157D800663431 /* PermCheck.m */,
+				CB75BB3C1CD15D7A00663431 /* MissingInteger.docx */,
+				CB75BB3D1CD15D8D00663431 /* MissingInteger.h */,
+				CB75BB3E1CD15D8D00663431 /* MissingInteger.m */,
+				CB75BB401CD2197600663431 /* MaxCounters.docx */,
+				CB75BB411CD2198300663431 /* MaxCounters.h */,
+				CB75BB421CD2198300663431 /* MaxCounters.m */,
+			);
+			name = "Lesson_4-CountingElements";
+			path = "Tasks/Lesson_4-CountingElements";
+			sourceTree = "<group>";
+		};
+		CB75BB491CD25CF700663431 /* Lesson_9-MaxSliceProblem */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BB4A1CD25CF700663431 /* MaxSliceSum.docx */,
+				CB75BB4C1CD25D1700663431 /* MaxSliceSum.h */,
+				CB75BB4D1CD25D1700663431 /* MaxSliceSum.m */,
+			);
+			name = "Lesson_9-MaxSliceProblem";
+			path = "Tasks/Lesson_9-MaxSliceProblem";
+			sourceTree = "<group>";
+		};
+		CB75BB501CD38F7500663431 /* HackerRank */ = {
+			isa = PBXGroup;
+			children = (
+				CB75BB511CD38F7500663431 /* Utopian Tree.docx */,
+				CB75BB531CD38F8F00663431 /* UtopianTree.h */,
+				CB75BB541CD38F8F00663431 /* UtopianTree.m */,
+			);
+			path = HackerRank;
+			sourceTree = "<group>";
+		};
+		CBEA62B71CD3D0400036303F /* Lesson_5-PrefixSums */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA62B81CD3D0400036303F /* CountDiv.docx */,
+				CBEA62BA1CD3D0540036303F /* CountDiv.h */,
+				CBEA62BB1CD3D0540036303F /* CountDiv.m */,
+				CBEA62BD1CD3E1A70036303F /* PassingCars.docx */,
+				CBEA62BE1CD3E1B50036303F /* PassingCars.h */,
+				CBEA62BF1CD3E1B50036303F /* PassingCars.m */,
+				CBEA62C11CD3E8680036303F /* GenomicRangeQuery.docx */,
+				CBEA62C21CD3E8770036303F /* GenomicRangeQuery.h */,
+				CBEA62C31CD3E8770036303F /* GenomicRangeQuery.m */,
+			);
+			name = "Lesson_5-PrefixSums";
+			path = "Tasks/Lesson_5-PrefixSums";
+			sourceTree = "<group>";
+		};
+		CBEA62C51CD626670036303F /* Lesson_7-StackQueues */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA62C61CD626670036303F /* Fish.docx */,
+				CBEA62C81CD626790036303F /* Fish.h */,
+				CBEA62C91CD626790036303F /* Fish.m */,
+				CBEA62CB1CD62BAC0036303F /* StoneWall.docx */,
+				CBEA62CC1CD62BBF0036303F /* StoneWall.h */,
+				CBEA62CD1CD62BBF0036303F /* StoneWall.m */,
+			);
+			name = "Lesson_7-StackQueues";
+			path = "Tasks/Lesson_7-StackQueues";
+			sourceTree = "<group>";
+		};
+		D44A89B0C100C61534976938 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E5C3190456CBC68404BF9F9 /* Pods_Codility.framework */,
+				79B09D2E35133C60D0159EDE /* Pods_CodilityTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB75BAB51CD0C34B00663431 /* Codility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB75BAE31CD0C34B00663431 /* Build configuration list for PBXNativeTarget "Codility" */;
+			buildPhases = (
+				DE55ED9935E3C644ECEDDA31 /* Check Pods Manifest.lock */,
+				CB75BAB21CD0C34B00663431 /* Sources */,
+				CB75BAB31CD0C34B00663431 /* Frameworks */,
+				CB75BAB41CD0C34B00663431 /* Resources */,
+				4EC85A95B5C0781E03E16D8B /* Embed Pods Frameworks */,
+				172FBE2E77C9B9E9D384EB47 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Codility;
+			productName = Codility;
+			productReference = CB75BAB61CD0C34B00663431 /* Codility.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB75BACE1CD0C34B00663431 /* CodilityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB75BAE61CD0C34B00663431 /* Build configuration list for PBXNativeTarget "CodilityTests" */;
+			buildPhases = (
+				7CBC9C13176289FB0FFB7AA6 /* Check Pods Manifest.lock */,
+				CB75BACB1CD0C34B00663431 /* Sources */,
+				CB75BACC1CD0C34B00663431 /* Frameworks */,
+				CB75BACD1CD0C34B00663431 /* Resources */,
+				6B96B035D402E7FD375D6836 /* Embed Pods Frameworks */,
+				7B4A9C5B0F9C5958DBB8DCD5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB75BAD11CD0C34B00663431 /* PBXTargetDependency */,
+			);
+			name = CodilityTests;
+			productName = CodilityTests;
+			productReference = CB75BACF1CD0C34B00663431 /* CodilityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB75BAD91CD0C34B00663431 /* CodilityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB75BAE91CD0C34B00663431 /* Build configuration list for PBXNativeTarget "CodilityUITests" */;
+			buildPhases = (
+				CB75BAD61CD0C34B00663431 /* Sources */,
+				CB75BAD71CD0C34B00663431 /* Frameworks */,
+				CB75BAD81CD0C34B00663431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB75BADC1CD0C34B00663431 /* PBXTargetDependency */,
+			);
+			name = CodilityUITests;
+			productName = CodilityUITests;
+			productReference = CB75BADA1CD0C34B00663431 /* CodilityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB75BAAE1CD0C34B00663431 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Yury Ramanchuk";
+				TargetAttributes = {
+					CB75BAB51CD0C34B00663431 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					CB75BACE1CD0C34B00663431 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = CB75BAB51CD0C34B00663431;
+					};
+					CB75BAD91CD0C34B00663431 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = CB75BAB51CD0C34B00663431;
+					};
+				};
+			};
+			buildConfigurationList = CB75BAB11CD0C34B00663431 /* Build configuration list for PBXProject "Codility" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB75BAAD1CD0C34B00663431;
+			productRefGroup = CB75BAB71CD0C34B00663431 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB75BAB51CD0C34B00663431 /* Codility */,
+				CB75BACE1CD0C34B00663431 /* CodilityTests */,
+				CB75BAD91CD0C34B00663431 /* CodilityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB75BAB41CD0C34B00663431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB75BAC91CD0C34B00663431 /* LaunchScreen.storyboard in Resources */,
+				CBEA62C71CD626670036303F /* Fish.docx in Resources */,
+				CB75BB521CD38F7500663431 /* Utopian Tree.docx in Resources */,
+				CB75BB231CD114FB00663431 /* FrogJmp.docx in Resources */,
+				CB75BAC61CD0C34B00663431 /* Assets.xcassets in Resources */,
+				CB75BB4B1CD25CF700663431 /* MaxSliceSum.docx in Resources */,
+				CBEA62B91CD3D0400036303F /* CountDiv.docx in Resources */,
+				CB75BAC41CD0C34B00663431 /* Main.storyboard in Resources */,
+				CB75BB341CD1504500663431 /* FrogRiverOne.docx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB75BACD1CD0C34B00663431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB75BAD81CD0C34B00663431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		172FBE2E77C9B9E9D384EB47 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Codility/Pods-Codility-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EC85A95B5C0781E03E16D8B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Codility/Pods-Codility-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B96B035D402E7FD375D6836 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B4A9C5B0F9C5958DBB8DCD5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CBC9C13176289FB0FFB7AA6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE55ED9935E3C644ECEDDA31 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB75BAB21CD0C34B00663431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB75BB431CD2198300663431 /* MaxCounters.m in Sources */,
+				CBEA62BC1CD3D0540036303F /* CountDiv.m in Sources */,
+				CB75BB261CD1151F00663431 /* FrogJmp.m in Sources */,
+				CBEA62C41CD3E8770036303F /* GenomicRangeQuery.m in Sources */,
+				CB75BAC11CD0C34B00663431 /* ViewController.m in Sources */,
+				CBEA62CA1CD626790036303F /* Fish.m in Sources */,
+				CB75BABE1CD0C34B00663431 /* AppDelegate.m in Sources */,
+				CB75BABB1CD0C34B00663431 /* main.m in Sources */,
+				CB26F7CD1CD809510040A1B6 /* ArraysStrings.m in Sources */,
+				CB75BAFD1CD0CA6A00663431 /* BinaryGap.m in Sources */,
+				CB75BB311CD14C3300663431 /* PermMissingElem.m in Sources */,
+				CB75BB001CD0D22E00663431 /* CyclicRotation.m in Sources */,
+				CBC65B581CDB568E00490412 /* CTCI.m in Sources */,
+				CBEA62CE1CD62BBF0036303F /* StoneWall.m in Sources */,
+				CB75BB3F1CD15D8D00663431 /* MissingInteger.m in Sources */,
+				CB75BB4E1CD25D1700663431 /* MaxSliceSum.m in Sources */,
+				CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */,
+				CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */,
+				CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */,
+				CBEA62C01CD3E1B50036303F /* PassingCars.m in Sources */,
+				CB75BB551CD38F8F00663431 /* UtopianTree.m in Sources */,
+				CB75BB0F1CD0E01600663431 /* OddOccurrencesInArray.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB75BACB1CD0C34B00663431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB75BB021CD0D60200663431 /* CyclicRotation.m in Sources */,
+				CB75BAD41CD0C34B00663431 /* CodilityTests.m in Sources */,
+				CB26F7D01CD809D30040A1B6 /* CTCITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB75BAD61CD0C34B00663431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB75BADF1CD0C34B00663431 /* CodilityUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB75BAD11CD0C34B00663431 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB75BAB51CD0C34B00663431 /* Codility */;
+			targetProxy = CB75BAD01CD0C34B00663431 /* PBXContainerItemProxy */;
+		};
+		CB75BADC1CD0C34B00663431 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB75BAB51CD0C34B00663431 /* Codility */;
+			targetProxy = CB75BADB1CD0C34B00663431 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB75BAC21CD0C34B00663431 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB75BAC31CD0C34B00663431 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB75BAC71CD0C34B00663431 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB75BAC81CD0C34B00663431 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB75BAE11CD0C34B00663431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB75BAE21CD0C34B00663431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB75BAE41CD0C34B00663431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A324B1512C9226EF9455D1F0 /* Pods-Codility.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Codility/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"EKAlgorithms\"",
+					"-all_load",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramanchuk.Codility;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB75BAE51CD0C34B00663431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33CA7F9F11E5EE5B34DD876 /* Pods-Codility.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Codility/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"EKAlgorithms\"",
+					"-all_load",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramanchuk.Codility;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB75BAE71CD0C34B00663431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB9B16AE72DFBF88C83025A4 /* Pods-CodilityTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CodilityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"EKAlgorithms\"",
+					"-all_load",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramanchuk.CodilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codility.app/Codility";
+			};
+			name = Debug;
+		};
+		CB75BAE81CD0C34B00663431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B5A422194BDAFF0CEAAA3DA /* Pods-CodilityTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CodilityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"EKAlgorithms\"",
+					"-all_load",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramanchuk.CodilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codility.app/Codility";
+			};
+			name = Release;
+		};
+		CB75BAEA1CD0C34B00663431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CodilityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramanchuk.CodilityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Codility;
+			};
+			name = Debug;
+		};
+		CB75BAEB1CD0C34B00663431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CodilityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramanchuk.CodilityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Codility;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB75BAB11CD0C34B00663431 /* Build configuration list for PBXProject "Codility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB75BAE11CD0C34B00663431 /* Debug */,
+				CB75BAE21CD0C34B00663431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB75BAE31CD0C34B00663431 /* Build configuration list for PBXNativeTarget "Codility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB75BAE41CD0C34B00663431 /* Debug */,
+				CB75BAE51CD0C34B00663431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB75BAE61CD0C34B00663431 /* Build configuration list for PBXNativeTarget "CodilityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB75BAE71CD0C34B00663431 /* Debug */,
+				CB75BAE81CD0C34B00663431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB75BAE91CD0C34B00663431 /* Build configuration list for PBXNativeTarget "CodilityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB75BAEA1CD0C34B00663431 /* Debug */,
+				CB75BAEB1CD0C34B00663431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB75BAAE1CD0C34B00663431 /* Project object */;
+}

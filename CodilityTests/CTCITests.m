@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "ArraysStrings.h"
 #import "EKLinkedList.h"
+#import "CTCI.h"
 
 @interface CTCITests : XCTestCase
 @end
@@ -112,6 +113,12 @@
 
 - (void)testPrintMinMax {
     [ArraysStrings printSmallestAndLargest:18];
+}
+
+- (void)testCountSteps {
+    CTCI *test = [CTCI new];
+    XCTAssertEqual(7, [test countPossibleWays:4]);
+    XCTAssertEqual(13, [test countPossibleWays:5]);
 }
 
 @end
