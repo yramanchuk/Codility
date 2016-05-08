@@ -11,4 +11,6 @@
 @interface CTCI : NSObject
 
 - (long)countPossibleWays:(int)n;
++ (int)checkPossibilities:(int)num with:(NSMutableArray *)values;
++ (int) changePossibilitiesBottomUp:(int) amount with:(NSMutableArray<NSNumber *> *)denominations;
 @end

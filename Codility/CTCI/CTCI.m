@@ -109,4 +109,53 @@
 //}
 
 
++ (int)checkPossibilities:(int)num with:(NSMutableArray *)values {
+    if (num == 0) {
+        return 1;
+    } else if (num < 0) {
+        return 0;
+    }
+    if (values.count == 0) {
+        return 0;
+    }
+    
+//    NSLog(@"checking %d with values:%@", num, values);
+    
+    int possiblities = 0;
+    int value = [values[0] intValue];
+    
+    NSMutableArray *restCoins = [values mutableCopy];
+    [restCoins removeObject:restCoins.firstObject];
+    
+    while (num >= 0) {
+        int delta = [self checkPossibilities:num with:restCoins];
+//        NSLog(@"adding %d checking %d with values:%@ from %d", delta, initNum, values, num);
+        possiblities += delta;
+        num -= value;
+    }
+    
+    return possiblities;
+}
+
++ (int) changePossibilitiesBottomUp:(int) amount with:(NSMutableArray<NSNumber *> *)denominations {
+    NSMutableArray *waysOfDoingNCents = [NSMutableArray arrayWithCapacity:amount+1];
+    for (int i = 0; i < amount+1; i++) {
+        [waysOfDoingNCents addObject:@0];
+    }
+    
+    waysOfDoingNCents[0] = @1;
+    
+    for (NSNumber *coin in denominations) {
+        for (int higherAmount = [coin intValue]; higherAmount < amount + 1; higherAmount++) {
+            int higherAmountRemainder = higherAmount - [coin intValue];
+            waysOfDoingNCents[higherAmount] = @([waysOfDoingNCents[higherAmount] intValue] + [waysOfDoingNCents[higherAmountRemainder] intValue]);
+            NSLog(@"inner %@", waysOfDoingNCents);
+        }
+        NSLog(@"%@", waysOfDoingNCents);
+    }
+    
+    return [waysOfDoingNCents[amount] intValue];
+}
+
+
 @end
