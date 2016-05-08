@@ -146,4 +146,11 @@
 
 }
 
+- (void)testSearchStart {
+    NSArray *testArray = @[@"ptolemaic", @"retrograde", @"supplant", @"undulate", @"xenoepist", @"asymptote", @"babka", @"banoffee", @"engender", @"karpatka", @"othellolagkage"];
+    int result = [CTCI getStart:testArray];
+    XCTAssertEqual([testArray indexOfObject:@"asymptote"], result);
+    XCTAssertEqual([testArray indexOfObject:@"asymptote"], [CTCI findRotated:testArray]);
+}
+
 @end

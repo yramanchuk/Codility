@@ -149,7 +149,7 @@
         for (int higherAmount = [coin intValue]; higherAmount < amount + 1; higherAmount++) {
             int higherAmountRemainder = higherAmount - [coin intValue];
             waysOfDoingNCents[higherAmount] = @([waysOfDoingNCents[higherAmount] intValue] + [waysOfDoingNCents[higherAmountRemainder] intValue]);
-            NSLog(@"inner %@", waysOfDoingNCents);
+//            NSLog(@"inner %@", waysOfDoingNCents);
         }
         NSLog(@"%@", waysOfDoingNCents);
     }
@@ -157,5 +157,52 @@
     return [waysOfDoingNCents[amount] intValue];
 }
 
+
+
++ (int)getStart:(NSArray *)array {
+    return [self binaryRotatedSearch:array  low:0  high:array.count-1];
+}
+
++ (int)binaryRotatedSearch:(NSArray *)array low:(int) lowIdx  high:(NSUInteger)highIdx {
+    int midIdx = (lowIdx +  highIdx) / 2;
+    NSString *mid = array[midIdx];
+    NSString *low = array[ lowIdx];
+    
+    if (highIdx - lowIdx <= 1) {
+        return lowIdx;
+    }
+    
+    if ([low compare:mid] > 0) {
+        return [self binaryRotatedSearch:array low:lowIdx high:midIdx];
+    } else {
+        return [self binaryRotatedSearch:array low:midIdx + 1 high:highIdx];
+    }
+}
+
++ (int)findRotated:(NSArray *)array {
+    int lowIdx = 0;
+    int highIdx = array.count - 1;
+    NSString *low = array[lowIdx];
+    
+    while (lowIdx < highIdx) {
+        int midIdx = lowIdx + (highIdx - lowIdx) / 2;
+        
+        NSString *mid = array[midIdx];
+        
+        
+        if ([low compare:mid] > 0) {
+            highIdx = midIdx;
+        } else {
+            lowIdx = midIdx;
+        }
+
+        if (highIdx - lowIdx == 1) {
+            break;
+        }
+
+    }
+    
+    return highIdx;
+}
 
 @end
