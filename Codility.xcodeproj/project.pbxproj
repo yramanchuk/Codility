@@ -44,6 +44,8 @@
 		CBEA62C71CD626670036303F /* Fish.docx in Resources */ = {isa = PBXBuildFile; fileRef = CBEA62C61CD626670036303F /* Fish.docx */; };
 		CBEA62CA1CD626790036303F /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62C91CD626790036303F /* Fish.m */; };
 		CBEA62CE1CD62BBF0036303F /* StoneWall.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62CD1CD62BBF0036303F /* StoneWall.m */; };
+		CBFA41731CDFBB1300291108 /* Algorithms.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA41721CDFBB1300291108 /* Algorithms.m */; };
+		CBFA41761CDFCD8700291108 /* AlgorithmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA41751CDFCD8700291108 /* AlgorithmTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +143,9 @@
 		CBEA62CB1CD62BAC0036303F /* StoneWall.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoneWall.docx; sourceTree = "<group>"; };
 		CBEA62CC1CD62BBF0036303F /* StoneWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoneWall.h; sourceTree = "<group>"; };
 		CBEA62CD1CD62BBF0036303F /* StoneWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoneWall.m; sourceTree = "<group>"; };
+		CBFA41711CDFBB1300291108 /* Algorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Algorithms.h; sourceTree = "<group>"; };
+		CBFA41721CDFBB1300291108 /* Algorithms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Algorithms.m; sourceTree = "<group>"; };
+		CBFA41751CDFCD8700291108 /* AlgorithmTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmTests.m; sourceTree = "<group>"; };
 		F33CA7F9F11E5EE5B34DD876 /* Pods-Codility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +193,8 @@
 				CB26F7CA1CD809300040A1B6 /* 1_ArrayString */,
 				CBC65B561CDB568E00490412 /* CTCI.h */,
 				CBC65B571CDB568E00490412 /* CTCI.m */,
+				CBFA41711CDFBB1300291108 /* Algorithms.h */,
+				CBFA41721CDFBB1300291108 /* Algorithms.m */,
 			);
 			path = CTCI;
 			sourceTree = "<group>";
@@ -255,6 +262,7 @@
 			children = (
 				CB75BAD31CD0C34B00663431 /* CodilityTests.m */,
 				CB26F7CF1CD809D30040A1B6 /* CTCITests.m */,
+				CBFA41751CDFCD8700291108 /* AlgorithmTests.m */,
 				CB75BAD51CD0C34B00663431 /* Info.plist */,
 			);
 			path = CodilityTests;
@@ -660,6 +668,7 @@
 				CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */,
 				CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */,
 				CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */,
+				CBFA41731CDFBB1300291108 /* Algorithms.m in Sources */,
 				CBEA62C01CD3E1B50036303F /* PassingCars.m in Sources */,
 				CB75BB551CD38F8F00663431 /* UtopianTree.m in Sources */,
 				CB75BB0F1CD0E01600663431 /* OddOccurrencesInArray.m in Sources */,
@@ -671,6 +680,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB75BB021CD0D60200663431 /* CyclicRotation.m in Sources */,
+				CBFA41761CDFCD8700291108 /* AlgorithmTests.m in Sources */,
 				CB75BAD41CD0C34B00663431 /* CodilityTests.m in Sources */,
 				CB26F7D01CD809D30040A1B6 /* CTCITests.m in Sources */,
 			);
