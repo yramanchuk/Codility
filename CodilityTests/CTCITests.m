@@ -10,6 +10,7 @@
 #import "ArraysStrings.h"
 #import "EKLinkedList.h"
 #import "CTCI.h"
+#import "MaxSliceSum.h"
 
 @interface CTCITests : XCTestCase
 @end
@@ -119,6 +120,18 @@
     CTCI *test = [CTCI new];
     XCTAssertEqual(7, [test countPossibleWays:4]);
     XCTAssertEqual(13, [test countPossibleWays:5]);
+}
+
+- (void)testProductOfThree {
+    long result = [MaxSliceSum maxProduct:[@[@2, @1, @-100, @10, @-5] mutableCopy]];
+    XCTAssertEqual(5000, result);
+
+    result = [MaxSliceSum maxProduct:[@[@2, @1, @100, @10, @-5] mutableCopy]];
+    XCTAssertEqual(2000, result);
+
+    result = [MaxSliceSum maxProduct:[@[@1, @10, @-5, @1, @-100] mutableCopy]];
+    XCTAssertEqual(5000, result);
+
 }
 
 @end

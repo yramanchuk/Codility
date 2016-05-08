@@ -11,5 +11,5 @@
 @interface MaxSliceSum : NSObject
 
 + (int)solution:(NSMutableArray *)A;
-
++ (long)maxProduct:(NSMutableArray *)A;
 @end

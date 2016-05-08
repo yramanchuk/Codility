@@ -27,6 +27,38 @@
     return maxSlice;
 }
 
+// 5 3 8 10
+// 2 1 -100 10 -5
++ (long)maxProduct:(NSMutableArray *)A {
+
+    assert(A.count > 2);
+    
+    long maxProductOfThree = [A[0] intValue] * [A[1] intValue] * [A[2] intValue];
+    
+    long maxProductOfTwo = [A[0] intValue] * [A[1] intValue];
+    long minProductOfTwo = [A[0] intValue] * [A[1] intValue];
+
+    long maxElement = fmax([A[0] intValue], [A[1] intValue]);
+    long minElement = fmin([A[0] intValue], [A[1] intValue]);
+
+    for (int i = 2; i < A.count; i++) {
+        int val = [A[i] intValue];
+        
+        
+        maxProductOfThree = fmax(fmax(maxProductOfThree, minProductOfTwo * val), maxProductOfTwo * val);
+
+        maxProductOfTwo = fmax(fmax(maxProductOfTwo, maxElement * val), minElement * val);
+        minProductOfTwo = fmin(fmin(minProductOfTwo, minElement * val), maxElement * val);
+
+        maxElement = fmax(maxElement, val);
+        minElement = fmin(minElement, val);
+
+    }
+    
+    return maxProductOfThree;
+}
+
+
 //public int getMaxProfit(int[] stockPricesYesterday) {
 //    
 //    // make sure we have at least 2 prices
