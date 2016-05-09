@@ -12,6 +12,7 @@
 #import "EKStack.h"
 #import "EKEdge.h"
 #import "EKQueue.h"
+#import "EKBTreeNode.h"
 
 
 @implementation Algorithms
@@ -183,79 +184,6 @@
     }
 }
 
-#pragma mark DFS implementation
-- (void)searchDFS:(EKVertex *)root {
-    
-//    root.label = @"Start vertex";
-    root.wasVisited = YES;
-//    [self displayVisitedVertex:root];
-    
-    EKStack *stack = [[EKStack alloc] init];
-    [stack push:root];
-    
-    while (![stack isEmpty]) {
-        EKVertex *lastVertex = [stack peek];
-        BOOL isAddNewVertex = NO;
-        
-        for (EKEdge *adjacentEdge in lastVertex.adjacentEdges) {
-            if (!adjacentEdge.adjacentTo.wasVisited) {
-                [stack push:adjacentEdge.adjacentTo];
-                adjacentEdge.adjacentTo.wasVisited = YES;
-                isAddNewVertex = YES;
-//                [self displayVisitedVertex:adjacentEdge.adjacentTo];
-                break;
-            }
-        }
-        if (!isAddNewVertex) {
-            [stack popLastObject];
-        }
-    }
-    
-//    [self clearVisitHistory];
-}
-
-- (void)searchDFS_Recursive:(EKVertex *)root {
-    if (!root) {
-        return;
-    }
-    
-    root.wasVisited = YES;
-//    [self displayVisitedVertex:root];
-    
-    for (EKEdge *adjacentEdge in root.adjacentEdges) {
-        if (!adjacentEdge.adjacentTo.wasVisited) {
-            [self searchDFS_Recursive:adjacentEdge.adjacentTo];
-        }
-    }
-//    [self clearVisitHistory];
-}
-
-#pragma mark BFS implementation
-
-- (void)breadthFirstSearch:(EKVertex *)root
-{
-//    NSAssert([self.vertices count] > 0, @"No any vertex in graph");
-    
-    root.label = @"Start vertex";
-    root.wasVisited = YES;
-//    [self displayVisitedVertex:self.firstVertex];
-    
-    EKQueue *queue = [[EKQueue alloc] init];
-    [queue insertObject:root];
-    
-    while (![queue isEmpty]) {
-        EKVertex *foo = [queue removeFirstObject];
-        for (EKEdge *adjacentEdge in foo.adjacentEdges) {
-            if (!adjacentEdge.adjacentTo.wasVisited) {
-                [queue insertObject:adjacentEdge.adjacentTo];
-                adjacentEdge.adjacentTo.wasVisited = YES;
-//                [self displayVisitedVertex:adjacentEdge.adjacentTo];
-            }
-        }
-    }
-    
-//    [self clearVisitHistory];
-}
 
 #pragma mark bit manipulation
 
@@ -338,6 +266,152 @@ static id _instance = nil;
     
     return nil;
 }
+
+
+#pragma mark Trees
+
+#pragma mark DFS implementation
+- (void)searchDFS:(EKVertex *)root {
+    
+    //    root.label = @"Start vertex";
+    root.wasVisited = YES;
+    //    [self displayVisitedVertex:root];
+    
+    EKStack *stack = [[EKStack alloc] init];
+    [stack push:root];
+    
+    while (![stack isEmpty]) {
+        EKVertex *lastVertex = [stack peek];
+        BOOL isAddNewVertex = NO;
+        
+        for (EKEdge *adjacentEdge in lastVertex.adjacentEdges) {
+            if (!adjacentEdge.adjacentTo.wasVisited) {
+                [stack push:adjacentEdge.adjacentTo];
+                adjacentEdge.adjacentTo.wasVisited = YES;
+                isAddNewVertex = YES;
+                //                [self displayVisitedVertex:adjacentEdge.adjacentTo];
+                break;
+            }
+        }
+        if (!isAddNewVertex) {
+            [stack popLastObject];
+        }
+    }
+    
+    //    [self clearVisitHistory];
+}
+
+- (void)searchDFS_Recursive:(EKVertex *)root {
+    if (!root) {
+        return;
+    }
+    
+    root.wasVisited = YES;
+    //    [self displayVisitedVertex:root];
+    
+    for (EKEdge *adjacentEdge in root.adjacentEdges) {
+        if (!adjacentEdge.adjacentTo.wasVisited) {
+            [self searchDFS_Recursive:adjacentEdge.adjacentTo];
+        }
+    }
+    //    [self clearVisitHistory];
+}
+
+#pragma mark BFS implementation
+
+- (void)breadthFirstSearch:(EKVertex *)root
+{
+    //    NSAssert([self.vertices count] > 0, @"No any vertex in graph");
+    
+    root.label = @"Start vertex";
+    root.wasVisited = YES;
+    //    [self displayVisitedVertex:self.firstVertex];
+    
+    EKQueue *queue = [[EKQueue alloc] init];
+    [queue insertObject:root];
+    
+    while (![queue isEmpty]) {
+        EKVertex *foo = [queue removeFirstObject];
+        for (EKEdge *adjacentEdge in foo.adjacentEdges) {
+            if (!adjacentEdge.adjacentTo.wasVisited) {
+                [queue insertObject:adjacentEdge.adjacentTo];
+                adjacentEdge.adjacentTo.wasVisited = YES;
+                //                [self displayVisitedVertex:adjacentEdge.adjacentTo];
+            }
+        }
+    }
+    
+    //    [self clearVisitHistory];
+}
+
+#pragma mark find node BFS
+- (EKBTreeNode *)find:(NSObject *)object fromRoot:(EKBTreeNode *)root
+{
+    EKQueue *queue = [[EKQueue alloc] init];
+    [queue insertObject:root];
+    EKBTreeNode *node;
+    while (![queue isEmpty]) {
+        node = [queue removeFirstObject];
+        if ([node.object isEqual:object]) {
+            return node;
+        }
+        if (node.leftChild) {
+            [queue insertObject:node.leftChild];
+        }
+        if (node.rightChild) {
+            [queue insertObject:node.rightChild];
+        }
+    }
+    return nil;
+}
+
+#pragma mark Tree traversal
+
+- (void)levelOrderTraversal:(EKBTreeNode *)root
+{
+    if (root) {
+        EKQueue *queue = [[EKQueue alloc] init];
+        [queue insertObject:root];
+        while (![queue isEmpty]) {
+            EKBTreeNode *currentNode = [queue removeFirstObject];
+            if (currentNode.leftChild) {
+                [queue insertObject:currentNode.leftChild];
+            }
+            if (currentNode.rightChild) {
+                [queue insertObject:currentNode.rightChild];
+            }
+            NSLog(@"%@", currentNode.object);
+        }
+    }
+}
+
++ (void)preOrderTraversalRecursive:(EKBTreeNode *)node
+{
+    if (node) {
+        NSLog(@"%@",node.object);
+        [self preOrderTraversalRecursive:node.leftChild];
+        [self preOrderTraversalRecursive:node.rightChild];
+    }
+}
+
++ (void)inOrderTraversalRecursive:(EKBTreeNode *)node
+{
+    if (node) {
+        [self inOrderTraversalRecursive:node.leftChild];
+        NSLog(@"%@",node.object);
+        [self inOrderTraversalRecursive:node.rightChild];
+    }
+}
+
++ (void)postOrderTraversalRecursive:(EKBTreeNode *)node
+{
+    if (node) {
+        [self postOrderTraversalRecursive:node.leftChild];
+        [self postOrderTraversalRecursive:node.rightChild];
+        NSLog(@"%@",node.object);
+    }
+}
+
 
 //#pragma mark HashTable implementation
 //http://ciechanowski.me/blog/2014/04/08/exposing-nsdictionary/
