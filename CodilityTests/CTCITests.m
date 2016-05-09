@@ -173,6 +173,8 @@
     result = [SquareRoot sqrt:value];
     XCTAssert(fabs(sqrt(value) - result) < .001);
 
+    NSDictionary *d;
+    [d objectForKey:@""];
 }
 
 @end
