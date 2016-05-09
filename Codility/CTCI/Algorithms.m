@@ -183,10 +183,6 @@
     }
 }
 
-
-
-#pragma mark HashTable implementation
-
 #pragma mark DFS implementation
 - (void)searchDFS:(EKVertex *)root {
     
@@ -267,6 +263,11 @@
 // x ^ 1s = ~x
 // x ^ x  = 0
 
+// 1 -> 0; 0 -> 1
+-(int)flipBit:(int)num {
+    return 1 ^ num;
+}
+
 -(BOOL)getBit:(int)num idx:(int)i {
     return ((num & (1 << i)) != 0);
 }
@@ -338,5 +339,36 @@ static id _instance = nil;
     return nil;
 }
 
+//#pragma mark HashTable implementation
+//http://ciechanowski.me/blog/2014/04/08/exposing-nsdictionary/
+//- (id)objectForKey:(id)aKey
+//{
+//    NSUInteger sizeIndex = _szidx;
+//    NSUInteger size = __NSDictionarySizes[sizeIndex];
+//
+//    id *storage = (id *)object_getIndexedIvars(dict);
+//
+//    NSUInteger fetchIndex = [aKey hash] % size;
+//
+//    for (int i = 0; i < size; i++) {
+//        id fetchedKey = storage[2 * fetchIndex];
+//
+//        if (fetchedKey == nil) {
+//            return nil;
+//        }
+//
+//        if (fetchedKey == aKey || [fetchedKey isEqual:aKey]) {
+//            return storage[2 * fetchIndex + 1];
+//        }
+//
+//        fetchIndex++;
+//
+//        if (fetchIndex == size) {
+//            fetchIndex = 0;
+//        }
+//    }
+//
+//    return nil;
+//}
 
 @end
