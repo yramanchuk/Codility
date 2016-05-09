@@ -13,4 +13,7 @@
 //static NSMutableArray * solution(NSMutableArray *A, int K);
 + (NSMutableArray *)solution:(NSMutableArray *)A size:(int) K;
 
++ (int)getStart:(NSArray *)array;
++ (int)findRotated:(NSArray *)array;
+
 @end

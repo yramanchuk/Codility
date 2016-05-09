@@ -11,6 +11,7 @@
 #import "EKLinkedList.h"
 #import "CTCI.h"
 #import "MaxSliceSum.h"
+#import "CyclicRotation.h"
 
 @interface CTCITests : XCTestCase
 @end
@@ -148,9 +149,9 @@
 
 - (void)testSearchStart {
     NSArray *testArray = @[@"ptolemaic", @"retrograde", @"supplant", @"undulate", @"xenoepist", @"asymptote", @"babka", @"banoffee", @"engender", @"karpatka", @"othellolagkage"];
-    int result = [CTCI getStart:testArray];
+    int result = [CyclicRotation getStart:testArray];
     XCTAssertEqual([testArray indexOfObject:@"asymptote"], result);
-    XCTAssertEqual([testArray indexOfObject:@"asymptote"], [CTCI findRotated:testArray]);
+    XCTAssertEqual([testArray indexOfObject:@"asymptote"], [CyclicRotation findRotated:testArray]);
 }
 
 @end

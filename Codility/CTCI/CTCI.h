@@ -14,6 +14,4 @@
 + (int)checkPossibilities:(int)num with:(NSMutableArray *)values;
 + (int) changePossibilitiesBottomUp:(int) amount with:(NSMutableArray<NSNumber *> *)denominations;
 
-+ (int)getStart:(NSArray *)array;
-+ (int)findRotated:(NSArray *)array;
 @end
