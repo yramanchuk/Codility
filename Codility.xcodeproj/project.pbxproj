@@ -47,6 +47,7 @@
 		CBFA41731CDFBB1300291108 /* Algorithms.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA41721CDFBB1300291108 /* Algorithms.m */; };
 		CBFA41761CDFCD8700291108 /* AlgorithmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA41751CDFCD8700291108 /* AlgorithmTests.m */; };
 		CBFA41791CE0B77B00291108 /* RomanNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA41781CE0B77B00291108 /* RomanNumbers.m */; };
+		CBFA417C1CE0C7A300291108 /* SquareRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA417B1CE0C7A300291108 /* SquareRoot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,8 @@
 		CBFA41751CDFCD8700291108 /* AlgorithmTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmTests.m; sourceTree = "<group>"; };
 		CBFA41771CE0B77B00291108 /* RomanNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RomanNumbers.h; sourceTree = "<group>"; };
 		CBFA41781CE0B77B00291108 /* RomanNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomanNumbers.m; sourceTree = "<group>"; };
+		CBFA417A1CE0C7A300291108 /* SquareRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareRoot.h; sourceTree = "<group>"; };
+		CBFA417B1CE0C7A300291108 /* SquareRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareRoot.m; sourceTree = "<group>"; };
 		F33CA7F9F11E5EE5B34DD876 /* Pods-Codility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +203,8 @@
 				CBFA41721CDFBB1300291108 /* Algorithms.m */,
 				CBFA41771CE0B77B00291108 /* RomanNumbers.h */,
 				CBFA41781CE0B77B00291108 /* RomanNumbers.m */,
+				CBFA417A1CE0C7A300291108 /* SquareRoot.h */,
+				CBFA417B1CE0C7A300291108 /* SquareRoot.m */,
 			);
 			path = CTCI;
 			sourceTree = "<group>";
@@ -656,6 +661,7 @@
 			files = (
 				CB75BB431CD2198300663431 /* MaxCounters.m in Sources */,
 				CBEA62BC1CD3D0540036303F /* CountDiv.m in Sources */,
+				CBFA417C1CE0C7A300291108 /* SquareRoot.m in Sources */,
 				CBFA41791CE0B77B00291108 /* RomanNumbers.m in Sources */,
 				CB75BB261CD1151F00663431 /* FrogJmp.m in Sources */,
 				CBEA62C41CD3E8770036303F /* GenomicRangeQuery.m in Sources */,

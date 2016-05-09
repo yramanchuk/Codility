@@ -13,6 +13,7 @@
 #import "MaxSliceSum.h"
 #import "CyclicRotation.h"
 #import "RomanNumbers.h"
+#import "SquareRoot.h"
 
 @interface CTCITests : XCTestCase
 @end
@@ -161,6 +162,17 @@
     
     result = [RomanNumbers romanNumber:@"MDCCCXCVI"];
     XCTAssertEqual(result, 1896);
+}
+
+- (void)testSquareRoot {
+    double value = 120.0;
+    double result = [SquareRoot sqrt:value];
+    XCTAssert(fabs(sqrt(value) - result) < .001);
+
+    value = 0.2;
+    result = [SquareRoot sqrt:value];
+    XCTAssert(fabs(sqrt(value) - result) < .001);
+
 }
 
 @end
