@@ -12,6 +12,7 @@
 #import "CTCI.h"
 #import "MaxSliceSum.h"
 #import "CyclicRotation.h"
+#import "RomanNumbers.h"
 
 @interface CTCITests : XCTestCase
 @end
@@ -152,6 +153,14 @@
     int result = [CyclicRotation getStart:testArray];
     XCTAssertEqual([testArray indexOfObject:@"asymptote"], result);
     XCTAssertEqual([testArray indexOfObject:@"asymptote"], [CyclicRotation findRotated:testArray]);
+}
+
+- (void)testRomanNumber {
+    int result = [RomanNumbers romanNumber:@"Ix"];
+    XCTAssertEqual(result, 9);
+    
+    result = [RomanNumbers romanNumber:@"MDCCCXCVI"];
+    XCTAssertEqual(result, 1896);
 }
 
 @end
