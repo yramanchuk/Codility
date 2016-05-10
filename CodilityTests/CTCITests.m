@@ -14,6 +14,7 @@
 #import "CyclicRotation.h"
 #import "RomanNumbers.h"
 #import "SquareRoot.h"
+#import "LadderSolver.h"
 
 @interface CTCITests : XCTestCase
 @end
@@ -180,6 +181,12 @@
 - (void)testAllSubstrings {
     NSLog(@"%@", [CTCI findAllSubstringCount:@"ABCGRETCABCG" length:3]);
     NSLog(@"%@", [CTCI findAllTriples:@[@10, @5, @3, @4, @7, @1]]);
+}
+
+- (void)testLadder {
+    int result = [LadderSolver wordLadder:@"hit" end:@"cog" dictionary:[@[@"hot", @"dot", @"dog", @"lot", @"log"] mutableCopy]];
+    
+    XCTAssertEqual(result, 5);
 }
 
 @end
