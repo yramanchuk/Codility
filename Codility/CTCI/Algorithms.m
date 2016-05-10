@@ -515,6 +515,47 @@ static id _instance = nil;
 }
 
 
+#pragma mark tree mirroring
++ (EKTreeNode *)mirror:(EKTreeNode *)input {
+    if (!input) {
+        return nil;
+    }
+    
+//    if (input.visited) {
+//        return input;
+//    }
+    
+    EKTreeNode *result = [EKTreeNode new];
+    result.object = input.object;
+//    [input setVisited];
+    
+    result.sibling = [self mirror: input.child];
+    result.child = [self mirror: input.sibling];
+    
+    return result;
+}
+
++ (void)mirrorMutated:(EKTreeNode *)input {
+    if (!input) {
+        return;
+    }
+    
+    //    if (input.visited) {
+    //        return input;
+    //    }
+    
+    //    [input setVisited];
+
+    
+    [self mirror: input.child];
+    [self mirror: input.sibling];
+    EKTreeNode *temp = input.child;
+    input.child = input.sibling;
+    input.sibling = temp;
+}
+
+
+
 //#pragma mark HashTable implementation
 //http://ciechanowski.me/blog/2014/04/08/exposing-nsdictionary/
 //- (id)objectForKey:(id)aKey
