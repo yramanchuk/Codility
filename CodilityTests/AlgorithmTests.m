@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "Algorithms.h"
+#import "NSString+EKStuff.h"
 
 @interface AlgorithmTests : XCTestCase
 
@@ -78,6 +79,35 @@
     int expected = [Algorithms binarySearchRecursive:testArray x:value];
     
     XCTAssertEqual(rand, expected);
+    
+}
+
+- (void)testLCS {
+    NSString *str = @"1241";
+    int result = [Algorithms longestCommonSubstring:str with:[str reversedString]];
+    XCTAssertEqual(result, 3);
+
+    str = @"12415566";
+    result = [Algorithms longestCommonSubstring:str with:[str reversedString]];
+    XCTAssertEqual(result, 3);
+
+    str = @"12412233";
+    NSArray *lcs = [str LCS_WithString:[str reversedString]];
+    NSLog(@"%@", lcs);
+    XCTAssertEqual(lcs.count, 3);
+
+    str = @"12415332";
+    lcs = [str LCS_WithString:[str reversedString]];
+    NSLog(@"LCS_WithString %@", lcs);
+    XCTAssertEqual(lcs.count, 4);
+
+    str = @"12412233";
+    result = [Algorithms longestCommonSubstring:str with:[str reversedString]];
+    XCTAssertEqual(result, 3);
+
+    str = @"124135332";
+    result = [Algorithms longestCommonSubstring:str with:[str reversedString] ];
+    XCTAssertEqual(result, 5);
     
 }
 @end

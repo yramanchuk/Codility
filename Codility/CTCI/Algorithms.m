@@ -184,6 +184,60 @@
     }
 }
 
+#pragma mark dynamic programming
+//     1 2 4 1 2 2 3 3
+//
+//3    0 0 0 0 0 0 1 1
+//3    0 0 0 0 0 0 1 2
+//2    0 1 1 1 1 1 1 2
+//2    0 1 1 1 2 2 2 2
+//1    1 1 1 2 2 2 2 2
+//4    1 1 2 2 2 2 2 2
+//2    1 2 2 2 3 3 3 3
+//1    1 2 2 3 3 3 3 3
+//
+//1 2 1
++ (int)longestCommonSubstring:(NSString *)str1 with:(NSString *)str2
+{
+    if (str1.length == 0 || str2.length == 0)
+        return 0;
+    
+    NSMutableArray *num = [NSMutableArray new];
+    for (int i = 0; i <= str1.length; i++) {
+        NSMutableArray *inner = [NSMutableArray new];
+        [num addObject:inner];
+        for (int j = 0; j <= str2.length; j++) {
+            [inner addObject:@(0)];
+        }
+    }
+    
+    int maxlen = 0;
+    
+    for (int row = 0; row < str1.length; row++) {
+        for (int col = 0; col < str2.length; col++) {
+            if ([str1 characterAtIndex:row] == [str2 characterAtIndex:col]) {
+                //take up and left + 1
+                int newValue = [num[row][col] intValue] + 1;
+                num[row + 1][col + 1] = @(newValue);
+                
+                //increase longest string
+                maxlen = fmax(maxlen, newValue);
+                
+            } else if ([num[row][col + 1] intValue] >= [num[row + 1][col] intValue]) {
+                //take up
+                num[row + 1][col + 1] = @([num[row][col + 1] intValue]);
+            } else {
+                //take left
+                num[row + 1][col + 1] = @([num[row + 1][col] intValue]);
+            }
+        }
+    }
+    
+    return maxlen;
+}
+
+
+
 
 #pragma mark bit manipulation
 

@@ -16,4 +16,7 @@
 
 + (void)mergeSort:(NSMutableArray *)array;
 + (void)quickSort:(NSMutableArray *)array;
+
++ (int)longestCommonSubstring:(NSString *)str1 with:(NSString *)str2;
+
 @end
