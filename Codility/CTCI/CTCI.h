@@ -16,4 +16,5 @@
 
 + (NSDictionary *)findAllSubstringCount:(NSString *)string length:(int)length;
 + (NSArray *)findAllTriples:(NSArray *)array;
++ (float)calcRPN:(NSString *)rpn;
 @end

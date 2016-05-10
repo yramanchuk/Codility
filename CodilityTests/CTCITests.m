@@ -189,4 +189,10 @@
     XCTAssertEqual(result, 5);
 }
 
+- (void)testCalcRPN {
+    long result = [CTCI calcRPN:@"50 1 2 + 4 * + 3 -"];
+    XCTAssertEqual(result, (long)59);
+    
+}
+
 @end

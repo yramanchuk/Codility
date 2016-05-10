@@ -7,6 +7,7 @@
 //
 
 #import "CTCI.h"
+#import "EKStack.h"
 
 @interface CTCI ()
 
@@ -204,5 +205,80 @@
     
 }
 
+//50 + ((1 + 2) × 4) − 3
+//50 1 2 + 4 × + 3 −
++ (float)calcRPN:(NSString *)rpn {
+    
+    //validate empty; nil
+    
+    EKStack *stack = [EKStack new];
+    
+    char prevChar = 'a';
+    for (int i = 0; i < rpn.length; i++) {
+        char c = [rpn characterAtIndex:i];
+        switch (c) {
+            case '*': {
+                long a = [[stack popLastObject] floatValue];
+                long b = [[stack popLastObject] floatValue];
+                [stack push:@(a*b)];
+            }
+                break;
+            case '+': {
+                long a = [[stack popLastObject] floatValue];
+                long b = [[stack popLastObject] floatValue];
+                [stack push:@(a+b)];
+            }
+                break;
+            case '-': {
+                long a = [[stack popLastObject] floatValue];
+                long b = [[stack popLastObject] floatValue];
+                [stack push:@(b-a)];
+            }
+                break;
+            case '/': {
+                long a = [[stack popLastObject] floatValue];
+                long b = [[stack popLastObject] floatValue];
+                [stack push:@(b/a)];
+            }
+                break;
+            case '^': {
+                long a = [[stack popLastObject] floatValue];
+                long b = [[stack popLastObject] floatValue];
+                [stack push:@(pow(a, b))];
+            }
+                break;
+            case'0':
+            case'1':
+            case'2':
+            case'3':
+            case'4':
+            case'5':
+            case'7':
+            case'8':
+            case'9': {
+                if (prevChar - '0' < 10 && prevChar - '0' >= 0) {
+                    long a = [[stack popLastObject] floatValue];
+                    [stack push:@(a * 10 + c - '0')];
+                } else {
+                    [stack push:@(c - '0')];
+                }
+            }
+                break;
+            case' ':
+                break;
+                
+            default:
+                @throw [NSException exceptionWithName:@"invalid format" reason:@"" userInfo:nil];
+        }
+        prevChar = c;
+        
+    }
+    
+    float result = [[stack popLastObject] floatValue];
+    return result;
+    
+    
+    
+}
 
 @end
