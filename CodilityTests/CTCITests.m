@@ -195,4 +195,9 @@
     
 }
 
+- (void)testCollaps {
+    NSDictionary *result = [CTCI collaps:@[@1, @4, @4, @7, @9, @10, @14] with:@[@4, @4, @5, @6, @7, @9, @11, @14]];
+    NSLog(@"Collaps %@", result);
+}
+
 @end

@@ -281,4 +281,58 @@
     
 }
 
+
+//0 1 2 3 4  5
+//1 4 7 9 10 14
+//
+//4 5 6 7 9 11 14
+//0 1 2 3 4 5  6
+
++ (NSDictionary *)collaps:(NSArray *)left with:(NSArray *)right {
+    //validate nils
+    int leftIdx = 0;
+    int rightIdx = 0;
+    NSMutableArray *intersection = [NSMutableArray new];
+    NSMutableArray *unionArr = [NSMutableArray new];
+    
+    while (leftIdx < left.count || rightIdx < right.count) {
+        //check out of bounds!
+        
+        int leftVal;
+        if (leftIdx != left.count) {
+            leftVal = [left[leftIdx] intValue];
+        } else {
+            [unionArr addObjectsFromArray:[right subarrayWithRange:NSMakeRange(rightIdx, left.count - leftVal)]];
+            break;
+        }
+        
+        int rightVal;
+        if (rightIdx != right.count) {
+            rightVal = [right[rightIdx] intValue];
+        } else {
+            
+            [unionArr addObjectsFromArray:[left subarrayWithRange:NSMakeRange(leftIdx, left.count - leftVal)]];
+            break;
+        }
+        
+        
+        if (leftVal == rightVal) {
+            [intersection addObject:@(leftVal)];
+            [unionArr addObject:@(leftVal)];
+            leftIdx++;
+            rightIdx++;
+        } else if (leftVal < rightVal) {
+            leftIdx++;
+            [unionArr addObject:@(leftVal)];
+        } else {
+            rightIdx++;
+            [unionArr addObject:@(rightVal)];
+        }
+        
+    }
+    
+    return @{@"union":unionArr, @"intersaction":intersection};
+    
+}
+
 @end
