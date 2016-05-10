@@ -110,4 +110,16 @@
     XCTAssertEqual(result, 5);
     
 }
+
+- (void)testPossibleDenominations {
+    int result = [Algorithms checkPossibilities:4 with:[@[@1, @2, @3] mutableCopy]];
+    XCTAssertEqual(4, result);
+
+    result = [Algorithms checkPossibilities:4 with:[@[@1, @2, @3] mutableCopy]];
+    XCTAssertEqual(4, result);
+    
+    result = [Algorithms checkPossibilities:5 with:[@[@1, @2, @3] mutableCopy]];
+    XCTAssertEqual(5, result);
+    
+}
 @end

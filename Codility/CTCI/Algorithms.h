@@ -18,5 +18,6 @@
 + (void)quickSort:(NSMutableArray *)array;
 
 + (int)longestCommonSubstring:(NSString *)str1 with:(NSString *)str2;
++ (int)checkPossibilities:(int)num with:(NSMutableArray *)values;
 
 @end

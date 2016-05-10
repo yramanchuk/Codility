@@ -236,8 +236,56 @@
     return maxlen;
 }
 
+//quarters (25 cents), dimes (10 cents), nickels (5 cents) and pennies (1 cent)
+//makeChange(100 using 0 quarters) =
+//    makeChange(100 using 0 quarters, 0 dimes) +
+//    makeChange(100 using 0 quarters, 1 dime) +
+//    makeChange(l00 using 0 quarters, 2 dimes) +
+//    ...
+//    makeChange(100 using 0 quarters, 10 dimes)
+//
+//makeChange(75 using 0 quarters) =
+//    makeChange(75 using 0 quarters, 0 dimes) +
+//    makeChange(75 using 0 quarters, 1 dime) +
+//    makeChange(75 using 0 quarters, 2 dimes) +
+//    ...
+//    makeChange(75 using 0 quarters, 7 dimes)
+//
+//makeChange(50 using 0 quarters) =
+//    makeChange(50 using 0 quarters, 0 dimes) +
+//    makeChange(50 using 0 quarters, 1 dime) +
+//    makeChange(50 using 0 quarters, 2 dimes) +
+//    ...
+//    makeChange(50 using 0 quarters, 5 dimes)
+//
+//makeChange(25 using 0 quarters) =
+//    makeChange(25 using 0 quarters, 0 dimes) +
+//    makeChange(25using0quarters,1dime) +
+//    makeChange(25 using 0 quarters, 2 dimes
 
-
++ (int)checkPossibilities:(int)num with:(NSMutableArray *)values {
+    if (num == 0) {
+        return 1;
+    } else if (num < 0) {
+        return 0;
+    }
+    if (values.count == 0) {
+        return 0;
+    }
+    
+    
+    int possiblities = 0;
+    int value = [values[0] intValue];
+    
+    NSMutableArray *restCoins = [values mutableCopy];
+    [restCoins removeObject:restCoins.firstObject];
+    
+    while (num >= 0) {
+        possiblities += [self checkPossibilities:num with:restCoins];;
+        num -= value;
+    }
+    return possiblities;
+}
 
 #pragma mark bit manipulation
 

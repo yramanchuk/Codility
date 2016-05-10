@@ -138,13 +138,13 @@
 }
 
 - (void)testPossibleDenominations {
-//    int result = [CTCI checkPossibilities:4 with:[@[@1, @2, @3] mutableCopy]];
-//    XCTAssertEqual(4, result);
-//
-//    result = [CTCI changePossibilitiesBottomUp:4 with:[@[@1, @2, @3] mutableCopy]];
-//    XCTAssertEqual(4, result);
+    int result = [CTCI checkPossibilities:4 with:[@[@1, @2, @3] mutableCopy]];
+    XCTAssertEqual(4, result);
 
-    int result = [CTCI changePossibilitiesBottomUp:5 with:[@[@1, @2, @3] mutableCopy]];
+    result = [CTCI changePossibilitiesBottomUp:4 with:[@[@1, @2, @3] mutableCopy]];
+    XCTAssertEqual(4, result);
+
+    result = [CTCI changePossibilitiesBottomUp:5 with:[@[@1, @2, @3] mutableCopy]];
     XCTAssertEqual(5, result);
 
 }
