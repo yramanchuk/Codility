@@ -158,7 +158,51 @@
 }
 
 
+//Given string say ABCGRETCABCG and substring length let us take length as 3, find the count of possible substrings, for example in above string ABC => 2 and BCG => 2 , where CGR and other 3 word length substrings has a count of 1.
++ (NSDictionary *)findAllSubstringCount:(NSString *)string length:(int)length {
+    NSMutableDictionary *result = [NSMutableDictionary new];
+    for (int i = 0; i + length <= string.length; i++) {
+        NSString *subst = [string substringWithRange:NSMakeRange(i, length)];
+        NSNumber *count = result[subst];
+        if (count) {
+            result[subst] = @(count.intValue + 1);
+        } else {
+            result[subst] = @(1);
+        }
+    }
+    
+    return result;
+}
 
+
+//Given a set of numbers find if a triplet can form a triangle a+b > c , b+c > a and c+a > b. The result to display all possible combinations of triplets. [ 10 5 3 4 7 1] [5,3,4 ] is one possible triplet and there can be many more.
++ (NSArray *)findAllTriples:(NSArray *)array {
+    NSArray *sortedArray = [array sortedArrayUsingSelector:@selector(compare:)];
+    
+    NSMutableArray *result = [NSMutableArray new];
+    
+    for (int i = 0; i + 2 < sortedArray.count; i++) {
+        NSNumber *a = sortedArray[i];
+        
+        for (int j = i + 1; j + 1 < sortedArray.count; j++) {
+            NSNumber *b = sortedArray[j];
+            for (int k = j + 1; k < sortedArray.count; k++) {
+                NSNumber *c = sortedArray[k];
+                
+                if (a.intValue + b.intValue > c.intValue) {
+                    [result addObject:@[a, b, c]];
+                } else {
+                    break;
+                }
+            }
+        }
+        
+        
+    }
+    
+    return result;
+    
+}
 
 
 @end

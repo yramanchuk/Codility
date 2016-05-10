@@ -14,4 +14,6 @@
 + (int)checkPossibilities:(int)num with:(NSMutableArray *)values;
 + (int) changePossibilitiesBottomUp:(int) amount with:(NSMutableArray<NSNumber *> *)denominations;
 
++ (NSDictionary *)findAllSubstringCount:(NSString *)string length:(int)length;
++ (NSArray *)findAllTriples:(NSArray *)array;
 @end

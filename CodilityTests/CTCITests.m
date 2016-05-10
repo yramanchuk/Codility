@@ -177,4 +177,9 @@
     [d objectForKey:@""];
 }
 
+- (void)testAllSubstrings {
+    NSLog(@"%@", [CTCI findAllSubstringCount:@"ABCGRETCABCG" length:3]);
+    NSLog(@"%@", [CTCI findAllTriples:@[@10, @5, @3, @4, @7, @1]]);
+}
+
 @end
