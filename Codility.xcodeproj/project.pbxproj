@@ -10,6 +10,12 @@
 		194804C8B31E07154FBD8FA3 /* Pods_Codility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5C3190456CBC68404BF9F9 /* Pods_Codility.framework */; };
 		2FA20B20507C549FF7A3AC94 /* Pods_CodilityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B09D2E35133C60D0159EDE /* Pods_CodilityTests.framework */; };
 		CB217B521CE2358C00D6D94B /* LadderSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B511CE2358C00D6D94B /* LadderSolver.m */; };
+		CB217B551CE3187D00D6D94B /* NumberOfIslands.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B541CE3187D00D6D94B /* NumberOfIslands.m */; };
+		CB217B5A1CE320F000D6D94B /* HackerRankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B591CE320F000D6D94B /* HackerRankTests.m */; };
+		CB217B5D1CE325F500D6D94B /* MaxProfit.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B5C1CE325F500D6D94B /* MaxProfit.m */; };
+		CB217B601CE351BD00D6D94B /* SpecialDivisor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B5F1CE351BD00D6D94B /* SpecialDivisor.m */; };
+		CB217B761CE3664B00D6D94B /* MainClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B751CE3664B00D6D94B /* MainClass.m */; };
+		CB217B791CE3671F00D6D94B /* TaskOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B781CE3671F00D6D94B /* TaskOne.m */; };
 		CB26F7CD1CD809510040A1B6 /* ArraysStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = CB26F7CC1CD809510040A1B6 /* ArraysStrings.m */; };
 		CB26F7D01CD809D30040A1B6 /* CTCITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB26F7CF1CD809D30040A1B6 /* CTCITests.m */; };
 		CB2EE4661CE0E35A006F996E /* MultiPutBlockingBoundedQueueImplTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2EE4651CE0E35A006F996E /* MultiPutBlockingBoundedQueueImplTests.m */; };
@@ -78,6 +84,17 @@
 		AB9B16AE72DFBF88C83025A4 /* Pods-CodilityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodilityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB217B501CE2358C00D6D94B /* LadderSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LadderSolver.h; sourceTree = "<group>"; };
 		CB217B511CE2358C00D6D94B /* LadderSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LadderSolver.m; sourceTree = "<group>"; };
+		CB217B531CE3187D00D6D94B /* NumberOfIslands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberOfIslands.h; sourceTree = "<group>"; };
+		CB217B541CE3187D00D6D94B /* NumberOfIslands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberOfIslands.m; sourceTree = "<group>"; };
+		CB217B591CE320F000D6D94B /* HackerRankTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackerRankTests.m; sourceTree = "<group>"; };
+		CB217B5B1CE325F500D6D94B /* MaxProfit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxProfit.h; sourceTree = "<group>"; };
+		CB217B5C1CE325F500D6D94B /* MaxProfit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxProfit.m; sourceTree = "<group>"; };
+		CB217B5E1CE351BD00D6D94B /* SpecialDivisor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialDivisor.h; sourceTree = "<group>"; };
+		CB217B5F1CE351BD00D6D94B /* SpecialDivisor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialDivisor.m; sourceTree = "<group>"; };
+		CB217B741CE3664B00D6D94B /* MainClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainClass.h; sourceTree = "<group>"; };
+		CB217B751CE3664B00D6D94B /* MainClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainClass.m; sourceTree = "<group>"; };
+		CB217B771CE3671F00D6D94B /* TaskOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskOne.h; sourceTree = "<group>"; };
+		CB217B781CE3671F00D6D94B /* TaskOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskOne.m; sourceTree = "<group>"; };
 		CB26F7CB1CD809510040A1B6 /* ArraysStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArraysStrings.h; sourceTree = "<group>"; };
 		CB26F7CC1CD809510040A1B6 /* ArraysStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArraysStrings.m; sourceTree = "<group>"; };
 		CB26F7CF1CD809D30040A1B6 /* CTCITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCITests.m; sourceTree = "<group>"; };
@@ -286,6 +303,7 @@
 				CB75BAD31CD0C34B00663431 /* CodilityTests.m */,
 				CB26F7CF1CD809D30040A1B6 /* CTCITests.m */,
 				CBFA41751CDFCD8700291108 /* AlgorithmTests.m */,
+				CB217B591CE320F000D6D94B /* HackerRankTests.m */,
 				CB75BAD51CD0C34B00663431 /* Info.plist */,
 			);
 			path = CodilityTests;
@@ -393,6 +411,16 @@
 				CB75BB511CD38F7500663431 /* Utopian Tree.docx */,
 				CB75BB531CD38F8F00663431 /* UtopianTree.h */,
 				CB75BB541CD38F8F00663431 /* UtopianTree.m */,
+				CB217B531CE3187D00D6D94B /* NumberOfIslands.h */,
+				CB217B541CE3187D00D6D94B /* NumberOfIslands.m */,
+				CB217B5B1CE325F500D6D94B /* MaxProfit.h */,
+				CB217B5C1CE325F500D6D94B /* MaxProfit.m */,
+				CB217B5E1CE351BD00D6D94B /* SpecialDivisor.h */,
+				CB217B5F1CE351BD00D6D94B /* SpecialDivisor.m */,
+				CB217B741CE3664B00D6D94B /* MainClass.h */,
+				CB217B751CE3664B00D6D94B /* MainClass.m */,
+				CB217B771CE3671F00D6D94B /* TaskOne.h */,
+				CB217B781CE3671F00D6D94B /* TaskOne.m */,
 			);
 			path = HackerRank;
 			sourceTree = "<group>";
@@ -676,6 +704,7 @@
 				CBEA62BC1CD3D0540036303F /* CountDiv.m in Sources */,
 				CBFA417C1CE0C7A300291108 /* SquareRoot.m in Sources */,
 				CBFA41791CE0B77B00291108 /* RomanNumbers.m in Sources */,
+				CB217B551CE3187D00D6D94B /* NumberOfIslands.m in Sources */,
 				CB75BB261CD1151F00663431 /* FrogJmp.m in Sources */,
 				CBEA62C41CD3E8770036303F /* GenomicRangeQuery.m in Sources */,
 				CB75BAC11CD0C34B00663431 /* ViewController.m in Sources */,
@@ -685,14 +714,18 @@
 				CB26F7CD1CD809510040A1B6 /* ArraysStrings.m in Sources */,
 				CB75BAFD1CD0CA6A00663431 /* BinaryGap.m in Sources */,
 				CB75BB311CD14C3300663431 /* PermMissingElem.m in Sources */,
+				CB217B601CE351BD00D6D94B /* SpecialDivisor.m in Sources */,
 				CB75BB001CD0D22E00663431 /* CyclicRotation.m in Sources */,
 				CBC65B581CDB568E00490412 /* CTCI.m in Sources */,
 				CBEA62CE1CD62BBF0036303F /* StoneWall.m in Sources */,
 				CB75BB3F1CD15D8D00663431 /* MissingInteger.m in Sources */,
 				CB75BB4E1CD25D1700663431 /* MaxSliceSum.m in Sources */,
+				CB217B761CE3664B00D6D94B /* MainClass.m in Sources */,
 				CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */,
 				CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */,
 				CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */,
+				CB217B5D1CE325F500D6D94B /* MaxProfit.m in Sources */,
+				CB217B791CE3671F00D6D94B /* TaskOne.m in Sources */,
 				CBFA41731CDFBB1300291108 /* Algorithms.m in Sources */,
 				CBEA62C01CD3E1B50036303F /* PassingCars.m in Sources */,
 				CB75BB551CD38F8F00663431 /* UtopianTree.m in Sources */,
@@ -707,6 +740,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2EE4661CE0E35A006F996E /* MultiPutBlockingBoundedQueueImplTests.m in Sources */,
+				CB217B5A1CE320F000D6D94B /* HackerRankTests.m in Sources */,
 				CB75BB021CD0D60200663431 /* CyclicRotation.m in Sources */,
 				CBFA41761CDFCD8700291108 /* AlgorithmTests.m in Sources */,
 				CB75BAD41CD0C34B00663431 /* CodilityTests.m in Sources */,

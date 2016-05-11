@@ -1,14 +1,14 @@
 //
-//  MainClass.m
+//  TaskOne.m
 //  Codility
 //
 //  Created by Yury Ramanchuk on 5/11/16.
 //  Copyright © 2016 Yury Ramanchuk. All rights reserved.
 //
 
-#import "MainClass.h"
+#import "TaskOne.h"
 
-@implementation MainClass
+@implementation TaskOne
 
 + (BOOL)startMain {
     //Read the STDIN here using the Objective-C wrapper methods
@@ -51,10 +51,3 @@
 }
 
 @end
-
-//This is what will actually run when you hit "Run Code"
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return [MainClass startMain];
-    }
-}

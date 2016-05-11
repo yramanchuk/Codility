@@ -588,4 +588,32 @@ static id _instance = nil;
 //    return nil;
 //}
 
++ (BOOL)isLucky:(int)n {
+    
+    int ith = 2;
+    int next_pos = n;
+    
+    while(next_pos >= ith){
+        if(next_pos%ith == 0){
+            return false;
+        }
+        
+        next_pos -= (next_pos)/ith;
+        ith++;
+    }
+    
+    return YES;
+
+//    //correct too
+//    int pos = n;
+//    int del = 2;
+//    while( pos >= del ){
+//        if( pos%del == 0 )
+//            return false;
+//        pos = pos - pos/del;
+//        del++;
+//    }
+//    return true;
+}
+
 @end

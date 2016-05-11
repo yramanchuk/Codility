@@ -122,4 +122,11 @@
     XCTAssertEqual(5, result);
     
 }
+
+- (void)testLucky {
+    XCTAssertFalse([Algorithms isLucky:17]);
+    XCTAssertTrue([Algorithms isLucky:13]);
+    XCTAssertTrue([Algorithms isLucky:19]);
+    XCTAssertFalse([Algorithms isLucky:21]);
+}
 @end

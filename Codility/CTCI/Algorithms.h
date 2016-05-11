@@ -20,4 +20,5 @@
 + (int)longestCommonSubstring:(NSString *)str1 with:(NSString *)str2;
 + (int)checkPossibilities:(int)num with:(NSMutableArray *)values;
 
++ (BOOL)isLucky:(int)n;
 @end
