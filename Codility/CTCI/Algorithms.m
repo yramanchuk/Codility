@@ -616,4 +616,31 @@ static id _instance = nil;
 //    return true;
 }
 
+
+//observe pow as a binary number. I don't do Java, so I'll just sketch this in C, which is quite like it.
+//So, you are observing x, x2, x4, x8,... and multiplying with them if the corresponding binary digit of pow is equal to 1.
+//5ˆ7 = 5ˆ(1+2+4)=5ˆ(2ˆ0+2ˆ1+2ˆ2)
++ (double)pow:(int)x to:(int)pow {
+    if (pow == 0) {
+        return 1;
+    }
+    
+    BOOL isPositive = pow > 0;
+    pow = isPositive ? pow : -pow;
+    
+    double px = x; // current power of x
+    double result = 1;
+    while (pow > 0) {
+        if (pow % 2 != 0) {
+            result *= px;
+        }
+        pow /= 2;
+        px *= px;
+    }
+
+    return isPositive ? result : 1 / result;
+
+}
+
+
 @end

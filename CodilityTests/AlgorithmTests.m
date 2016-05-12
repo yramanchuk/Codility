@@ -129,4 +129,10 @@
     XCTAssertTrue([Algorithms isLucky:19]);
     XCTAssertFalse([Algorithms isLucky:21]);
 }
+
+- (void)testPow {
+    for (int i = -11; i < 12; i++) {
+        XCTAssertEqual(pow(3, i), [Algorithms pow:3 to:i], @"not equal for pow(3, %d)", i);
+    }
+}
 @end

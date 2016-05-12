@@ -21,4 +21,5 @@
 + (int)checkPossibilities:(int)num with:(NSMutableArray *)values;
 
 + (BOOL)isLucky:(int)n;
++ (double)pow:(int)x to:(int)pow;
 @end
