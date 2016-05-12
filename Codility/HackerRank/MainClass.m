@@ -73,8 +73,8 @@
 @end
 
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return [MainClass startMain];
-    }
-}
+//int main(int argc, char * argv[]) {
+//    @autoreleasepool {
+//        return [MainClass startMain];
+//    }
+//}
