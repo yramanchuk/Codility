@@ -8,10 +8,10 @@
 
 #import "MainClass.h"
 
+
 @implementation MainClass
 
 + (BOOL)startMain {
-    //Read the STDIN here using the Objective-C wrapper methods
     NSInteger n = [self readLong];
     
     [self printLong:n];
@@ -34,9 +34,29 @@
     return [result copy];
 }
 
-//Helpers to print an int and array of ints to STDOUT
+
++ (NSArray *)readLong2DimArrayOfLength:(NSInteger)len {
+    NSMutableArray *result = [NSMutableArray array];
+    for (int i =0; i < len; i++) {
+        [result addObject:[NSMutableArray array]];
+        for (int j =0; j < len; j++) {
+            [result[i] addObject:@([self readLong])];
+        }
+    }
+    return [result copy];
+}
+
+//Helpers
 + (void)printLong:(long)i {
     printf("%ld\n",(long)i);
+}
+
++ (void)printFloat:(float)i {
+    printf("%f\n", i);
+}
+
++ (void)printString:(NSString *)s {
+    printf("%s\n", [s UTF8String]);
 }
 
 + (void)printLongNumberArray:(NSArray *)array {
@@ -52,7 +72,7 @@
 
 @end
 
-//This is what will actually run when you hit "Run Code"
+
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         return [MainClass startMain];
