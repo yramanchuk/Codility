@@ -201,6 +201,22 @@
     return [result[amount] intValue];
 }
 
+//  Input:
+//  Values (stored in array v)
+//  Weights (stored in array w)
+//  Number of distinct items (n)
+//  Knapsack capacity (W)
+//
+// for j from 0 to W do:
+//     m[0, j] := 0
+//
+// for i from 1 to n do:
+//     for j from 0 to W do:
+//         if w[i-1] > j then:
+//             m[i, j] := m[i-1, j]
+//         else:
+//             m[i, j] := max(m[i-1, j], m[i-1, j-w[i-1]] + v[i-1])
+
 
 //Given string say ABCGRETCABCG and substring length let us take length as 3, find the count of possible substrings, for example in above string ABC => 2 and BCG => 2 , where CGR and other 3 word length substrings has a count of 1.
 + (NSDictionary *)findAllSubstringCount:(NSString *)string length:(int)length {
