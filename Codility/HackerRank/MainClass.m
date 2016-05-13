@@ -23,6 +23,13 @@
     return YES;
 }
 
++ (NSString *)readString {
+    char c[1024];
+//    scanf("%s", c);
+    scanf("%[^\n]", c);
+    return [NSString stringWithCString:c encoding:NSUTF8StringEncoding];
+}
+
 + (long)readLong {
     long n;
     scanf("%ld",&n);
