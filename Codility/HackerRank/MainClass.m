@@ -6,8 +6,11 @@
 //  Copyright © 2016 Yury Ramanchuk. All rights reserved.
 //
 
-#import "MainClass.h"
+#import <Foundation/Foundation.h>
 
+@interface MainClass : NSObject
++ (BOOL)startMain;
+@end
 
 @implementation MainClass
 
@@ -26,15 +29,6 @@
     return n;
 }
 
-+ (NSArray *)readLongArrayOfLength:(NSInteger)len {
-    NSMutableArray *result = [NSMutableArray array];
-    for (int i =0; i < len; i++) {
-        [result addObject:@([self readLong])];
-    }
-    return [result copy];
-}
-
-
 + (NSArray *)readLong2DimArrayOfLength:(NSInteger)len {
     NSMutableArray *result = [NSMutableArray array];
     for (int i =0; i < len; i++) {
@@ -42,6 +36,14 @@
         for (int j =0; j < len; j++) {
             [result[i] addObject:@([self readLong])];
         }
+    }
+    return [result copy];
+}
+
++ (NSArray *)readLongArrayOfLength:(NSInteger)len {
+    NSMutableArray *result = [NSMutableArray array];
+    for (int i =0; i < len; i++) {
+        [result addObject:@([self readLong])];
     }
     return [result copy];
 }
@@ -72,9 +74,22 @@
 
 @end
 
-
 //int main(int argc, char * argv[]) {
 //    @autoreleasepool {
 //        return [MainClass startMain];
 //    }
 //}
+
+//DO NOT COPY
+//@interface MainClass : NSObject
+//+ (BOOL)startMain;
+//@end
+//
+//@implementation MainClass
+//
+//+ (BOOL)startMain {
+//
+//    return YES;
+//}
+//
+//@end
