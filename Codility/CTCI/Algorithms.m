@@ -291,7 +291,7 @@
 #pragma mark bit manipulation
 
 // x ^ 0s = x
-// x ^ 1s = ~x
+// x ^ 1s = ~x -> num ^ (((long)1 << 32) - 1)
 // x ^ x  = 0
 
 // 1 -> 0; 0 -> 1
