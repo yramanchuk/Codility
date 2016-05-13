@@ -159,6 +159,49 @@
 }
 
 
+//Given a list of  integers, , and another integer,  representing the expected sum. Select zero or more numbers from  such that the sum of these numbers is as near as possible, but not exceeding, to the expected sum ().
+//
+//Output  lines, the maximum sum for each test case which is as near as possible, but not exceeding, to the expected sum (k).
+//
+//13
+//2 3 6 9
+//weights
+//2    3
+//0     0    0
+//1     0    0
+//2     2    2
+//3     0    3
+//4     4    4
+//5     0    5
+//6     6    6
+//7     0    7
+//8     8    8
+//9     0    9
+//10    10   10
+//11    0    11
+//12    12   12
+//13    0    13
++(int)maxKnapsack:(int) amount weights:(NSArray *)weights {
+    NSMutableArray *result = [NSMutableArray new];
+    for (int i=0; i<= amount; i++) {
+        [result addObject:@(0)];
+    }
+    
+    for (int weightIdx = 0; weightIdx < weights.count; weightIdx++) {
+        int weightValue = [weights[weightIdx] intValue];
+        for (int weight = weightValue; weight <= amount; weight++) {
+            if ([result[weight-weightValue] intValue] + weightValue <= amount)
+                result[weight] = @(fmax([result[weight] intValue], [result[weight-weightValue] intValue] + weightValue));
+        }
+        if ([result[amount] intValue] == amount) {
+            return amount;
+        }
+    }
+    
+    return [result[amount] intValue];
+}
+
+
 //Given string say ABCGRETCABCG and substring length let us take length as 3, find the count of possible substrings, for example in above string ABC => 2 and BCG => 2 , where CGR and other 3 word length substrings has a count of 1.
 + (NSDictionary *)findAllSubstringCount:(NSString *)string length:(int)length {
     NSMutableDictionary *result = [NSMutableDictionary new];

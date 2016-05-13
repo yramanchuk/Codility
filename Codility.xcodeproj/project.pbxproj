@@ -91,7 +91,6 @@
 		CB217B5C1CE325F500D6D94B /* MaxProfit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxProfit.m; sourceTree = "<group>"; };
 		CB217B5E1CE351BD00D6D94B /* SpecialDivisor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialDivisor.h; sourceTree = "<group>"; };
 		CB217B5F1CE351BD00D6D94B /* SpecialDivisor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialDivisor.m; sourceTree = "<group>"; };
-		CB217B741CE3664B00D6D94B /* MainClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainClass.h; sourceTree = "<group>"; };
 		CB217B751CE3664B00D6D94B /* MainClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainClass.m; sourceTree = "<group>"; };
 		CB217B771CE3671F00D6D94B /* TaskOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskOne.h; sourceTree = "<group>"; };
 		CB217B781CE3671F00D6D94B /* TaskOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskOne.m; sourceTree = "<group>"; };
@@ -417,7 +416,6 @@
 				CB217B5C1CE325F500D6D94B /* MaxProfit.m */,
 				CB217B5E1CE351BD00D6D94B /* SpecialDivisor.h */,
 				CB217B5F1CE351BD00D6D94B /* SpecialDivisor.m */,
-				CB217B741CE3664B00D6D94B /* MainClass.h */,
 				CB217B751CE3664B00D6D94B /* MainClass.m */,
 				CB217B771CE3671F00D6D94B /* TaskOne.h */,
 				CB217B781CE3671F00D6D94B /* TaskOne.m */,
