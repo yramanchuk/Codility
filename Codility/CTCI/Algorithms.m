@@ -13,6 +13,7 @@
 #import "EKEdge.h"
 #import "EKQueue.h"
 #import "EKBTreeNode.h"
+#import "EKLinkedList.h"
 
 
 @implementation Algorithms
@@ -465,6 +466,51 @@ static id _instance = nil;
         }
     }
     return nil;
+}
+
+- (NSArray *)bfsWithLinkedList:(EKBTreeNode *)root {
+    EKLinkedList *current = [EKLinkedList new];
+    NSMutableArray *result = [NSMutableArray new];
+    [current addToBack:root];
+    
+    while (current.count > 0) {
+        [result addObject:current];
+        EKLinkedList *parents = current;
+        
+        current = [EKLinkedList new];
+        
+        for (EKBTreeNode *node in parents) {
+            if (node.leftChild) {
+                [current addToBack:node.leftChild];
+            }
+            if (node.rightChild) {
+                [current addToBack:node.rightChild];
+            }
+        }
+    }
+    
+    return result;
+
+}
+
+
+#pragma mark create minBST
++ (EKBTreeNode *)createMinimalBST:(NSMutableArray *)arr {
+    return [self createMinimalBST:arr start:0 end:arr.count - 1];
+}
+
++ (EKBTreeNode *)createMinimalBST:(NSMutableArray *)arr start:(int)start end:(int)end {
+    if (end< start) {
+        return nil;
+    }
+    
+    int mid = (start + end) / 2;
+    EKBTreeNode *n = [EKBTreeNode new];
+    n.object = arr[mid];
+    
+    n.leftChild = [self createMinimalBST:arr start:start end:mid - 1];
+    n.rightChild = [self createMinimalBST:arr start:mid + 1 end:end];
+    return n;
 }
 
 #pragma mark Tree traversal
