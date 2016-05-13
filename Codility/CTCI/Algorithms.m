@@ -14,7 +14,7 @@
 #import "EKQueue.h"
 #import "EKBTreeNode.h"
 #import "EKLinkedList.h"
-
+#import "EKNode.h"
 
 @implementation Algorithms
 
@@ -494,7 +494,8 @@ static id _instance = nil;
 }
 
 
-#pragma mark create minBST
+#pragma mark create minimal depth BST from sorted array
+
 + (EKBTreeNode *)createMinimalBST:(NSMutableArray *)arr {
     return [self createMinimalBST:arr start:0 end:arr.count - 1];
 }
@@ -686,6 +687,23 @@ static id _instance = nil;
 
     return isPositive ? result : 1 / result;
 
+}
+
+#pragma mark Linked list operations
+
+/* Function to reverse the linked list */
++ (EKNode *) reverseLinkedList:(EKNode *) node {
+    EKNode *prev = nil;
+    EKNode *current = node;
+    EKNode *next = nil;
+    while (current != nil) {
+        next = current.next;
+        current.next = prev;
+        prev = current;
+        current = next;
+    }
+    node = prev;
+    return node;
 }
 
 
