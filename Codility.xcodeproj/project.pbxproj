@@ -14,7 +14,6 @@
 		CB217B5A1CE320F000D6D94B /* HackerRankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B591CE320F000D6D94B /* HackerRankTests.m */; };
 		CB217B5D1CE325F500D6D94B /* MaxProfit.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B5C1CE325F500D6D94B /* MaxProfit.m */; };
 		CB217B601CE351BD00D6D94B /* SpecialDivisor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B5F1CE351BD00D6D94B /* SpecialDivisor.m */; };
-		CB217B761CE3664B00D6D94B /* MainClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B751CE3664B00D6D94B /* MainClass.m */; };
 		CB217B791CE3671F00D6D94B /* TaskOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B781CE3671F00D6D94B /* TaskOne.m */; };
 		CB26F7CD1CD809510040A1B6 /* ArraysStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = CB26F7CC1CD809510040A1B6 /* ArraysStrings.m */; };
 		CB26F7D01CD809D30040A1B6 /* CTCITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB26F7CF1CD809D30040A1B6 /* CTCITests.m */; };
@@ -45,6 +44,8 @@
 		CB75BB521CD38F7500663431 /* Utopian Tree.docx in Resources */ = {isa = PBXBuildFile; fileRef = CB75BB511CD38F7500663431 /* Utopian Tree.docx */; };
 		CB75BB551CD38F8F00663431 /* UtopianTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CB75BB541CD38F8F00663431 /* UtopianTree.m */; };
 		CBC65B581CDB568E00490412 /* CTCI.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC65B571CDB568E00490412 /* CTCI.m */; };
+		CBD813FA1CE6761300C77210 /* HRGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD813F91CE6761300C77210 /* HRGraph.m */; };
+		CBD814031CE6978F00C77210 /* HackerRankBFS.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD814021CE6978F00C77210 /* HackerRankBFS.m */; };
 		CBEA62B91CD3D0400036303F /* CountDiv.docx in Resources */ = {isa = PBXBuildFile; fileRef = CBEA62B81CD3D0400036303F /* CountDiv.docx */; };
 		CBEA62BC1CD3D0540036303F /* CountDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62BB1CD3D0540036303F /* CountDiv.m */; };
 		CBEA62C01CD3E1B50036303F /* PassingCars.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA62BF1CD3E1B50036303F /* PassingCars.m */; };
@@ -152,6 +153,11 @@
 		CB75BB541CD38F8F00663431 /* UtopianTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtopianTree.m; sourceTree = "<group>"; };
 		CBC65B561CDB568E00490412 /* CTCI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCI.h; sourceTree = "<group>"; };
 		CBC65B571CDB568E00490412 /* CTCI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCI.m; sourceTree = "<group>"; };
+		CBD813F91CE6761300C77210 /* HRGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRGraph.m; sourceTree = "<group>"; };
+		CBD813FC1CE67B2200C77210 /* HRQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRQueue.m; sourceTree = "<group>"; };
+		CBD813FF1CE6841700C77210 /* HRVertexEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRVertexEdge.m; sourceTree = "<group>"; };
+		CBD814011CE6978F00C77210 /* HackerRankBFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HackerRankBFS.h; sourceTree = "<group>"; };
+		CBD814021CE6978F00C77210 /* HackerRankBFS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackerRankBFS.m; sourceTree = "<group>"; };
 		CBEA62B81CD3D0400036303F /* CountDiv.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = CountDiv.docx; sourceTree = "<group>"; };
 		CBEA62BA1CD3D0540036303F /* CountDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDiv.h; sourceTree = "<group>"; };
 		CBEA62BB1CD3D0540036303F /* CountDiv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDiv.m; sourceTree = "<group>"; };
@@ -419,6 +425,11 @@
 				CB217B751CE3664B00D6D94B /* MainClass.m */,
 				CB217B771CE3671F00D6D94B /* TaskOne.h */,
 				CB217B781CE3671F00D6D94B /* TaskOne.m */,
+				CBD813F91CE6761300C77210 /* HRGraph.m */,
+				CBD813FC1CE67B2200C77210 /* HRQueue.m */,
+				CBD813FF1CE6841700C77210 /* HRVertexEdge.m */,
+				CBD814011CE6978F00C77210 /* HackerRankBFS.h */,
+				CBD814021CE6978F00C77210 /* HackerRankBFS.m */,
 			);
 			path = HackerRank;
 			sourceTree = "<group>";
@@ -718,18 +729,19 @@
 				CBEA62CE1CD62BBF0036303F /* StoneWall.m in Sources */,
 				CB75BB3F1CD15D8D00663431 /* MissingInteger.m in Sources */,
 				CB75BB4E1CD25D1700663431 /* MaxSliceSum.m in Sources */,
-				CB217B761CE3664B00D6D94B /* MainClass.m in Sources */,
 				CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */,
 				CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */,
 				CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */,
 				CB217B5D1CE325F500D6D94B /* MaxProfit.m in Sources */,
 				CB217B791CE3671F00D6D94B /* TaskOne.m in Sources */,
 				CBFA41731CDFBB1300291108 /* Algorithms.m in Sources */,
+				CBD813FA1CE6761300C77210 /* HRGraph.m in Sources */,
 				CBEA62C01CD3E1B50036303F /* PassingCars.m in Sources */,
 				CB75BB551CD38F8F00663431 /* UtopianTree.m in Sources */,
 				CB217B521CE2358C00D6D94B /* LadderSolver.m in Sources */,
 				CBFA417F1CE0D50400291108 /* MultiPutBlockingBoundedQueueImpl.m in Sources */,
 				CB75BB0F1CD0E01600663431 /* OddOccurrencesInArray.m in Sources */,
+				CBD814031CE6978F00C77210 /* HackerRankBFS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
