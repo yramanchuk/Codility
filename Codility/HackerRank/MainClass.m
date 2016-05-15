@@ -30,6 +30,12 @@
     return [NSString stringWithCString:c encoding:NSUTF8StringEncoding];
 }
 
+//char s2[256]
+//char str[80];
+//strcpy(str, s);
+//strcat(str, s2);
+//printf("%s\n", str);
+
 + (long)readLong {
     long n;
     scanf("%ld",&n);
