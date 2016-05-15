@@ -8,6 +8,15 @@
 
 #import "BinaryGap.h"
 
+@interface Interval: NSObject
+@property (nonatomic, assign) int start;
+@property (nonatomic, assign) int end;
+
+@end
+
+@implementation Interval
+@end
+
 @implementation BinaryGap
 
 + (int)solution:(int) N {
@@ -66,6 +75,44 @@
     NSLog(@"result %d", maxLength);
     
     return maxLength;
+}
+
+
+
+
+
++(NSArray *)mergeIntervals:(NSArray *)array {
+    
+    if (array.count < 2) {
+        return array;
+    }
+    
+    NSArray *sortedArray = [array sortedArrayUsingComparator:^NSComparisonResult(Interval *obj1, Interval *obj2){
+        return obj1.start <  obj2.start;
+    }];
+    
+    Interval *first = sortedArray[0];
+    int start = [first start];
+    int end = [first end];
+    
+    NSMutableArray *result = [NSMutableArray array];
+    for (int i = 0; i < sortedArray.count; i++) {
+        Interval *item = sortedArray[i];
+        if (item.start <= end) {
+            end = fmax(item.end, end);
+        } else {
+            Interval *newInterval = [Interval new];
+            newInterval.start = start;
+            newInterval.end = end;
+            [result addObject:newInterval];
+            
+            start = item.start;
+            end = item.end;
+        }
+    }
+    
+    return result;
+    
 }
 
 @end
