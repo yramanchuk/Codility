@@ -269,6 +269,18 @@
 }
 
 #pragma mark dynamic programming
+////recursive LCS O(2^n)
+///* Returns length of LCS for X[0..m-1], Y[0..n-1] */
+//int lcs( char *X, char *Y, int m, int n )
+//{
+//    if (m == 0 || n == 0)
+//        return 0;
+//    if (X[m-1] == Y[n-1])
+//        return 1 + lcs(X, Y, m-1, n-1);
+//    else
+//        return max(lcs(X, Y, m, n-1), lcs(X, Y, m-1, n));
+//}
+
 //     1 2 4 1 2 2 3 3
 //
 //3    0 0 0 0 0 0 1 1
@@ -319,6 +331,8 @@
     
     return maxlen;
 }
+//the longest increasing subsequence of a sequence S is the longest common subsequence of S and T, where T is the result of sorting S
+
 
 //quarters (25 cents), dimes (10 cents), nickels (5 cents) and pennies (1 cent)
 //makeChange(100 using 0 quarters) =
