@@ -114,6 +114,51 @@
 }
 
 
+//+ (void)mergeSort2:(NSMutableArray *)array {
+//    NSMutableArray *helper = [array mutableCopy];
+//    
+//    [self mergeSort2:array helper:helper start:0 end:array.count-1];
+//}
+//
+//+ (void)mergeSort2:(NSMutableArray *)array helper:(NSMutableArray *)helper start:(int)start end:(int)end {
+//    if (start < end) {
+//        int mid = (start + end) /2 ;
+//        [self mergeSort2:array helper:helper start:start end:mid];
+//        [self mergeSort2:array helper:helper start:mid+1 end:end];
+//        
+//        [self merge2:array helper:helper start:start mid:mid end:end];
+//        
+//    }
+//    
+//}
+//
+//+ (void)merge2:(NSMutableArray *)array helper:(NSMutableArray *)helper start:(int)start mid:(int)mid end:(int)end {
+//    //copy helper
+//    for (int i = start; i<=end; i++) {
+//        helper[i] = array[i];
+//    }
+//    
+//    int left = start;
+//    int curr = start;
+//    int rght = mid+1;
+//    
+//    while (left <= mid && rght <= end) {
+//        if (helper[left] <= helper[rght]) {
+//            array[curr] = helper[left];
+//            left++;
+//        } else {
+//            array[curr] = helper[rght];
+//            rght++;
+//        }
+//        curr++;
+//    }
+//    
+//    for (int i=0; i <= mid - left; i++) {
+//        array[curr+i] = helper[left+i];
+//    }
+//    
+//}
+
 + (void) mergesortNonRecursive:(NSMutableArray *)array
 {
     NSMutableArray *temp = [NSMutableArray new];
