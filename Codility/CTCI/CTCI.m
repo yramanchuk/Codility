@@ -394,4 +394,40 @@
     
 }
 
++(NSArray *)mergeUnion:(NSArray *)first with:(NSArray *)second {
+    if (first.count == 0) {
+        return second;
+    } else if (second.count == 0) {
+        return first;
+    }
+    
+    NSMutableArray *result = [NSMutableArray arrayWithCapacity:first.count + second.count];
+    
+    int firstIdx = 0;
+    int secondIdx = 0;
+    while (firstIdx < first.count && secondIdx < second.count) {
+        NSString *firstVal = first[firstIdx];
+        NSString *secondVal = second[secondIdx];
+        
+        if ([firstVal compare:secondVal] == NSOrderedAscending) {
+            [result addObject:firstVal];
+            firstIdx++;
+        } else {
+            [result addObject:secondVal];
+            secondIdx++;
+        }
+    }
+    
+    for (int i = firstIdx; i < first.count; i++) {
+        [result addObject:first[i]];
+    }
+    
+    for (int i = secondIdx; i < second.count; i++) {
+        [result addObject:second[i]];
+    }
+    
+    return result;
+    
+}
+
 @end

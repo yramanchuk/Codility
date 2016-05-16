@@ -200,4 +200,9 @@
     NSLog(@"Collaps %@", result);
 }
 
+
+- (void)testMergeUnion {
+    NSArray *result = [CTCI mergeUnion:@[@"good", @"person"] with:@[@"he", @"is", @"g very"]];
+    NSLog(@"union: %@", result);
+}
 @end

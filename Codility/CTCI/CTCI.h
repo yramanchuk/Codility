@@ -18,5 +18,5 @@
 + (NSArray *)findAllTriples:(NSArray *)array;
 + (float)calcRPN:(NSString *)rpn;
 + (NSDictionary *)collaps:(NSArray *)left with:(NSArray *)right;
-
++(NSArray *)mergeUnion:(NSArray *)first with:(NSArray *)second;
 @end
