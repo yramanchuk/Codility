@@ -101,6 +101,42 @@
     return possiblities;
 }
 
+
+////number of ways to reach/make n
+////e g 4:
+////1 1 1 1
+////1 1 2
+////1 2 1
+////1 3
+////2 1 1
+////2 2
+////3 1
+//int print(vector<int>v,int n)
+//{
+//    if(n<=0)
+//    {
+//        if(v.size()!=1)
+//        {
+//            for(int i=0;i<v.size();i++)
+//            {
+//                cout<<v[i]<<" ";
+//            }
+//            cout<<endl;
+//        }
+//    }
+//    else
+//    {
+//        for(int j=1;j<=n;j++)
+//        {
+//            v.push_back(j);
+//            print(v,n-j);
+//            v.pop_back();
+//        }
+//    }
+//}
+
+
+
 + (int) changePossibilitiesBottomUp:(int) amount with:(NSMutableArray<NSNumber *> *)denominations {
     NSMutableArray *waysOfDoingNCents = [NSMutableArray arrayWithCapacity:amount+1];
     for (int i = 0; i < amount+1; i++) {
@@ -120,6 +156,9 @@
     
     return [waysOfDoingNCents[amount] intValue];
 }
+
+
+
 
 
 //Given a list of  integers, , and another integer,  representing the expected sum. Select zero or more numbers from  such that the sum of these numbers is as near as possible, but not exceeding, to the expected sum ().
