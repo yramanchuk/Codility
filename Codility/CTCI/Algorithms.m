@@ -113,6 +113,44 @@
     }
 }
 
+
++ (void) mergesortNonRecursive:(NSMutableArray *)array
+{
+    NSMutableArray *temp = [NSMutableArray new];
+    int arraySize = array.count;
+    
+    int rght, rend;
+    int i,j,m;
+    
+    for (int k=1; k < arraySize; k *= 2 ) {
+        for (int left=0; left+k < arraySize; left += k*2 ) {
+            rght = left + k;
+            rend = rght + k;
+            if (rend > arraySize) rend = arraySize;
+            m = left; i = left; j = rght;
+            while (i < rght && j < rend) {
+                if (array[i] <= array[j]) {
+                    temp[m] = array[i]; i++;
+                } else {
+                    temp[m] = array[j]; j++;
+                }
+                m++;
+            }
+            while (i < rght) {
+                temp[m]=array[i];
+                i++; m++;
+            }
+            while (j < rend) {
+                temp[m]=array[j];
+                j++; m++;
+            }
+            for (m=left; m < rend; m++) {
+                array[m] = temp[m];
+            }
+        }
+    }
+}
+
 #pragma mark quick sort
 //helper
 + (void)quickSort:(NSMutableArray *)array {

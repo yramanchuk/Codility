@@ -34,6 +34,24 @@
     
 }
 
+- (void)testMergeSortNonRecursive {
+    NSMutableArray *testArray = [NSMutableArray new];
+    for (int i = 0; i < 100; i++) {
+        [testArray addObject:@(arc4random()%50)];
+    }
+    
+    NSMutableArray *result = [testArray mutableCopy];
+    NSMutableArray *expected = [testArray mutableCopy];
+    
+    [Algorithms mergesortNonRecursive:result];
+    [expected sortUsingSelector:@selector(compare:)];
+    
+    for (int i = 0; i < testArray.count; i++) {
+        XCTAssertEqual([result[i] intValue], [expected[i] intValue]);
+    }
+    
+}
+
 - (void)testQuickSort {
     NSMutableArray *testArray = [NSMutableArray new];
     for (int i = 0; i < 100; i++) {
