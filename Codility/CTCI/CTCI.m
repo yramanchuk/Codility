@@ -48,21 +48,21 @@
     }
 }
 
-- (long)countPossibleWays:(int) n {
+- (long)countChangePossibleWays:(int) n {
     [self prepareArray:n];
-    return [self countPossibleWaysRecursive:n];
+    return [self countChangePossibleWaysRecursive:n];
 }
 
-- (long)countPossibleWaysRecursive:(int) n {
+- (long)countChangePossibleWaysRecursive:(int) n {
     if (n < 0) {
         return 0;
     } else if (n == 0) {
         return [steps[n] longValue];
     }
     
-    long steps1 = [self countPossibleWaysRecursive:n-1];
-    long steps2 = [self countPossibleWaysRecursive:n-2];
-    long steps3 = [self countPossibleWaysRecursive:n-3];
+    long steps1 = [self countChangePossibleWaysRecursive:n-1];
+    long steps2 = [self countChangePossibleWaysRecursive:n-2];
+    long steps3 = [self countChangePossibleWaysRecursive:n-3];
     
     long result = steps1 + steps2 + steps3;
     
@@ -73,7 +73,7 @@
 }
 
 
-+ (int)checkPossibilities:(int)num with:(NSMutableArray *)values {
++ (int)checkChangePossibilities:(int)num with:(NSMutableArray *)values {
     if (num == 0) {
         return 1;
     } else if (num < 0) {
@@ -92,7 +92,7 @@
     [restCoins removeObject:restCoins.firstObject];
     
     while (num >= 0) {
-        int delta = [self checkPossibilities:num with:restCoins];
+        int delta = [self checkChangePossibilities:num with:restCoins];
 //        NSLog(@"adding %d checking %d with values:%@ from %d", delta, initNum, values, num);
         possiblities += delta;
         num -= value;

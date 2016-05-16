@@ -122,8 +122,8 @@
 
 - (void)testCountSteps {
     CTCI *test = [CTCI new];
-    XCTAssertEqual(7, [test countPossibleWays:4]);
-    XCTAssertEqual(13, [test countPossibleWays:5]);
+    XCTAssertEqual(7, [test countChangePossibleWays:4]);
+    XCTAssertEqual(13, [test countChangePossibleWays:5]);
 }
 
 - (void)testProductOfThree {
@@ -139,7 +139,7 @@
 }
 
 - (void)testPossibleDenominations {
-    int result = [CTCI checkPossibilities:4 with:[@[@1, @2, @3] mutableCopy]];
+    int result = [CTCI checkChangePossibilities:4 with:[@[@1, @2, @3] mutableCopy]];
     XCTAssertEqual(4, result);
 
     result = [CTCI changePossibilitiesBottomUp:4 with:[@[@1, @2, @3] mutableCopy]];

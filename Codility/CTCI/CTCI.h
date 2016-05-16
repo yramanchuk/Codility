@@ -10,8 +10,8 @@
 
 @interface CTCI : NSObject
 
-- (long)countPossibleWays:(int)n;
-+ (int)checkPossibilities:(int)num with:(NSMutableArray *)values;
+- (long)countChangePossibleWays:(int)n;
++ (int)checkChangePossibilities:(int)num with:(NSMutableArray *)values;
 + (int) changePossibilitiesBottomUp:(int) amount with:(NSMutableArray<NSNumber *> *)denominations;
 
 + (NSDictionary *)findAllSubstringCount:(NSString *)string length:(int)length;
