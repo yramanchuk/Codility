@@ -48,21 +48,22 @@
     }
 }
 
-- (long)countChangePossibleWays:(int) n {
+- (long)countClimbPossibleWays:(int) n {
     [self prepareArray:n];
-    return [self countChangePossibleWaysRecursive:n];
+    return [self countClimbPossibleWaysRecursive:n];
 }
 
-- (long)countChangePossibleWaysRecursive:(int) n {
+//Given n stairs , you climb 1 , 2 or 3 stairs at a time . Find the number of ways to reach the nth step
+- (long)countClimbPossibleWaysRecursive:(int) n {
     if (n < 0) {
         return 0;
     } else if (n == 0) {
         return [steps[n] longValue];
     }
     
-    long steps1 = [self countChangePossibleWaysRecursive:n-1];
-    long steps2 = [self countChangePossibleWaysRecursive:n-2];
-    long steps3 = [self countChangePossibleWaysRecursive:n-3];
+    long steps1 = [self countClimbPossibleWaysRecursive:n-1];
+    long steps2 = [self countClimbPossibleWaysRecursive:n-2];
+    long steps3 = [self countClimbPossibleWaysRecursive:n-3];
     
     long result = steps1 + steps2 + steps3;
     

@@ -122,8 +122,8 @@
 
 - (void)testCountSteps {
     CTCI *test = [CTCI new];
-    XCTAssertEqual(7, [test countChangePossibleWays:4]);
-    XCTAssertEqual(13, [test countChangePossibleWays:5]);
+    XCTAssertEqual(7, [test countClimbPossibleWays:4]);
+    XCTAssertEqual(13, [test countClimbPossibleWays:5]);
 }
 
 - (void)testProductOfThree {
