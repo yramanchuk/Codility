@@ -361,7 +361,7 @@
 //    makeChange(25using0quarters,1dime) +
 //    makeChange(25 using 0 quarters, 2 dimes
 
-+ (int)checkPossibilities:(int)num with:(NSMutableArray *)values {
++ (int)checkChangePossibilities:(int)num with:(NSMutableArray *)values {
     if (num == 0) {
         return 1;
     } else if (num < 0) {
@@ -379,9 +379,63 @@
     [restCoins removeObject:restCoins.firstObject];
     
     while (num >= 0) {
-        possiblities += [self checkPossibilities:num with:restCoins];;
+        possiblities += [self checkChangePossibilities:num with:restCoins];;
         num -= value;
     }
+    return possiblities;
+}
+
+//    4:
+//    1 1 1 1
+//    1 1 2
+//    1 2 1
+//    1 3
+//    2 1 1
+//    2 2
+//    3 1
+
++ (int)printChangePosiibilitesAll:(int)num using:(NSMutableArray *)array {
+    int possiblities = 0;
+
+    if (num == 0) {
+        if(array.count != 1) {
+            NSLog(@"%@", [array componentsJoinedByString:@" "]);
+            possiblities = 1;
+        }
+    } else {
+        for(int j = 1; j <= num; j++) {
+            [array addObject:@(j)];
+            possiblities += [self printChangePosiibilitesAll:num-j using:array];
+            [array removeLastObject];
+        }
+    }
+    
+    return possiblities;
+}
+
+
+
+//    4:
+//    1 1 1 1
+//    1 1 2
+//    1 3
+//    2 2
++ (int)printChangePosiibilitesUnique:(int)num from:(int)start using:(NSMutableArray *)array {
+    int possiblities = 0;
+    
+    if (num == 0) {
+        if(array.count != 1) {
+            NSLog(@"%@", [array componentsJoinedByString:@" "]);
+            possiblities = 1;
+        }
+    } else {
+        for(int j = start; j <= num; j++) {
+            [array addObject:@(j)];
+            possiblities += [self printChangePosiibilitesUnique:num-j from:j using:array];
+            [array removeLastObject];
+        }
+    }
+    
     return possiblities;
 }
 

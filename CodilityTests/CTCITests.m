@@ -148,6 +148,9 @@
     result = [CTCI changePossibilitiesBottomUp:5 with:[@[@1, @2, @3] mutableCopy]];
     XCTAssertEqual(5, result);
 
+    result = [CTCI checkChangePossibilities:5 with:[@[@1, @2, @3, @4] mutableCopy]];
+    XCTAssertEqual(6, result);
+
 }
 
 - (void)testSearchStart {

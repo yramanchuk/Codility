@@ -130,15 +130,21 @@
 }
 
 - (void)testPossibleDenominations {
-    int result = [Algorithms checkPossibilities:4 with:[@[@1, @2, @3] mutableCopy]];
+    int result = [Algorithms checkChangePossibilities:4 with:[@[@1, @2, @3] mutableCopy]];
     XCTAssertEqual(4, result);
 
-    result = [Algorithms checkPossibilities:4 with:[@[@1, @2, @3] mutableCopy]];
+    result = [Algorithms checkChangePossibilities:4 with:[@[@1, @2, @3] mutableCopy]];
     XCTAssertEqual(4, result);
     
-    result = [Algorithms checkPossibilities:5 with:[@[@1, @2, @3] mutableCopy]];
+    result = [Algorithms checkChangePossibilities:5 with:[@[@1, @2, @3] mutableCopy]];
     XCTAssertEqual(5, result);
     
+}
+
+- (void)testPrintPossibleDenominations {
+    XCTAssertEqual(15, [Algorithms printChangePosiibilitesAll:5 using:[NSMutableArray new]]);
+    NSLog(@" ");
+    XCTAssertEqual(6, [Algorithms printChangePosiibilitesUnique:5 from:1 using:[NSMutableArray new]]);
 }
 
 - (void)testLucky {

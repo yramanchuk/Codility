@@ -19,7 +19,11 @@
 + (void)quickSort:(NSMutableArray *)array;
 
 + (int)longestCommonSubstring:(NSString *)str1 with:(NSString *)str2;
-+ (int)checkPossibilities:(int)num with:(NSMutableArray *)values;
++ (int)checkChangePossibilities:(int)num with:(NSMutableArray *)values;
++ (int)printChangePosiibilitesUnique:(int)num from:(int)start using:(NSMutableArray *)array;
++ (int)printChangePosiibilitesAll:(int)num using:(NSMutableArray *)array;
+
+
 
 + (BOOL)isLucky:(int)n;
 + (double)pow:(int)x to:(int)pow;
