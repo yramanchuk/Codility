@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "Algorithms.h"
 #import "NSString+EKStuff.h"
+#import "AStarAlgorithm.h"
 
 @interface AlgorithmTests : XCTestCase
 
@@ -159,4 +160,40 @@
         XCTAssertEqual(pow(3, i), [Algorithms pow:3 to:i], @"not equal for pow(3, %d)", i);
     }
 }
+
+
+- (void)testAStar {
+    NSArray *input = @[@[@0, @0, @0],
+                       @[@0, @0, @0],
+                       @[@0, @0, @0]];
+    int result = [AStarAlgorithm getShortestPath:input fromX:0 fromY:0 toX:2 toY:1];
+    XCTAssertEqual(3, result);
+
+    input = @[@[@0, @0, @0],
+              @[@-1, @-1, @0],
+              @[@-1, @0, @0]];
+    result = [AStarAlgorithm getShortestPath:input fromX:0 fromY:0 toX:2 toY:1];
+    XCTAssertEqual(5, result);
+
+    input = @[@[@0, @0, @0],
+              @[@-1, @-1, @-1],
+              @[@-1, @0, @0]];
+    result = [AStarAlgorithm getShortestPath:input fromX:0 fromY:0 toX:2 toY:1];
+    XCTAssertEqual(-1, result);
+
+    input = @[@[@0, @0, @0, @0],
+              @[@-1, @-1, @-1, @0],
+              @[@-1, @0, @-1, @0],
+              @[@0, @0, @0, @0]];
+    result = [AStarAlgorithm getShortestPath:input fromX:0 fromY:0 toX:2 toY:1];
+    XCTAssertEqual(9, result);
+
+    input = @[@[@0, @0, @0, @0],
+              @[@0, @-1, @-1, @0],
+              @[@0, @0, @-1, @0],
+              @[@0, @0, @0, @0]];
+    result = [AStarAlgorithm getShortestPath:input fromX:0 fromY:0 toX:2 toY:1];
+    XCTAssertEqual(3, result);
+}
+
 @end
