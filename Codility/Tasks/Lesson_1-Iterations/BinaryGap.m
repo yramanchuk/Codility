@@ -80,7 +80,21 @@
 
 
 
-
+//    vector<pair<int, int> > ranges;
+//    vector<pair<int, int> > result;
+//    sort(ranges.begin(),ranges.end());
+//    vector<pair<int, int> >::iterator it = ranges.begin();
+//    pair<int,int> current = *(it)++;
+//    while (it != ranges.end()){
+//        if (current.second > it->first){ // you might want to change it to >=
+//            current.second = std::max(current.second, it->second);
+//        } else {
+//            result.push_back(current);
+//            current = *(it);
+//        }
+//        it++;
+//    }
+//    result.push_back(current);
 +(NSArray *)mergeIntervals:(NSArray *)array {
     
     if (array.count < 2) {
