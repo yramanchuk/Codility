@@ -268,6 +268,26 @@
     }
 }
 
+- (NSInteger) countAndRearrangeNonZeroElementsFromThisArray: (NSMutableArray*) array {
+    int lastIndexOfZero = -1;
+    int countZeros = 0;
+    for (int index = 0; index < array.count; index++) {
+        if ([array[index] intValue] == 0) {
+            countZeros++;
+            if (lastIndexOfZero == -1) {
+                lastIndexOfZero = index;
+            } else {
+                lastIndexOfZero = fmin(lastIndexOfZero, index);
+            }
+        } else if (lastIndexOfZero != -1) {
+            [array exchangeObjectAtIndex:index withObjectAtIndex:lastIndexOfZero];
+            lastIndexOfZero = lastIndexOfZero+1;
+        }
+    }
+    
+    return countZeros;
+}
+
 #pragma mark dynamic programming
 ////recursive LCS O(2^n)
 ///* Returns length of LCS for X[0..m-1], Y[0..n-1] */
