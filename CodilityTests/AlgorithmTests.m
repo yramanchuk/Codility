@@ -155,6 +155,10 @@
     XCTAssertFalse([Algorithms isLucky:21]);
 }
 
+- (void)testPrimes {
+    NSLog(@"primes: %@", [[Algorithms primeNumbersFromSieveEratosthenes:26] componentsJoinedByString:@" "]);
+}
+
 - (void)testPow {
     for (int i = -11; i < 12; i++) {
         XCTAssertEqual(pow(3, i), [Algorithms pow:3 to:i], @"not equal for pow(3, %d)", i);
@@ -194,6 +198,13 @@
               @[@0, @0, @0, @0]];
     result = [AStarAlgorithm getShortestPath:input fromX:0 fromY:0 toX:2 toY:1];
     XCTAssertEqual(3, result);
+}
+
+- (void)testUnwrap {
+    NSArray *test = @[@1,@[@4,@3],@6,@[@5,@[@1,@0]]];
+    
+    NSArray *result = [Algorithms unwrapArray:test];
+    NSLog(@"unwrapped %@", [result componentsJoinedByString:@" "]);
 }
 
 @end

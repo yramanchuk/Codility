@@ -23,8 +23,10 @@
 + (int)printChangePosiibilitesUnique:(int)num from:(int)start using:(NSMutableArray *)array;
 + (int)printChangePosiibilitesAll:(int)num using:(NSMutableArray *)array;
 
-
++ (NSArray *)unwrapArray:(NSObject *)array;
 
 + (BOOL)isLucky:(int)n;
 + (double)pow:(int)x to:(int)pow;
+
++ (NSArray *)primeNumbersFromSieveEratosthenes:(NSUInteger)firstNPrimesCount;
 @end

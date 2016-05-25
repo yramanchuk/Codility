@@ -877,5 +877,52 @@ static id _instance = nil;
     return node;
 }
 
+//unwrap array
++ (NSArray *)unwrapArray:(NSObject *)array {
+    
+    if ([array isKindOfClass:[NSArray class]]) {
+        
+        NSMutableArray *result = [NSMutableArray new];
+        
+        for (int i = 0; i < ((NSArray *)array).count; i++) {
+            [result addObjectsFromArray:[self unwrapArray:((NSArray *)array)[i]]];
+        }
+        
+        return result;
+    } else {
+        return @[array];
+    }
+    
+}
+
+
++ (NSArray *)primeNumbersFromSieveEratosthenes:(NSUInteger)firstNPrimesCount
+{
+    NSUInteger maxNumber =  ceilf(log(log(firstNPrimesCount) * firstNPrimesCount) * firstNPrimesCount);
+    NSArray *result = [self primeNumbersFromSieveEratosthenesWithMaxNumber:maxNumber];
+    return [result subarrayWithRange:NSMakeRange(0, firstNPrimesCount)];
+}
+
++ (NSArray *)primeNumbersFromSieveEratosthenesWithMaxNumber:(NSUInteger)maxNumber
+{
+    NSMutableArray *resultArray = [@[] mutableCopy];
+    
+    for (NSUInteger i = 0; i < maxNumber; i++) {
+        resultArray[i] = @(i);
+    }
+    
+    resultArray[1] = @0;
+    
+    for (NSUInteger prime = 2; prime <= sqrt(maxNumber); prime++) {
+        if (resultArray[prime] != 0) {
+            for (NSUInteger j = prime * prime; j < maxNumber; j += prime) {
+                resultArray[j] = @0;
+            }
+        }
+    }
+    [resultArray removeObject:@0];
+    
+    return [resultArray copy];
+}
 
 @end
