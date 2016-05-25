@@ -239,8 +239,12 @@
 }
 
 #pragma mark rotation
-+ (void)rotateArray:(NSArray *)array times:(int)n {
-    
++ (NSArray *)rotateArray:(NSArray *)array times:(int)n {
+    NSMutableArray *ret = [NSMutableArray new];
+    for (int i = 0; i < array.count; i++) {
+        [ret addObject:array[(i + n) % array.count]];
+    }
+    return ret;
 }
 
 - (void)reverse:(NSMutableArray *)array {
@@ -906,6 +910,54 @@ static id _instance = nil;
     }
     node = prev;
     return node;
+}
+
+
+
+//  Definition for singly-linked list.
+  struct ListNode {
+      int val;
+      struct ListNode *next;
+  };
+ 
+  typedef struct ListNode listnode;
+ 
+  listnode* listnode_new(int val) {
+      listnode* node = (listnode *) malloc(sizeof(listnode));
+      node->val = val;
+      node->next = NULL;
+      return node;
+  }
+ 
+/**
+ * @input A : Head pointer of linked list
+ *
+ * @Output head pointer of list.
+ */
+listnode* detectCycle(listnode* A) {
+    listnode* slow = A;
+    listnode* fast = A;
+    
+    while (fast->next && fast->next->next) {
+        fast = fast->next->next;
+        slow = slow->next;
+        
+        if (fast->val == slow->val) {
+            break;
+        }
+    }
+    
+    if (!fast->next || !fast->next->next) return NULL;
+    slow = A;
+    
+    while (fast->val != slow->val) {
+        fast = fast->next;
+        slow = slow->next;
+    }
+    
+    return slow;
+    
+    
 }
 
 //unwrap array
