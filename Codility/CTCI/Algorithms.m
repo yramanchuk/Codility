@@ -504,6 +504,37 @@
     return (num & mask) | (v << i);
 }
 
+int numSetBits(unsigned int A) {
+    int ct=0;
+    while(A)
+    {
+        if(0x1 & A)
+            ct++;
+        A = A>>1;
+    }
+    return ct;
+}
+
+-(int) numSetBits:(unsigned int) A {
+    unsigned int testBit = 1;
+    int indexOfBit = 0;
+    int numOfBits = 0;
+    while (testBit <= A && indexOfBit < 32) {
+        //isBitSet(unsigned int A, int index)
+        //return (A & (1 << index)) != 0
+        
+        if ((A & (1 << indexOfBit)) != 0) {
+            numOfBits++;
+        }
+        indexOfBit++;
+        testBit  = 1 << indexOfBit;
+    }
+    
+    return numOfBits;
+    
+}
+
+
 #pragma mark probability
 
 //  A & B
