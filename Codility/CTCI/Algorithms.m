@@ -1148,27 +1148,17 @@ listnode* detectCycle(listnode* A) {
     
 }
 
-listnode* deleteDuplicates(listnode* A) {
-    if (!A) {
-        return A;
-    }
-    
-    
-    
-    listnode* prev = A;
-    listnode* current = A;
-    
-    while (current && current->next) {
-        while(current && current->next && current->val == current->next->val) {
-            current = current->next;
+
+listnode* deleteDuplicates(listnode* head) {
+
+    listnode *origin = head;
+    while (head) {
+        while(head->next && head->val == head->next->val) {
+            head->next = head->next->next;
         }
-        
-        current = current->next;
-        prev->next = current;
-        prev = current;
+        head = head->next;
     }
-    
-    return A;
+    return origin;
     
 }
 
