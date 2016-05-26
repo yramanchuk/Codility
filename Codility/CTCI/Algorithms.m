@@ -1148,6 +1148,30 @@ listnode* detectCycle(listnode* A) {
     
 }
 
+listnode* deleteDuplicates(listnode* A) {
+    if (!A) {
+        return A;
+    }
+    
+    
+    
+    listnode* prev = A;
+    listnode* current = A;
+    
+    while (current && current->next) {
+        while(current && current->next && current->val == current->next->val) {
+            current = current->next;
+        }
+        
+        current = current->next;
+        prev->next = current;
+        prev = current;
+    }
+    
+    return A;
+    
+}
+
 //unwrap array
 + (NSArray *)unwrapArray:(NSObject *)array {
     
