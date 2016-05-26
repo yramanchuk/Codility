@@ -29,4 +29,6 @@
 + (double)pow:(int)x to:(int)pow;
 
 + (NSArray *)primeNumbersFromSieveEratosthenes:(NSUInteger)firstNPrimesCount;
+
++ (NSArray *)findAllSubstitutions:(NSString *)word;
 @end

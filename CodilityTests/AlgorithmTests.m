@@ -207,4 +207,9 @@
     NSLog(@"unwrapped %@", [result componentsJoinedByString:@" "]);
 }
 
+- (void)testFindSubstitutions {
+    NSArray *result = [Algorithms findAllSubstitutions:@"fb1"];
+    NSLog(@"Substitutions %@", [result componentsJoinedByString:@" "]);
+}
+
 @end

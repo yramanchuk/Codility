@@ -1008,4 +1008,52 @@ listnode* detectCycle(listnode* A) {
     return [resultArray copy];
 }
 
+
+#pragma mark string operations
++ (NSArray *)findAllSubstitutions:(NSString *)word {
+    
+    if (word.length == 0) {
+        return [NSArray new];
+    } else if (word.length == 1) {
+        char character = [word characterAtIndex:0];
+        return [self getSubstitutionsForChar:character];
+    }
+    
+    NSMutableArray *result = [NSMutableArray new];
+    char firstChar = [word characterAtIndex:0];
+    NSArray *substitutionsOfFirstChar = [self getSubstitutionsForChar:firstChar];
+    
+    NSString *restOfWord = [word substringFromIndex:1];
+    NSArray *permutationsOfRestWord = [self findAllSubstitutions:restOfWord];
+    
+    for (int indexOfCharPerm = 0; indexOfCharPerm < substitutionsOfFirstChar.count; indexOfCharPerm++) {
+        for (int indexOfRestWordPerm = 0; indexOfRestWordPerm < permutationsOfRestWord.count; indexOfRestWordPerm++) {
+            NSString *newWord = [NSString stringWithFormat:@"%@%@", substitutionsOfFirstChar[indexOfCharPerm], permutationsOfRestWord[indexOfRestWordPerm]];
+            [result addObject:newWord];
+        }
+    }
+    
+    return result;
+    
+}
+
++ (NSArray *)getSubstitutionsForChar:(char)character {
+    NSArray *mappingChars = @[@[@"1"],
+                              @[@"2", @"a", @"b", @"c"],
+                              @[@"3", @"d", @"e", @"f"],
+                              @[@"4", @"g", @"h", @"i"]
+                              ];
+    
+    
+    NSString *charStr = [NSString stringWithFormat:@"%c", character];
+    NSArray *substitutions = [NSArray arrayWithObject:charStr];
+    for (int index = 0; index < mappingChars.count; index++) {
+        if ([mappingChars[index] containsObject:charStr]) {
+            substitutions = mappingChars[index];
+        }
+    }
+    
+    return substitutions;
+}
+
 @end
