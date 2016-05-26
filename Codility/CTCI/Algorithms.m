@@ -881,6 +881,81 @@ int isSameTree(treenode* A, treenode* B) {
 }
 
 
+treenode* flattenHelper(treenode* A, treenode* result) {
+    
+    if (!A) {
+        return NULL;
+    }
+    
+    treenode* node = treenode_new(A->val);
+    result->right = node;
+    
+    if (A->left) {
+        node = flattenHelper(A->left, node);
+    }
+    
+    if (A->right) {
+        node = flattenHelper(A->right, node);
+    }
+    
+    
+    return node;
+}
+
+treenode* flatten(treenode* A) {
+    
+    if (!A) {
+        return NULL;
+    }
+    treenode* node = treenode_new(0);
+    flattenHelper(A, node);
+    
+    return node->right;
+}
+
+//       1
+//      / \
+//     2   5
+//    / \   \
+//   3   4   6
+//
+//    INTO
+//
+//    1
+//     \
+//      2
+//       \
+//        3
+//         \
+//          4
+//           \
+//            5
+//             \
+//              6
+
+
+treenode* flattenOptimal(treenode* A) {
+    if(A== NULL)
+        return NULL;
+    if(A->left == NULL && A->right == NULL)
+        return A;
+    treenode *left = flatten(A->left);
+    treenode *right = flatten(A->right);
+    
+    A->right = left;
+    
+    treenode *temp = left;
+    while(temp != NULL && temp->right != NULL)
+        temp = temp->right;
+    if(temp != NULL)
+        temp->right = right;
+    else
+        A->right = right;
+    
+    A->left = NULL;
+    return A;
+}
+
 #pragma mark tree mirroring
 + (EKTreeNode *)mirror:(EKTreeNode *)input {
     if (!input) {
