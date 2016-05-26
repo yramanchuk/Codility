@@ -597,6 +597,13 @@ int numSetBits(unsigned int A) {
     
 }
 
+int greatestCommonDivisorWithNumber(int A, int B)
+{
+    if ( A==0 )
+        return B;
+    else
+        return greatestCommonDivisorWithNumber( B%A, A );
+}
 
 #pragma mark probability
 
