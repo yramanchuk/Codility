@@ -1056,4 +1056,35 @@ listnode* detectCycle(listnode* A) {
     return substitutions;
 }
 
+
++ (NSArray *)findAllPermutations:(NSString *)word {
+    if (!word || word.length <= 1) {
+        return @[word];
+    }
+    
+    NSMutableArray *permutations = [NSMutableArray new];
+    char firstChar = [word characterAtIndex:0];
+    NSString *restOfWord = [word substringFromIndex:1];
+    
+    NSArray *permutationsOfRestWord = [self findAllPermutations:restOfWord];
+    for (int permIndex = 0; permIndex < permutationsOfRestWord.count; permIndex++) {
+        NSString *subPermutation = permutationsOfRestWord[permIndex];
+        for (int subIndex = 0; subIndex <= subPermutation.length; subIndex++) {
+            NSString *newPermutation = [self insertChar:firstChar to:subPermutation atIndex:subIndex];
+            [permutations addObject:newPermutation];
+        }
+    }
+    
+    return permutations;
+    
+}
+
++ (NSString *)insertChar:(char)character to:(NSString *)word atIndex:(int)index {
+    NSMutableString *result = [NSMutableString stringWithString:word];
+    NSString *charStr = [NSString stringWithFormat:@"%c", character];
+    [result insertString:charStr atIndex:index];
+    
+    return result;
+}
+
 @end

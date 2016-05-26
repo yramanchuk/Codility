@@ -212,4 +212,9 @@
     NSLog(@"Substitutions %@", [result componentsJoinedByString:@" "]);
 }
 
+- (void)testFindPermutations {
+    NSArray *result = [Algorithms findAllPermutations:@"abc"];
+    NSLog(@"Permutations %@", [result componentsJoinedByString:@" "]);
+}
+
 @end

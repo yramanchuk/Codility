@@ -31,4 +31,5 @@
 + (NSArray *)primeNumbersFromSieveEratosthenes:(NSUInteger)firstNPrimesCount;
 
 + (NSArray *)findAllSubstitutions:(NSString *)word;
++ (NSArray *)findAllPermutations:(NSString *)word;
 @end
