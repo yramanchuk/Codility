@@ -217,4 +217,13 @@
     NSLog(@"Permutations %@", [result componentsJoinedByString:@" "]);
 }
 
+- (void)testLongestUniqueSubstring {
+    NSString *result = [Algorithms longestUniqueSubstring:@"aaabcadcbc"];
+    XCTAssertEqualObjects(@"bcad", result);
+
+    result = [Algorithms longestUniqueSubstring:@"aaabcadcbcdfg"];
+    XCTAssertEqualObjects(@"bcdfg", result);
+
+}
+
 @end

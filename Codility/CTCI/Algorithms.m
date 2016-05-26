@@ -293,6 +293,65 @@
 }
 
 #pragma mark dynamic programming
+
+//    0123456789
+//    aaabcadcbc
+//       bcad
++ (NSString *)longestUniqueSubstring:(NSString *)string {
+    
+    if (string.length == 1) {
+        return string;
+    }
+    
+    NSMutableArray *positions = [NSMutableArray arrayWithCapacity:256];
+    for (int i = 0; i < 256; i++) {
+        [positions addObject:@(-1)];
+    }
+    
+    
+    int character = (int)[string characterAtIndex:0];
+    
+    /* Mark first character as visited by storing the index
+     of first   character in visited array. */
+    positions[character] = @0;
+    int maxLength = 1;
+    int maxStartPos = 0;
+    int currentLength = maxLength;
+    
+    /* Start from the second character. First character is
+     already processed (cur_len and max_len are initialized
+     as 1, and visited[str[0]] is set */
+    for (int index = 1; index < string.length; index++) {
+        character = (int)[string characterAtIndex:index];
+        int charPosition = [positions[character] intValue];
+        
+        /* If the currentt character is not present in the
+         already processed substring or it is not part of
+         the current NRCS, then do cur_len++ */
+        if (charPosition == -1 || index - currentLength > charPosition) {
+            currentLength++;
+        } else {
+            
+            if (maxLength < currentLength) {
+                maxLength = currentLength;
+                maxStartPos = index - currentLength;
+            }
+            
+            currentLength = index - charPosition;
+        }
+
+        positions[character] = @(index);
+    }
+    
+    if (maxLength < currentLength) {
+        maxLength = currentLength;
+        maxStartPos = string.length - currentLength;
+    }
+    
+    return [string substringWithRange:NSMakeRange(maxStartPos, maxLength)];
+    
+}
+
 ////recursive LCS O(2^n)
 ///* Returns length of LCS for X[0..m-1], Y[0..n-1] */
 //int lcs( char *X, char *Y, int m, int n )

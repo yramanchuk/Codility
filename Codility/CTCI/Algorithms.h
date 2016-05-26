@@ -18,6 +18,7 @@
 + (void)mergesortNonRecursive:(NSMutableArray *)array;
 + (void)quickSort:(NSMutableArray *)array;
 
++ (NSString *)longestUniqueSubstring:(NSString *)string;
 + (int)longestCommonSubstring:(NSString *)str1 with:(NSString *)str2;
 + (int)checkChangePossibilities:(int)num with:(NSMutableArray *)values;
 + (int)printChangePosiibilitesUnique:(int)num from:(int)start using:(NSMutableArray *)array;
