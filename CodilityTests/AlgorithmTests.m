@@ -236,4 +236,11 @@
 
 }
 
+- (void)testIsomorphic {
+    XCTAssertEqual(true, [Algorithms isIsomorpthic:@"foo" with:@"app"]);
+    XCTAssertEqual(false, [Algorithms isIsomorpthic:@"foo" with:@"bar"]);
+    XCTAssertEqual(true, [Algorithms isIsomorpthic:@"turtle" with:@"tletur"]);
+    XCTAssertEqual(false, [Algorithms isIsomorpthic:@"turtle" with:@"tlerur"]);
+}
+
 @end

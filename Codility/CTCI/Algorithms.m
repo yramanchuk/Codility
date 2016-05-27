@@ -1326,4 +1326,33 @@ listnode* deleteDuplicates(listnode* head) {
     return result;
 }
 
++ (BOOL)isIsomorpthic:(NSString *)first with:(NSString *)second {
+    char maxCharIndex = 'Z';
+    NSMutableArray *deltas = [NSMutableArray arrayWithCapacity:126 + maxCharIndex];
+    
+    for (int i = 0; i < 126+maxCharIndex; i++) {
+        [deltas addObject:@0];
+    }
+    
+    if (first.length != second.length) {
+        return NO;
+    }
+    
+    for (int index = 0; index < first.length; index++) {
+        char charA = [first characterAtIndex:index];
+        char charB = [second characterAtIndex:index];
+        
+        int delta = charA - charB + maxCharIndex;
+        int deltaValue = [deltas[charA] intValue];
+        if (deltaValue == 0) {
+            deltas[charA] = @(delta);
+        } else if (deltaValue != delta) {
+            return NO;
+        }
+    }
+    
+    return YES;
+    
+}
+
 @end
