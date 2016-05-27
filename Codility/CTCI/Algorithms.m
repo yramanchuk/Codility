@@ -765,6 +765,40 @@ static id _instance = nil;
 
 }
 
+//- (NSArray *)getListOfLevels:(TreeNode *)root {
+//    
+//    NSMutableArray *result = [NSMutableArray new];
+//    
+//    // create first level
+//    NSMutableArray *current = [NSMutableArray new];
+//    [current addObject:root];
+//    
+//    while (current.count > 0) {
+//        
+//        //save existing level
+//        [result addObject:current];
+//        
+//        //retain existing level -> become parent level
+//        NSMutableArray *parents = current;
+//        
+//        //container for new level
+//        current = [NSMutableArray new];
+//        
+//        //add all children from previous parent level
+//        for (TreeNode *node in parents) {
+//            if (node.left) {
+//                [current addObject:node.left];
+//            }
+//            if (node.right) {
+//                [current addObject:node.right];
+//            }
+//        }
+//    }
+//    
+//    return result;
+//    
+//}
+
 
 #pragma mark create minimal depth BST from sorted array
 
