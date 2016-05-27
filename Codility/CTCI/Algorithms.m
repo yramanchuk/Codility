@@ -1327,10 +1327,10 @@ listnode* deleteDuplicates(listnode* head) {
 }
 
 + (BOOL)isIsomorpthic:(NSString *)first with:(NSString *)second {
-    char maxCharIndex = 'Z';
-    NSMutableArray *deltas = [NSMutableArray arrayWithCapacity:126 + maxCharIndex];
+    char maxCharIndex = 'z'; //or 256 if all ASCII
+    NSMutableArray *deltas = [NSMutableArray arrayWithCapacity:2 * maxCharIndex];
     
-    for (int i = 0; i < 126+maxCharIndex; i++) {
+    for (int i = 0; i < 2 * maxCharIndex; i++) {
         [deltas addObject:@0];
     }
     
