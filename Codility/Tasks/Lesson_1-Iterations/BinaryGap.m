@@ -95,6 +95,12 @@
 //        it++;
 //    }
 //    result.push_back(current);
+
+
+//    @interface Interval: NSObject
+//    @property (nonatomic, assign) int start;
+//    @property (nonatomic, assign) int end;
+//    @end
 +(NSArray *)mergeIntervals:(NSArray *)array {
     
     if (array.count < 2) {
