@@ -1072,10 +1072,10 @@ treenode* flattenOptimal(treenode* A) {
     double px = x; // current power of x
     double result = 1;
     while (pow > 0) {
-        if (pow % 2 != 0) {
+        if (pow & 1 /* pow % 2 != 0 */) {
             result *= px;
         }
-        pow /= 2;
+        pow >>= 1; //pow /= 2;
         px *= px;
     }
 
