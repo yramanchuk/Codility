@@ -207,6 +207,16 @@
     NSLog(@"unwrapped %@", [result componentsJoinedByString:@" "]);
 }
 
+- (void)testNestedSum {
+    NSArray *test = @[@1, @[@4, @[@6]]]; //@[@1,@[@4,@3],@6,@[@5,@[@1,@0]]];
+    int result = [Algorithms calcNestedSum:test];
+    XCTAssertEqual(27, result);
+    
+    test = @[@[@1, @1], @2, @[@1, @1]];
+    result = [Algorithms calcNestedSum:test];
+    XCTAssertEqual(10, result);
+}
+
 - (void)testFindSubstitutions {
     NSArray *result = [Algorithms findAllSubstitutions:@"fb1"];
     NSLog(@"Substitutions %@", [result componentsJoinedByString:@" "]);

@@ -1180,6 +1180,29 @@ listnode* deleteDuplicates(listnode* head) {
     
 }
 
+//calc nested array
++ (int)calcNestedSum:(NSArray *)array {
+    
+    return [self calcNestedSum:array forLevel:1];
+    
+}
+
++ (int)calcNestedSum:(NSArray *)array forLevel:(int)level {
+    
+    int sum = 0;
+    for (NSObject *value in array) {
+        if ([value isKindOfClass:[NSArray class]]) {
+            sum += [self calcNestedSum:(NSArray *)value forLevel:level+1];
+        } else if ([value isKindOfClass:[NSNumber class]]) {
+            sum += [(NSNumber *)value intValue] * level;
+        }
+    }
+    
+    return sum;
+}
+
+
+#pragma mark Prime numbers
 
 + (NSArray *)primeNumbersFromSieveEratosthenes:(NSUInteger)firstNPrimesCount
 {

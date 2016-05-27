@@ -25,6 +25,7 @@
 + (int)printChangePosiibilitesAll:(int)num using:(NSMutableArray *)array;
 
 + (NSArray *)unwrapArray:(NSObject *)array;
++ (int)calcNestedSum:(NSArray *)array;
 
 + (BOOL)isLucky:(int)n;
 + (double)pow:(int)x to:(int)pow;
