@@ -13,18 +13,18 @@
 
 + (int)solution:(NSMutableArray *)A {
     
-    int maxEnding = 0; //current max ending
-    int maxSlice = 0; //max of all endings
+    int sum = 0; //current max ending
+    int maxSum = 0; //max of all endings
     
     for (int i = 0; i < A.count; i++) {
         int val = [A[i] intValue];
-        maxEnding = fmax(0, maxEnding + val);
-        maxSlice = fmax(maxSlice, maxEnding);
+        sum = fmax(0, sum + val);
+        maxSum = fmax(maxSum, sum);
     }
     
     
     
-    return maxSlice;
+    return maxSum;
 }
 
 // 5 3 8 10
