@@ -1281,6 +1281,28 @@ listnode* deleteDuplicates(listnode* head) {
     return [resultArray copy];
 }
 
+//    https://careercup.com/question?id=5643607445864448
+//    Given an array and a number, add it in such a way where array is [0,0,1] and number is 4 output will be [0,0,5]
+//
+//    Example 2 :
+//    array is [1] and number is 9 output will be [1,0]
++ (void)sumArray:(NSMutableArray<NSNumber *> *)array with:(int)num {
+    NSUInteger index = array.count - 1;
+    array[index] = @([array[index] intValue] + num);
+
+    while (array[index] > @9) {
+        int digit = [array[index] intValue];
+        array[index] = @(digit % 10);
+
+        if (index == 0) {
+            [array insertObject:@(digit / 10) atIndex:0];
+        } else {
+            index--;
+            array[index] = @([array[index] intValue] + digit / 10);
+            
+        }
+    }
+}
 
 #pragma mark string operations
 + (NSArray *)findAllSubstitutions:(NSString *)word {

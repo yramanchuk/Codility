@@ -24,6 +24,8 @@
 + (int)printChangePosiibilitesUnique:(int)num from:(int)start using:(NSMutableArray *)array;
 + (int)printChangePosiibilitesAll:(int)num using:(NSMutableArray *)array;
 
++ (void)sumArray:(NSMutableArray<NSNumber *> *)A with:(int)num;
+
 + (NSArray *)unwrapArray:(NSObject *)array;
 + (int)calcNestedSum:(NSArray *)array;
 

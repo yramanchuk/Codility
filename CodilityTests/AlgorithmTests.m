@@ -155,6 +155,12 @@
     XCTAssertFalse([Algorithms isLucky:21]);
 }
 
+- (void)testSumArray {
+    NSMutableArray *test = [@[@0, @0, @3] mutableCopy];
+    [Algorithms sumArray:test with:1009];
+    NSLog(@"%@", [test componentsJoinedByString:@" "]);
+}
+
 - (void)testPrimes {
     NSLog(@"primes: %@", [[Algorithms primeNumbersFromSieveEratosthenes:26] componentsJoinedByString:@" "]);
 }
