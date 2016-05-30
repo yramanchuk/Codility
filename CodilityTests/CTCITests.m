@@ -138,6 +138,18 @@
 
 }
 
+- (void)testMaxCoins {
+    NSArray *grid = @[
+                      @[@1, @0, @0, @0],
+                      @[@0, @0, @1, @0],
+                      @[@11,@0, @1, @0],
+                      @[@0, @1, @1, @0]
+                      ];
+    
+    NSInteger max = [MaxSliceSum findMaxCoins:grid];
+    XCTAssertEqual(14, max);
+}
+
 - (void)testPossibleDenominations {
     int result = [CTCI checkChangePossibilities:4 with:[@[@1, @2, @3] mutableCopy]];
     XCTAssertEqual(4, result);

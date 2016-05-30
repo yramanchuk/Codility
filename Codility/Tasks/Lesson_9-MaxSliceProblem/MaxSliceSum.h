@@ -12,4 +12,6 @@
 
 + (int)solution:(NSMutableArray *)A;
 + (long)maxProduct:(NSMutableArray *)A;
+
++ (NSUInteger)findMaxCoins:(NSArray *)grid;
 @end

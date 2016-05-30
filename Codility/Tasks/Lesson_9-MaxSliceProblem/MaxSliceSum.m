@@ -141,4 +141,53 @@
 //    return productsOfAllIntsExceptAtIndex;
 //}
 
+
+
+//    There are N coins with coordinates (x, y) where x >= 0 and y >= 0
+//    You start at (0, 0) and you can only do steps of form (dx, dy) where dx >0 and dy > 0
+//    Print the maximum number of coins that you can collect.
+//
+//    Clarification: you can do as many moves as you wish, the point is to collect maximum number of coins. If you are located at position (a, b) you may jump to position (a+dx, b+dy) for all dx >= 0 and dy >= 0
+
+
+
++(NSUInteger) maxFromPosition:(NSArray *)grid startX:(NSUInteger)xPos  startY:(NSUInteger)yPos chache:(NSMutableDictionary *)cache {
+    
+    NSString *key = [NSString stringWithFormat:@"%ld-%ld",xPos, yPos];
+    NSNumber *value = cache[key];
+    
+    if (value) {
+        return [value integerValue];
+    }
+    
+    int maxCoins = 0;
+
+// not needed to check
+//    if(xPos > grid.count - 1 || yPos > [grid[xPos] count] - 1){
+//        return 0;
+//    }
+    
+    for(NSUInteger row = xPos; row < [grid count]; row++){
+        for(NSUInteger col = yPos; col < [grid[row] count]; col++){
+            if (row != xPos || col != yPos) {
+                NSInteger total = [self maxFromPosition:grid startX:row startY:col chache:cache];
+                maxCoins = fmax(total, maxCoins);
+            }
+        }
+    }
+    
+    maxCoins += [grid[xPos][yPos] intValue];
+    
+    [cache setObject:@(maxCoins) forKey:key];
+    
+    return maxCoins;
+    
+}
+
+
++(NSUInteger) findMaxCoins:(NSArray *)grid {
+    return [self maxFromPosition:grid startX:0 startY:0 chache:[NSMutableDictionary new]];
+}
+
+
 @end
