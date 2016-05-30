@@ -15,6 +15,7 @@
 #import "RomanNumbers.h"
 #import "SquareRoot.h"
 #import "LadderSolver.h"
+#import "LexicographicallyLargestString.h"
 
 @interface CTCITests : XCTestCase
 @end
@@ -219,5 +220,12 @@
 - (void)testMergeUnion {
     NSArray *result = [CTCI mergeUnion:@[@"good", @"person"] with:@[@"he", @"is", @"g very"]];
     NSLog(@"union: %@", result);
+}
+
+- (void)testLexLargString {
+    LexicographicallyLargestString *solution = [LexicographicallyLargestString new];
+    NSArray *pairs = @[@[@0, @3], @[@2, @3]];
+    NSString *result = [solution lexicographicallyLargestString:@"abdc" with:pairs];
+    NSLog(@"%@", result);
 }
 @end

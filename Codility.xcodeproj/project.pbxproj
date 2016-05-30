@@ -10,6 +10,7 @@
 		194804C8B31E07154FBD8FA3 /* Pods_Codility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5C3190456CBC68404BF9F9 /* Pods_Codility.framework */; };
 		2FA20B20507C549FF7A3AC94 /* Pods_CodilityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B09D2E35133C60D0159EDE /* Pods_CodilityTests.framework */; };
 		CB12E4641CF32F0000A164DD /* AStarAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = CB12E4631CF32F0000A164DD /* AStarAlgorithm.m */; };
+		CB12E4681CFC7DA600A164DD /* LexicographicallyLargestString.m in Sources */ = {isa = PBXBuildFile; fileRef = CB12E4671CFC7DA600A164DD /* LexicographicallyLargestString.m */; };
 		CB217B521CE2358C00D6D94B /* LadderSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B511CE2358C00D6D94B /* LadderSolver.m */; };
 		CB217B551CE3187D00D6D94B /* NumberOfIslands.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B541CE3187D00D6D94B /* NumberOfIslands.m */; };
 		CB217B5A1CE320F000D6D94B /* HackerRankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B591CE320F000D6D94B /* HackerRankTests.m */; };
@@ -86,6 +87,8 @@
 		AB9B16AE72DFBF88C83025A4 /* Pods-CodilityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodilityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodilityTests/Pods-CodilityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB12E4621CF32F0000A164DD /* AStarAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AStarAlgorithm.h; sourceTree = "<group>"; };
 		CB12E4631CF32F0000A164DD /* AStarAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AStarAlgorithm.m; sourceTree = "<group>"; };
+		CB12E4661CFC7DA600A164DD /* LexicographicallyLargestString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LexicographicallyLargestString.h; sourceTree = "<group>"; };
+		CB12E4671CFC7DA600A164DD /* LexicographicallyLargestString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LexicographicallyLargestString.m; sourceTree = "<group>"; };
 		CB217B501CE2358C00D6D94B /* LadderSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LadderSolver.h; sourceTree = "<group>"; };
 		CB217B511CE2358C00D6D94B /* LadderSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LadderSolver.m; sourceTree = "<group>"; };
 		CB217B531CE3187D00D6D94B /* NumberOfIslands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberOfIslands.h; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 				CBFA417E1CE0D50400291108 /* MultiPutBlockingBoundedQueueImpl.m */,
 				CB217B501CE2358C00D6D94B /* LadderSolver.h */,
 				CB217B511CE2358C00D6D94B /* LadderSolver.m */,
+				CB12E4661CFC7DA600A164DD /* LexicographicallyLargestString.h */,
+				CB12E4671CFC7DA600A164DD /* LexicographicallyLargestString.m */,
 			);
 			path = CTCI;
 			sourceTree = "<group>";
@@ -722,6 +727,7 @@
 				CB75BB261CD1151F00663431 /* FrogJmp.m in Sources */,
 				CBEA62C41CD3E8770036303F /* GenomicRangeQuery.m in Sources */,
 				CB75BAC11CD0C34B00663431 /* ViewController.m in Sources */,
+				CB12E4681CFC7DA600A164DD /* LexicographicallyLargestString.m in Sources */,
 				CBEA62CA1CD626790036303F /* Fish.m in Sources */,
 				CB75BABE1CD0C34B00663431 /* AppDelegate.m in Sources */,
 				CB75BABB1CD0C34B00663431 /* main.m in Sources */,
