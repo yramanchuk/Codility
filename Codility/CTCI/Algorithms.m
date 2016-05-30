@@ -1341,6 +1341,83 @@ listnode* deleteDuplicates(listnode* head) {
     return (powf(1 + 8 * size, .5f) + 1)/2;
 }
 
+//    Given a decimal number, write a function that returns its negabinary (i.e. negative 2-base) representation as a string.
+//    (-2)^0 = 1
+//    (-2)^1 = -2
+//    (-2)^2 = 4
+//    (-2)^3 = -8
+//    (-2)^4 = 16
+//    (-2)^5 = -32 and so on
+//
+//    i. e. for 2 = 1 * 4 + 1 * (-2) + 0 * 1 => 110
+//    -15 = 1 * -32 + 1 * 16 + 0 * -8 + 0 * 4 + 0 * -2 + 1 * 1 => 110001
+//
+//    https://careercup.com/question?id=5728108897370112
+//
+//    It is very similar to transforming into 2-base but tricky case is when reminder is negative.
+//    we just have to convert negative reminder into non-negative:
+//    a=b*c + r, so if r <0 then we can do a=b*c + r +b-b=b*(c+1) + (r-b)
+//    in our case b=-2
+//
+//    private static String negaBinary(int x) {
+//        StringBuilder sb = new StringBuilder();
+//        while (x != 0) {
+//            int rem = x % -2;
+//            x = x / -2;
+//            if (rem < 0) {
+//                rem += 2;
+//                x += 1;
+//            }
+//            sb.append(rem);
+//        }
+//        return sb.reverse().toString();
+//    }
+
+- (id)convertedNumberWithBase:(int)base from:(NSNumber *)number
+{
+    if (fabs(base) != 2 && fabs(base) != 8 && fabs(base) != 10 && fabs(base) != 12 && fabs(base) != 16) {
+        NSLog(@"Bad base - base must be 2, 8, 10, 12 or 16 only");
+        base = 10;
+    }
+    
+    const char baseDigits[16] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+    long int numberToConvert = [number longValue];
+    int convertedNumber[64];
+    int nextDigit = 0, index = 0;
+    id resultOfConvertion = nil;
+    NSMutableString *resultString = [@"" mutableCopy];
+    
+    
+    do {
+        convertedNumber[index] = numberToConvert % base;
+        numberToConvert = numberToConvert / base;
+        
+        if (convertedNumber[index] < 0) {
+            convertedNumber[index] -= base;
+            numberToConvert += 1;
+        }
+        ++index;
+    }
+    while (numberToConvert != 0);
+    
+    for (--index; index >= 0; --index) {
+        nextDigit = convertedNumber[index];
+        [resultString appendString:[NSString stringWithFormat:@"%c", baseDigits[nextDigit]]];
+    }
+    
+    if (fabs(base) == 2 || fabs(base) == 8 || fabs(base) == 10) {
+        NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+        NSNumber *myNumber = [f numberFromString:resultString];
+        resultOfConvertion = myNumber;
+    }
+    else {
+        resultOfConvertion = [resultString copy];
+    }
+    
+    return resultOfConvertion;
+}
+
+
 #pragma mark string operations
 + (NSArray *)findAllSubstitutions:(NSString *)word {
     
