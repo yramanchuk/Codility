@@ -1304,6 +1304,43 @@ listnode* deleteDuplicates(listnode* head) {
     }
 }
 
+//    https://careercup.com/question?id=5751343965798400
+//    Given a set of numbers {x1, x2, x3, x4, ..., xN} (N>=3) a set of its pairwise sums is {x1+x2, x1+x3, x1+x4, x2+x3,x2+x4,x3+x4, ...,}. (That is s_k = x_i + x_j where i != j)
+//    Restore a set of numbers given a set of its pairwise sums.
+//    Note: you don't know given some k, to which i and j it refers, (i.e. input is given in undefined order)
+//
+//    Example:
+//
+//    S = {1, 5, 10, 100} (n elements)
+//    P = {6, 11, 101, 15, 105, 110} (n * (n - 1) / 2 elements)
+//    P = {x1+x2, x1+x3, x1+x4, x2+x3, x2+x4, x3+x4}
+//
+//   EXPLANATION
+//    original size is: x * (x-1) = 2 * size
+//     x^2 - x - 2 *Size = 0
+//    D = sqrt(bˆ2 -4ac) = sqrt(1 + 8*size)
+//    x = (-b +- D)/2a == (1 + D)/2
+//
+//    S[0] = P0 + P1 - P(4-1)
++(NSArray *)reconstructFromSum:(NSArray *)sums {
+    int size = [self getOriginalSize:sums.count];
+    NSMutableArray *result = [NSMutableArray arrayWithCapacity:size];
+    int firstValue = ([sums[0] intValue] + [sums[1] intValue] - [sums[size-1] intValue]) / 2;
+    [result addObject:@(firstValue)];
+    for (int index = 0; index < size-1; index++) {
+        int value = [sums[index] intValue] - firstValue;
+        [result addObject:@(value)];
+    }
+    
+    NSLog(@"%@", [result componentsJoinedByString:@" "]);
+    
+    return result;
+    
+}
++ (int)getOriginalSize:(int)size {
+    return (powf(1 + 8 * size, .5f) + 1)/2;
+}
+
 #pragma mark string operations
 + (NSArray *)findAllSubstitutions:(NSString *)word {
     

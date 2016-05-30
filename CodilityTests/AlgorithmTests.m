@@ -161,6 +161,11 @@
     NSLog(@"%@", [test componentsJoinedByString:@" "]);
 }
 
+- (void)testreconstructSum {
+    NSArray *test = @[@6, @11, @101, @15, @105, @110];
+    [Algorithms reconstructFromSum:test];
+}
+
 - (void)testPrimes {
     NSLog(@"primes: %@", [[Algorithms primeNumbersFromSieveEratosthenes:26] componentsJoinedByString:@" "]);
 }
