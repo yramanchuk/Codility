@@ -11,6 +11,7 @@
 		2FA20B20507C549FF7A3AC94 /* Pods_CodilityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B09D2E35133C60D0159EDE /* Pods_CodilityTests.framework */; };
 		CB12E4641CF32F0000A164DD /* AStarAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = CB12E4631CF32F0000A164DD /* AStarAlgorithm.m */; };
 		CB12E4681CFC7DA600A164DD /* LexicographicallyLargestString.m in Sources */ = {isa = PBXBuildFile; fileRef = CB12E4671CFC7DA600A164DD /* LexicographicallyLargestString.m */; };
+		CB12E46B1CFC99E600A164DD /* PrintGraphRows.m in Sources */ = {isa = PBXBuildFile; fileRef = CB12E46A1CFC99E600A164DD /* PrintGraphRows.m */; };
 		CB217B521CE2358C00D6D94B /* LadderSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B511CE2358C00D6D94B /* LadderSolver.m */; };
 		CB217B551CE3187D00D6D94B /* NumberOfIslands.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B541CE3187D00D6D94B /* NumberOfIslands.m */; };
 		CB217B5A1CE320F000D6D94B /* HackerRankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB217B591CE320F000D6D94B /* HackerRankTests.m */; };
@@ -89,6 +90,7 @@
 		CB12E4631CF32F0000A164DD /* AStarAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AStarAlgorithm.m; sourceTree = "<group>"; };
 		CB12E4661CFC7DA600A164DD /* LexicographicallyLargestString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LexicographicallyLargestString.h; sourceTree = "<group>"; };
 		CB12E4671CFC7DA600A164DD /* LexicographicallyLargestString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LexicographicallyLargestString.m; sourceTree = "<group>"; };
+		CB12E46A1CFC99E600A164DD /* PrintGraphRows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintGraphRows.m; sourceTree = "<group>"; };
 		CB217B501CE2358C00D6D94B /* LadderSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LadderSolver.h; sourceTree = "<group>"; };
 		CB217B511CE2358C00D6D94B /* LadderSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LadderSolver.m; sourceTree = "<group>"; };
 		CB217B531CE3187D00D6D94B /* NumberOfIslands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberOfIslands.h; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				CB217B511CE2358C00D6D94B /* LadderSolver.m */,
 				CB12E4661CFC7DA600A164DD /* LexicographicallyLargestString.h */,
 				CB12E4671CFC7DA600A164DD /* LexicographicallyLargestString.m */,
+				CB12E46A1CFC99E600A164DD /* PrintGraphRows.m */,
 			);
 			path = CTCI;
 			sourceTree = "<group>";
@@ -744,6 +747,7 @@
 				CB75BB371CD1507900663431 /* FrogRiverOne.m in Sources */,
 				CB75BB3B1CD157D800663431 /* PermCheck.m in Sources */,
 				CB75BB2D1CD1462B00663431 /* TapeEquilibrium.m in Sources */,
+				CB12E46B1CFC99E600A164DD /* PrintGraphRows.m in Sources */,
 				CB217B5D1CE325F500D6D94B /* MaxProfit.m in Sources */,
 				CB217B791CE3671F00D6D94B /* TaskOne.m in Sources */,
 				CBFA41731CDFBB1300291108 /* Algorithms.m in Sources */,
