@@ -135,6 +135,50 @@
     
 }
 
++(NSArray *)mergeIntervals:(NSArray *)listA with:(NSArray *)listB {
+    NSMutableArray *result = [NSMutableArray new];
+    
+    int indexA = 0;
+    int indexB = 0;
+    
+    int start = [listA[indexA][0] intValue];
+    int end = [listA[indexA][1] intValue];
+    indexA++;
+    
+    while (indexA < listA.count || indexB < listB.count) {
+        int startA = indexA == listA.count ? -1 : [listA[indexA][0] intValue];
+        int startB = indexB == listB.count ? -1 : [listB[indexB][0] intValue];
+        
+        int startInter;
+        int endInter;
+        
+        
+        if (indexB == listB.count || startB >= startA) {
+            startInter = startA;
+            endInter = [listA[indexA][1] intValue];
+            indexA++;
+        } else {
+            startInter = startB;
+            endInter = [listB[indexB][1] intValue];
+            indexB++;
+        }
+        
+        if (startInter <= end) {
+            end = fmax(endInter, end);
+        } else {
+            [result addObject:@[@(start), @(end)]];
+            start = startInter;
+            end = endInter;
+        }
+        
+    }
+    
+    [result addObject:@[@(start), @(end)]];
+    
+    return result;
+}
+
+
 //import java.util.List;
 //import java.util.ArrayList;
 //import java.util.Collections;

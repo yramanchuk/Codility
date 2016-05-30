@@ -11,5 +11,5 @@
 @interface BinaryGap : NSObject
 
 + (int)solution:(int) N;
-
++(NSArray *)mergeIntervals:(NSArray *)listA with:(NSArray *)listB;
 @end

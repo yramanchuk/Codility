@@ -67,6 +67,17 @@
     XCTAssertEqual(5 ,[BinaryGap solution:1376796946]);
 }
 
+- (void)testMergeIntervals {
+    NSArray *testA = @[@[@3, @11], @[@17, @25], @[@58, @73]];
+    NSArray *testB = @[@[@6, @18], @[@40, @47]];
+    NSArray *result = [BinaryGap mergeIntervals:testA with:testB];
+    
+    for (NSArray *interval in result) {
+        NSLog(@"%@", [interval componentsJoinedByString:@" "]);
+    }
+
+}
+
 - (void)testCyclicRotation {
     [CyclicRotation solution:[@[@3, @8, @9, @7, @6] mutableCopy] size:6];
     [CyclicRotation solution:[@[] mutableCopy] size:6];
