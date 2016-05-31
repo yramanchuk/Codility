@@ -84,21 +84,23 @@
 }
 
 - (void)cancelBlock:(dispatch_block_t)block {
+    //set cancelling assotionation
     [self setAssosiation:block];
 }
 
 -(dispatch_block_t) dispatch_after_with_cancel:(NSTimeInterval) delay  for:(dispatch_block_t) block {
     
+    __block dispatch_block_t originalBlock = [block copy];
+    
     dispatch_block_t cancellable = ^{
-        if (![self getAssosiation:block]) {
-            block();
-
+        //execute block if there is no cancelling assotionation
+        if (![self getAssosiation:originalBlock]) {
+            originalBlock();
         }
+        originalBlock = nil;
     };
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        cancellable();
-    });
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), cancellable);
     
     return cancellable;
 }
@@ -113,7 +115,7 @@
         NSLog(@"test");
     };
     
-    [self dispatch_after_with_cancel:5 for:block];
+    [self dispatch_after_with_cancel:3 for:block];
 
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        [self cancelBlock:block];
