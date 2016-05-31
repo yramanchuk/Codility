@@ -1422,23 +1422,34 @@ listnode* deleteDuplicates(listnode* head) {
 + (NSArray *)findAllSubstitutions:(NSString *)word {
     
     if (word.length == 0) {
+        //for empty word return empty array
         return [NSArray new];
     } else if (word.length == 1) {
+        
+        //for single character return array of substitutions
         char character = [word characterAtIndex:0];
         return [self getSubstitutionsForChar:character];
     }
     
     NSMutableArray *result = [NSMutableArray new];
+    
+    //get first char
     char firstChar = [word characterAtIndex:0];
+    // create list of replacements for first char
     NSArray *substitutionsOfFirstChar = [self getSubstitutionsForChar:firstChar];
     
+    //recursively get substitutions for rest of the word
     NSString *restOfWord = [word substringFromIndex:1];
     NSArray *permutationsOfRestWord = [self findAllSubstitutions:restOfWord];
     
+    //iterate for all first char substitutions
     for (int indexOfCharPerm = 0; indexOfCharPerm < substitutionsOfFirstChar.count; indexOfCharPerm++) {
+        //iterate for all possible rest variants and concat them
         for (int indexOfRestWordPerm = 0; indexOfRestWordPerm < permutationsOfRestWord.count; indexOfRestWordPerm++) {
+            
             NSString *newWord = [NSString stringWithFormat:@"%@%@", substitutionsOfFirstChar[indexOfCharPerm], permutationsOfRestWord[indexOfRestWordPerm]];
             [result addObject:newWord];
+            
         }
     }
     
@@ -1455,7 +1466,11 @@ listnode* deleteDuplicates(listnode* head) {
     
     
     NSString *charStr = [NSString stringWithFormat:@"%c", character];
+    
+    //init with existing value -> if it's not found in substituations
     NSArray *substitutions = [NSArray arrayWithObject:charStr];
+    
+    //find array of substitutions in array of replacements
     for (int index = 0; index < mappingChars.count; index++) {
         if ([mappingChars[index] containsObject:charStr]) {
             substitutions = mappingChars[index];
