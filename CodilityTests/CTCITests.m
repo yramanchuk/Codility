@@ -200,8 +200,14 @@
 }
 
 - (void)testLadder {
-    int result = [LadderSolver wordLadder:@"hit" end:@"cog" dictionary:[@[@"hot", @"dot", @"dog", @"lot", @"log"] mutableCopy]];
     
+    int result = [LadderSolver wordLadder:@"cat" end:@"dat" dictionary:[@[@"bat"] mutableCopy]];
+    XCTAssertEqual(result, 2);
+
+    result = [LadderSolver wordLadder:@"cat" end:@"dog" dictionary:[@[@"bat", @"hot", @"dot", @"cog", @"lot", @"log", @"cot"] mutableCopy]];
+    XCTAssertEqual(result, 4);
+
+    result = [LadderSolver wordLadder:@"hit" end:@"cog" dictionary:[@[@"hot", @"dot", @"dog", @"lot", @"log"] mutableCopy]];
     XCTAssertEqual(result, 5);
 }
 

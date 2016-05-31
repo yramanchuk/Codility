@@ -7,14 +7,14 @@
 //
 
 #import "LadderSolver.h"
-#import "EKStack.h"
-@interface WordNode : NSObject 
+@interface WordNode : NSObject
 
 @property (nonatomic, copy) NSString *word;
 @property (nonatomic, assign) int length;
+@property (nonatomic, strong) NSArray *path;
 
 - (id)initWith:(NSString *)word;
-- (id)initWith:(NSString *)word length:(int)length;
+- (id)initWith:(NSString *)word length:(int)length withPath:(NSArray *)newPath;
 
 @end
 
@@ -24,14 +24,16 @@
     if (self = [super init]) {
         self.word = word;
         self.length = 1;
+        _path = [NSArray arrayWithObject:self.word];
     }
     
     return self;
 }
 
-- (id)initWith:(NSString *)word length:(int)length {
+- (id)initWith:(NSString *)word length:(int)length withPath:(NSArray *)newPath {
     if (self = [self initWith:word]) {
         self.length = length;
+        _path = newPath;
     }
     
     return self;
@@ -46,13 +48,14 @@
     //check dict not empty; start == end;
     
     [dictionary addObject:endWord];
-    EKStack *stack = [EKStack new];
+    NSMutableArray *stack = [NSMutableArray new];
     
+    [stack addObject:[[WordNode alloc] initWith:startWord]];
     
-    [stack push:[[WordNode alloc] initWith:startWord]];
-    
-    while (!stack.isEmpty) {
-        WordNode *node = [stack peek];
+    //dfs all combinations
+    while (stack.count > 0) {
+        WordNode *node = [stack lastObject];
+        [stack removeLastObject];
         
         NSMutableString *chars = [node.word mutableCopy];
         
@@ -65,9 +68,12 @@
   
                 if ([dictionary containsObject:chars]) {
                     if ([chars isEqualToString:endWord]) {
+                        NSArray *path = [node.path arrayByAddingObject: [chars copy]];
+                        NSLog(@"ladder path %@", path);
                         return node.length + 1;
                     } else {
-                        [stack push:[[WordNode alloc] initWith:chars length:(node.length+1)]];
+                        NSArray *path = [node.path arrayByAddingObject: [chars copy]];
+                        [stack addObject:[[WordNode alloc] initWith:chars length:(node.length+1) withPath:path]];
                         [dictionary removeObject:chars];
                         
                     }
