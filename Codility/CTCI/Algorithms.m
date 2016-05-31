@@ -892,7 +892,10 @@ treenode* treenode_new(int val) {
  *
  * @Output Integer
  */
-int isSameTree(treenode* A, treenode* B) {
+int compareTree(treenode* A, treenode* B) {
+    return isEqualTree(A, B);
+}
+int isEqualTree(treenode* A, treenode* B) {
     
     if (!A && !B) {
         return 1;
@@ -903,11 +906,11 @@ int isSameTree(treenode* A, treenode* B) {
     if (A->val != B->val) {
         return 0;
     }
-    if (isSameTree(A->left, B->left) == 0) {
+    if (isEqualTree(A->left, B->left) == 0) {
         return 0;
     }
     
-    if (isSameTree(A->right, B->right) == 0) {
+    if (isEqualTree(A->right, B->right) == 0) {
         return 0;
     }
     
