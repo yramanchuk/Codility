@@ -275,16 +275,23 @@
 - (NSInteger) countAndRearrangeNonZeroElementsFromThisArray: (NSMutableArray*) array {
     int lastIndexOfZero = -1;
     int countZeros = 0;
+    
+    //iterate over all array to detect zeroes
     for (int index = 0; index < array.count; index++) {
         if ([array[index] intValue] == 0) {
             countZeros++;
+            //if first zero found -> store it's value
             if (lastIndexOfZero == -1) {
                 lastIndexOfZero = index;
             } else {
+                //find minimal index of zero
                 lastIndexOfZero = fmin(lastIndexOfZero, index);
             }
         } else if (lastIndexOfZero != -1) {
+            //exchange with non-zero
             [array exchangeObjectAtIndex:index withObjectAtIndex:lastIndexOfZero];
+            
+            //next element is either zero or already swapped element
             lastIndexOfZero = lastIndexOfZero+1;
         }
     }
