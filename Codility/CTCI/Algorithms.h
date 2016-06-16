@@ -38,4 +38,5 @@
 + (NSArray *)findAllSubstitutions:(NSString *)word;
 + (NSArray *)findAllPermutations:(NSString *)word;
 + (BOOL)isIsomorpthic:(NSString *)first with:(NSString *)second;
++ (NSMutableArray *)reversePossibilities:(NSString *)value;
 @end

@@ -1550,4 +1550,51 @@ listnode* deleteDuplicates(listnode* head) {
     
 }
 
+
++ (NSMutableArray *)reversePossibilities:(NSString *)value {
+    if (!value || value.length == 0) {
+        return [NSMutableArray new];
+    } else if (value.length == 1) {
+        return [@[[@[value] mutableCopy]] mutableCopy];
+    } else if (value.length == 2) {
+        NSString *possibilityA = [value substringWithRange:NSMakeRange(0, 1)];
+        NSString *possibilityB = [value substringWithRange:NSMakeRange(1, 1)];
+        if ([self isValidString:value]) {
+            return [NSMutableArray arrayWithObjects:[@[possibilityA, possibilityB] mutableCopy], [@[value] mutableCopy], nil];
+        } else {
+            return [NSMutableArray arrayWithObjects:[@[possibilityA, possibilityB] mutableCopy], nil];
+        }
+    }
+    
+    NSMutableArray *result = [NSMutableArray new];
+    
+    NSString *possibilityA = [value substringWithRange:NSMakeRange(0, 1)];
+    NSMutableArray *restA = [self reversePossibilities:value length:1];
+    for (NSMutableArray *possibilities in restA) {
+        [possibilities insertObject:possibilityA atIndex:0];
+        [result addObject:possibilities];
+    }
+    
+    NSString *possibilityB = [value substringWithRange:NSMakeRange(0, 2)];
+    if ([self isValidString:possibilityB]) {
+        NSMutableArray *restB = [self reversePossibilities:value length:2];
+        for (NSMutableArray *possibilities in restB) {
+            [possibilities insertObject:possibilityB atIndex:0];
+            [result addObject:possibilities];
+        }
+    }
+    
+    return result;
+}
+
++ (NSMutableArray *)reversePossibilities:(NSString *)value length:(int)length {
+    NSString *possibilitiesRestA = [value substringWithRange:NSMakeRange(length, value.length-length)];
+    return [self reversePossibilities: possibilitiesRestA];
+}
+
++ (BOOL)isValidString:(NSString *)value {
+    int valueInt = [value intValue];
+    return valueInt < 27;
+}
+
 @end

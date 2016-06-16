@@ -254,4 +254,9 @@
     XCTAssertEqual(false, [Algorithms isIsomorpthic:@"turtle" with:@"tlerur"]);
 }
 
+- (void)testReversePossibilities {
+    NSArray *result = [Algorithms reversePossibilities:@"11111"];
+    XCTAssertEqual(8, result.count);
+}
+
 @end
