@@ -1597,4 +1597,77 @@ listnode* deleteDuplicates(listnode* head) {
     return valueInt < 27;
 }
 
+// Given an array with non negative numbers, divide the array into two parts such that the average of both the parts is equal.
+//Return both parts (If exist).
+//If there is no solution. return an empty list.
+
+//
+//Example:
+//
+//
+//Input:
+//[1 7 15 29 11 9]
+//
+//Output:
+//[9 15] [1 7 11 29]
+//
+//The average of part is (15+9)/2 = 12,
+//average of second part elements is (1 + 7 + 11 + 29) / 4 = 12
+
+//Sum_of_Set1 / size_of_set1 = total_sum / total_size
+
++(int)getSum:(NSArray *)input {
+    int sum = 0;
+    for (NSNumber *num in input) {
+        sum += [num intValue];
+    }
+    return sum;
+}
+
++ (NSArray *)getEqualAvg:(NSArray *)input {
+    float avg = [self getSum:input]/(float)input.count;
+    for (int i = 1; i <= input.count/2; i++) {
+        NSArray *result = [self getAvg:input forCount:i forSum:avg*i startFrom:0];
+        if (result) {
+            NSLog(@"%@", result);
+            return result;
+        }
+    }
+    
+    NSLog(@"not found");
+    
+    return nil;
+}
+
++ (NSArray *)getAvg:(NSArray *)input forCount:(int)count forSum:(float)sum startFrom:(int)index {
+    if (count == 1) {
+        for (int i = index; i < input.count; i++) {
+            if ([input[i]  isEqual: @(sum)]) {
+                return @[input[i]];
+            }
+        }
+        return nil;
+    }
+    if (index == input.count) {
+        return nil;
+    }
+    
+    NSArray *resultWithValue = [self getAvg:input forCount:count-1 forSum:sum-[input[index] intValue] startFrom:index+1];
+    if (resultWithValue) {
+        NSMutableArray *result = [resultWithValue mutableCopy];
+        [result addObject:input[index]];
+        return result;
+    }
+    
+    NSArray *resultWithoutValue = [self getAvg:input forCount:count forSum:sum startFrom:index+1];
+    if (resultWithoutValue) {
+        NSMutableArray *result = [resultWithoutValue mutableCopy];
+        return result;
+    }
+    
+    return nil;
+    
+}
+
+
 @end

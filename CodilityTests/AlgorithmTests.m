@@ -259,4 +259,10 @@
     XCTAssertEqual(8, result.count);
 }
 
+- (void)testEqualAvg {
+    [Algorithms getEqualAvg:@[@18, @2, @13, @8, @15, @20, @8]];
+//    [Algorithms getEqualAvg:@[@2, @7, @9, @11, @15, @28]];
+//    [Algorithms getEqualAvg:@[@1, @1, @1, @1, @1, @1]];
+}
+
 @end
