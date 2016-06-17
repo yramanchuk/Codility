@@ -1669,5 +1669,22 @@ listnode* deleteDuplicates(listnode* head) {
     
 }
 
+//sum of two
++(NSArray *)sumOfTwo:(NSArray *)input {
+    NSMutableDictionary *hashSum = [NSMutableDictionary new];
+    for (int i = 0; i < input.count; i++) {
+        for (int j = i+1; j < input.count; j++) {
+            int sum = [input[i] intValue] + [input[j] intValue];
+            if (hashSum[@(sum)]) {
+                NSLog(@"%@ -- %@ %@", hashSum[@(sum)], input[i], input[j]);
+            } else {
+                hashSum[@(sum)] = @[input[i], input[j]];
+            }
+        }
+    }
+    
+    return nil;
+}
+
 
 @end

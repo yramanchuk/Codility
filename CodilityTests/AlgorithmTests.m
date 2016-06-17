@@ -261,8 +261,14 @@
 
 - (void)testEqualAvg {
     [Algorithms getEqualAvg:@[@18, @2, @13, @8, @15, @20, @8]];
-//    [Algorithms getEqualAvg:@[@2, @7, @9, @11, @15, @28]];
-//    [Algorithms getEqualAvg:@[@1, @1, @1, @1, @1, @1]];
+    [Algorithms getEqualAvg:@[@7, @8, @6, @7]];
+    [Algorithms getEqualAvg:@[@2, @7, @9, @11, @15, @28]];
+    [Algorithms getEqualAvg:@[@1, @1, @1, @1, @1, @1]];
+
+    [Algorithms sumOfTwo:@[@3, @4, @7, @1, @2, @9, @8]];
+
 }
+
+
 
 @end

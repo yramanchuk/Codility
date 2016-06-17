@@ -41,4 +41,5 @@
 + (NSMutableArray *)reversePossibilities:(NSString *)value;
 
 + (NSArray *)getEqualAvg:(NSArray *)input;
++(NSArray *)sumOfTwo:(NSArray *)input;
 @end
