@@ -269,6 +269,9 @@
 
 }
 
-
+- (void)testPairs {
+    NSArray *result = [Algorithms getPairs:@"1234"];
+    NSLog(@"\n(%@)", [result componentsJoinedByString:@")\n("]);
+}
 
 @end

@@ -1687,4 +1687,32 @@ listnode* deleteDuplicates(listnode* head) {
 }
 
 
+
++ (NSArray *)getPairs:(NSString *)string {
+    if (!string) {
+        return @[];
+    }
+    
+    if (string.length == 1) {
+        return @[string];
+    }
+    
+    char firstChar = [string characterAtIndex:0];
+    NSArray *pairs = [self getPairs:[string substringWithRange:NSMakeRange(1, string.length-1)]];
+    NSMutableArray *result = [NSMutableArray new];
+    
+    for (int i = 0; i < pairs.count; i++) {
+        NSString *value = pairs[i];
+//        NSString *val1 = [NSString stringWithFormat:@"(%c%@)", firstChar, value];
+//        NSString *val2 = [NSString stringWithFormat:@"(%c)(%@)", firstChar, value];
+        NSString *val1 = [NSString stringWithFormat:@"%c%@", firstChar, value];
+        NSString *val2 = [NSString stringWithFormat:@"%c)(%@", firstChar, value];
+        [result addObject:val1];
+        [result addObject:val2];
+    }
+    
+    return result;
+    
+}
+
 @end
