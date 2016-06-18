@@ -44,4 +44,6 @@
 + (NSArray *)sumOfTwo:(NSArray *)input;
 + (NSArray *)getPairs:(NSString *)string;
 
++ (int)minCostOfDistance:(int)start finish:(int)finish withIntervals:(NSArray *)intervals;
+
 @end

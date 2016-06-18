@@ -274,4 +274,13 @@
     NSLog(@"\n(%@)", [result componentsJoinedByString:@")\n("]);
 }
 
+- (void)testGetDistance {
+    NSArray *intervals = @[@[@0, @5, @10], @[@0, @4, @1], @[@1, @2, @5], @[@2, @5, @1]];
+    float result = [Algorithms minCostOfDistance:0 finish:5 withIntervals:intervals];
+    XCTAssertEqual(2, result);
+
+    intervals = @[@[@1, @4, @10], @[@2, @5, @6]];
+    result = [Algorithms minCostOfDistance:0 finish:5 withIntervals:intervals];
+    XCTAssertEqual(-1, result);
+}
 @end

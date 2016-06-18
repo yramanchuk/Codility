@@ -1687,7 +1687,7 @@ listnode* deleteDuplicates(listnode* head) {
 }
 
 
-
+//https://www.careercup.com/question?id=5689327699886080
 + (NSArray *)getPairs:(NSString *)string {
     if (!string) {
         return @[];
@@ -1713,6 +1713,56 @@ listnode* deleteDuplicates(listnode* head) {
     
     return result;
     
+}
+
+//https://www.careercup.com/question?id=5760148355153920
++ (int)minCostOfDistance:(int)start finish:(int)finish withIntervals:(NSArray *)intervals {
+    
+    NSMutableArray *suggestedIntervals = [[self getIntervalsFor:start from:(NSArray *)intervals] mutableCopy];
+    
+    
+    for (int distance = start+1; distance <= finish; distance++) {
+        NSMutableArray *suggestedIntervalsCopy = [suggestedIntervals mutableCopy];
+        for (NSArray *interval in suggestedIntervals) {
+            if (interval[1] < @(distance)) {
+                [suggestedIntervalsCopy removeObject:interval];
+                NSMutableArray *continuedIntervals = [[self getIntervalsFor:distance from:(NSArray *)intervals] mutableCopy];
+                for (NSMutableArray *continuedInterval in continuedIntervals) {
+                    continuedInterval[2] = @([continuedInterval[2] intValue] + [interval[2] intValue]);
+                }
+                [suggestedIntervalsCopy addObjectsFromArray:continuedIntervals];
+            }
+        }
+        if (suggestedIntervalsCopy.count == 0) {
+            return -1;
+        }
+        suggestedIntervals = suggestedIntervalsCopy;
+    }
+    
+    float result = [self getMinCost:suggestedIntervals];
+    return result;
+}
+
++ (NSArray *)getIntervalsFor:(int)distance from:(NSArray *)intervals {
+    NSMutableArray *result = [NSMutableArray new];
+    for (NSArray *interval in intervals) {
+        if (interval[0] <= @(distance) && interval[1] >= @(distance)) {
+            [result addObject:[interval mutableCopy]];
+        }
+    }
+    
+    return result;
+}
+
++ (float)getMinCost:(NSArray *)intervals {
+    float cost = NSIntegerMax;
+    for (NSArray *interval in intervals) {
+        if ([interval[2] floatValue] <= cost) {
+            cost = [interval[2] floatValue];
+        }
+    }
+    
+    return cost;
 }
 
 @end
