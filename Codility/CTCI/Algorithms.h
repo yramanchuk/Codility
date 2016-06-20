@@ -45,5 +45,6 @@
 + (NSArray *)getPairs:(NSString *)string;
 
 + (int)minCostOfDistance:(int)start finish:(int)finish withIntervals:(NSArray *)intervals;
++ (NSString *) encodeString:(NSString *)string;
 
 @end

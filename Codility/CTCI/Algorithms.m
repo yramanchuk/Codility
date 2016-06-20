@@ -1765,4 +1765,42 @@ listnode* deleteDuplicates(listnode* head) {
     return cost;
 }
 
+
++ (NSString *) encodeString:(NSString *)string {
+    NSMutableString *result = [NSMutableString new];
+    if (string.length == 1) {
+        return string;
+    }
+    int counter = 1;
+    char prev = [string characterAtIndex:0];
+    char current;
+    for (int index = 1; index < string.length; index++) {
+        current = [string characterAtIndex:index];
+        if (current == prev) {
+            counter++;
+        } else {
+            if (counter < 4) {
+                for (int i = 0; i < counter; i++) {
+                    [result appendFormat:@"%c", prev];
+                }
+            } else {
+                [result appendFormat:@"%dx%c", counter, prev];
+            }
+            counter = 1;
+            prev = current;
+        }
+    }
+    if (counter != 0) {
+        if (counter < 4) {
+            for (int i = 0; i < counter; i++) {
+                [result appendFormat:@"%c", prev];
+            }
+        } else {
+            [result appendFormat:@"%dx%c", counter, prev];
+        }
+    }
+    
+    return [result copy];
+}
+
 @end

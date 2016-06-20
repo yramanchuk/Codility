@@ -283,4 +283,9 @@
     result = [Algorithms minCostOfDistance:0 finish:5 withIntervals:intervals];
     XCTAssertEqual(-1, result);
 }
+
+- (void)testEncodeString {
+    NSString *result = [Algorithms encodeString:@"p14akkkkkkkkpqqqq"];
+    XCTAssertEqualObjects(@"p14a8xkp4xq", result);
+}
 @end
