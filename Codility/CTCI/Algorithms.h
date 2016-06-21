@@ -17,6 +17,7 @@
 + (void)mergeSort:(NSMutableArray *)array;
 + (void)mergesortNonRecursive:(NSMutableArray *)array;
 + (void)quickSort:(NSMutableArray *)array;
++ (int)findKthLargestElement:(NSMutableArray *)array k:(int)k left:(int)left right:(int)right;
 
 + (NSString *)longestUniqueSubstring:(NSString *)string;
 + (int)longestCommonSubstring:(NSString *)str1 with:(NSString *)str2;

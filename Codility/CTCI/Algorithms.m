@@ -217,6 +217,7 @@
 
 + (int)partition:(NSMutableArray *)array left:(int)left right:(int)right {
     int pivot = [array[(left + right) / 2] intValue]; // Pick pivot point
+    NSLog(@"pivot %d", pivot);
     while (left <= right) {
         // Find element on left that should be on right
         while ([array[left] intValue] < pivot) {
@@ -230,13 +231,51 @@
         // Swap elements, and move left and right indices
         if (left <= right) {
             [array exchangeObjectAtIndex:left withObjectAtIndex:right];
+            NSLog(@"%@", [array componentsJoinedByString:@" "]);
             left++;
             right--;
         }
     }
+    NSLog(@"final %@", [array componentsJoinedByString:@" "]);
     return left;
     
 }
+
+//http://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/
++ (int)findKthLargestElement:(NSMutableArray *)array k:(int)k left:(int)left right:(int)right {
+    if (k > 0 && k <= right - left + 1) {
+        int pivot = [self randomPartition:array left:left right:right];
+        if (left + k - pivot - 1 == 0) {
+            return [array[pivot] intValue];
+        } else if (left + k - pivot - 1 < 0) {
+            return [self findKthLargestElement:array k:k left:left right:pivot - 1];
+        }
+        return [self findKthLargestElement:array k:left + k - pivot - 1 left:pivot + 1 right:right];
+
+    }
+    return -1;
+    
+}
+
++ (int)randomPartition:(NSMutableArray *)array left:(int)left right:(int)right {
+    int random = arc4random()%(right - left + 1);
+    [array exchangeObjectAtIndex:left + random withObjectAtIndex:right];
+    
+    int pivot = [array[right] intValue];
+    int index = left;
+    
+    for (int j = left; j <= right - 1; j++) {
+        if ([array[j] intValue] >= pivot) {
+            [array exchangeObjectAtIndex:j withObjectAtIndex:index];
+            index++;
+        }
+    }
+    [array exchangeObjectAtIndex:right withObjectAtIndex:index];
+    return index;
+}
+
+
+
 
 #pragma mark rotation
 + (NSArray *)rotateArray:(NSArray *)array times:(int)n {
@@ -1802,5 +1841,21 @@ listnode* deleteDuplicates(listnode* head) {
     
     return [result copy];
 }
+
+
+//+ (int) partition:(NSMutableArray *)arr left:(int)l right:(int)r
+//{
+//    int x = arr[r] intv, i = l;
+//    for (int j = l; j <= r - 1; j++)
+//    {
+//        if (arr[j] <= x)
+//        {
+//            swap(&arr[i], &arr[j]);
+//            i++;
+//        }
+//    }
+//    swap(&arr[i], &arr[r]);
+//    return i;
+//}
 
 @end

@@ -86,6 +86,21 @@
     
 }
 
+- (void)testFindKLargestf {
+    NSMutableArray *test = [@[@3, @7, @2, @5, @4] mutableCopy];
+    int result = [Algorithms findKthLargestElement:test k:2 left:0 right:test.count-1];
+    XCTAssertEqual(5, result);
+
+    
+    NSMutableArray *testArray = [NSMutableArray new];
+    for (int i = 0; i < 100; i++) {
+        [testArray addObject:@(i)];
+    }
+    result = [Algorithms findKthLargestElement:testArray k:9 left:0 right:testArray.count-1];
+    XCTAssertEqual(91, result);
+    
+}
+
 - (void)testBinarySearchRecursive {
     NSMutableArray *testArray = [NSMutableArray new];
     for (int i = 0; i < 100; i++) {
