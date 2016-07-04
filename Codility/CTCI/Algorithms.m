@@ -811,6 +811,72 @@ static id _instance = nil;
 
 }
 
+
+/**
+ * Definition for binary tree
+ */
+struct NodeXY {
+    int val;
+    int x;
+    int y;
+    struct NodeXY *left;
+    struct NodeXY *right;
+};
+typedef struct NodeXY nodeXY;
+
+//    https://careercup.com/question?id=5691211923849216
+
+- (int)contains:(nodeXY *)root x:(int)x y:(int)y {
+    if (!root) {
+        return -1;
+    }
+    //	if (root.x == x && root.y == y) {
+    //		return 0;
+    //	}
+    
+    NSMutableArray *currentLevel = [NSMutableArray new];
+    
+    NSValue *rootObj = [NSValue value:&root withObjCType:@encode(nodeXY)];
+    [currentLevel addObject:rootObj];
+    
+    bool levelContainsX = false;
+    bool levelContainsY = false;
+    int level = 0;
+    while (currentLevel.count > 0) {
+        levelContainsX = false;
+        levelContainsY = false;
+        NSMutableArray *newLevel = [NSMutableArray new];
+        
+        for (NSValue *nodeObj in currentLevel) {
+            nodeXY node;
+            [nodeObj getValue:&node];
+            
+            if (node.x == x) {
+                levelContainsX = YES;
+            }
+            if (node.y == y) {
+                levelContainsY = YES;
+            }
+            if (levelContainsX && levelContainsY) {
+                return level;
+            }
+            
+            if (node.left) {
+                [newLevel addObject:[NSValue value:&node.left withObjCType:@encode(nodeXY)]];
+            }
+            if (node.right) {
+                [newLevel addObject:[NSValue value:&node.right withObjCType:@encode(nodeXY)]];
+            }
+        }
+        
+        level++;
+        currentLevel = newLevel;
+    }
+    
+    return -1;
+}
+
+
 //- (NSArray *)getListOfLevels:(TreeNode *)root {
 //    
 //    NSMutableArray *result = [NSMutableArray new];
