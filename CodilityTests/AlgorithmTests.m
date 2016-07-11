@@ -10,6 +10,7 @@
 #import "Algorithms.h"
 #import "NSString+EKStuff.h"
 #import "AStarAlgorithm.h"
+#import "PrintMatrixDiagonal.h"
 
 @interface AlgorithmTests : XCTestCase
 
@@ -303,4 +304,15 @@
     NSString *result = [Algorithms encodeString:@"p14akkkkkkkkpqqqq"];
     XCTAssertEqualObjects(@"p14a8xkp4xq", result);
 }
+
+- (void)testPrintDiagonal {
+    NSArray *array = @[
+                       @[@1, @2, @3, @4],
+                       @[@5, @6, @7, @8],
+                       @[@9, @10, @11, @12]
+                       ];
+    PrintMatrixDiagonal *print = [PrintMatrixDiagonal new];
+    [print printMatrixDiagonal:array];
+}
+
 @end
